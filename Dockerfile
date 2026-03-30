@@ -31,7 +31,7 @@ COPY . .
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader --no-interaction --no-progress
 
-# Create required directories and set permissions
+# Create required directories
 RUN mkdir -p storage/framework/{sessions,views,cache} \
     bootstrap/cache \
     database
@@ -57,6 +57,17 @@ RUN echo '<VirtualHost *:${PORT}>' > /etc/apache2/sites-available/000-default.co
     echo '    ErrorLog ${APACHE_LOG_DIR}/error.log' >> /etc/apache2/sites-available/000-default.conf && \
     echo '    CustomLog ${APACHE_LOG_DIR}/access.log combined' >> /etc/apache2/sites-available/000-default.conf && \
     echo '</VirtualHost>' >> /etc/apache2/sites-available/000-default.conf
+
+# Enable PHP error logging (ADD THIS SECTION)
+RUN echo "display_errors = On" >> /usr/local/etc/php/conf.d/errors.ini && \
+    echo "error_reporting = E_ALL" >> /usr/local/etc/php/conf.d/errors.ini && \
+    echo "log_errors = On" >> /usr/local/etc/php/conf.d/errors.ini
+
+# Ensure storage is writable
+RUN chmod -R 777 storage bootstrap/cache
+
+# Create SQLite database if using SQLite
+RUN touch database/database.sqlite && chmod 666 database/database.sqlite
 
 EXPOSE ${PORT}
 
