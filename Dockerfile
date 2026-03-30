@@ -43,17 +43,21 @@ RUN chown -R www-data:www-data /var/www/html \
 # Create SQLite database if needed
 RUN touch database/database.sqlite && chmod 666 database/database.sqlite
 
-# Configure Apache for Render
-RUN sed -i 's/Listen 80/Listen 10000/g' /etc/apache2/ports.conf \
-    && sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
+# Configure Apache for Render - FIXED VERSION
+RUN sed -i 's/Listen 80/Listen 10000/g' /etc/apache2/ports.conf
 
-# Configure .htaccess support
-RUN echo '<Directory /var/www/html/public>' > /etc/apache2/conf-available/laravel.conf && \
-    echo '    Options Indexes FollowSymLinks' >> /etc/apache2/conf-available/laravel.conf && \
-    echo '    AllowOverride All' >> /etc/apache2/conf-available/laravel.conf && \
-    echo '    Require all granted' >> /etc/apache2/conf-available/laravel.conf && \
-    echo '</Directory>' >> /etc/apache2/conf-available/laravel.conf && \
-    a2enconf laravel
+# Create a clean virtual host configuration for Laravel
+RUN echo '<VirtualHost *:10000>' > /etc/apache2/sites-available/000-default.conf && \
+    echo '    ServerName localhost' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    DocumentRoot /var/www/html/public' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    <Directory /var/www/html/public>' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '        Options Indexes FollowSymLinks' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '        AllowOverride All' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '        Require all granted' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    </Directory>' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    ErrorLog ${APACHE_LOG_DIR}/error.log' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    CustomLog ${APACHE_LOG_DIR}/access.log combined' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '</VirtualHost>' >> /etc/apache2/sites-available/000-default.conf
 
 # Enable PHP error logging
 RUN echo "display_errors=On" >> /usr/local/etc/php/conf.d/errors.ini \
