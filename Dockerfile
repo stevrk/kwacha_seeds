@@ -1,0 +1,71 @@
+FROM php:8.2-apache
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    libsqlite3-dev \
+    zip \
+    unzip \
+    nodejs \
+    npm \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install PHP extensions
+RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd pdo_sqlite
+
+# Enable Apache mod_rewrite
+RUN a2enmod rewrite
+
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Set working directory
+WORKDIR /var/www/html
+
+# Copy composer files first for better caching
+COPY composer.json composer.lock ./
+RUN composer install --no-dev --optimize-autoloader --no-interaction --no-progress
+
+# Copy npm files for better caching
+COPY package.json package-lock.json ./
+RUN npm ci && npm run production
+
+# Copy the rest of the application
+COPY . .
+
+# Create required directories and set permissions
+RUN mkdir -p storage/framework/{sessions,views,cache} \
+    bootstrap/cache \
+    database
+
+# Set proper permissions
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 755 storage \
+    && chmod -R 755 bootstrap/cache \
+    && chmod -R 755 public
+
+# Configure Apache for Render
+ENV PORT=10000
+RUN sed -i "s/Listen 80/Listen ${PORT}/g" /etc/apache2/ports.conf \
+    && sed -i "s/:80/:${PORT}/g" /etc/apache2/sites-available/000-default.conf
+
+# Configure Apache virtual host for Laravel
+RUN echo '<VirtualHost *:${PORT}> \
+    DocumentRoot /var/www/html/public \
+    <Directory /var/www/html/public> \
+        Options Indexes FollowSymLinks \
+        AllowOverride All \
+        Require all granted \
+    </Directory> \
+    ErrorLog ${APACHE_LOG_DIR}/error.log \
+    CustomLog ${APACHE_LOG_DIR}/access.log combined \
+</VirtualHost>' > /etc/apache2/sites-available/000-default.conf
+
+EXPOSE ${PORT}
+
+CMD ["apache2-foreground"]
