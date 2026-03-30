@@ -25,50 +25,37 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy all application files
+# Copy project
 COPY . .
 
-# Install PHP dependencies
+# Install dependencies
 RUN composer install --no-dev --optimize-autoloader --no-interaction --no-progress
 
-# Create required directories
-RUN mkdir -p storage/framework/{sessions,views,cache} \
-    bootstrap/cache \
-    database
-
-# Set proper permissions
+# Set correct permissions (IMPORTANT FIX)
 RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 755 storage \
-    && chmod -R 755 bootstrap/cache \
-    && chmod -R 755 public
+    && chmod -R 775 storage bootstrap/cache
 
-# Configure Apache for Render
-ENV PORT=10000
-RUN sed -i "s/Listen 80/Listen ${PORT}/g" /etc/apache2/ports.conf
+# 🔥 FIX 1: Proper Apache port config for Render
+RUN sed -i 's/Listen 80/Listen 10000/g' /etc/apache2/ports.conf \
+    && sed -i 's/:80/:10000/g' /etc/apache2/sites-available/000-default.conf
 
-# Configure Apache virtual host for Laravel
-RUN echo '<VirtualHost *:${PORT}>' > /etc/apache2/sites-available/000-default.conf && \
-    echo '    DocumentRoot /var/www/html/public' >> /etc/apache2/sites-available/000-default.conf && \
-    echo '    <Directory /var/www/html/public>' >> /etc/apache2/sites-available/000-default.conf && \
-    echo '        Options Indexes FollowSymLinks' >> /etc/apache2/sites-available/000-default.conf && \
-    echo '        AllowOverride All' >> /etc/apache2/sites-available/000-default.conf && \
-    echo '        Require all granted' >> /etc/apache2/sites-available/000-default.conf && \
-    echo '    </Directory>' >> /etc/apache2/sites-available/000-default.conf && \
-    echo '    ErrorLog ${APACHE_LOG_DIR}/error.log' >> /etc/apache2/sites-available/000-default.conf && \
-    echo '    CustomLog ${APACHE_LOG_DIR}/access.log combined' >> /etc/apache2/sites-available/000-default.conf && \
-    echo '</VirtualHost>' >> /etc/apache2/sites-available/000-default.conf
+# 🔥 FIX 2: Correct DocumentRoot to Laravel public folder
+RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
 
-# Enable PHP error logging (ADD THIS SECTION)
-RUN echo "display_errors = On" >> /usr/local/etc/php/conf.d/errors.ini && \
-    echo "error_reporting = E_ALL" >> /usr/local/etc/php/conf.d/errors.ini && \
-    echo "log_errors = On" >> /usr/local/etc/php/conf.d/errors.ini
+# 🔥 FIX 3: Allow .htaccess (VERY IMPORTANT)
+RUN echo '<Directory /var/www/html/public>' >> /etc/apache2/apache2.conf \
+    && echo '    AllowOverride All' >> /etc/apache2/apache2.conf \
+    && echo '    Require all granted' >> /etc/apache2/apache2.conf \
+    && echo '</Directory>' >> /etc/apache2/apache2.conf
 
-# Ensure storage is writable
-RUN chmod -R 777 storage bootstrap/cache
+# Enable PHP error logging (for debugging)
+RUN echo "display_errors=On" >> /usr/local/etc/php/conf.d/errors.ini \
+    && echo "display_startup_errors=On" >> /usr/local/etc/php/conf.d/errors.ini \
+    && echo "error_reporting=E_ALL" >> /usr/local/etc/php/conf.d/errors.ini
 
-# Create SQLite database if using SQLite
-RUN touch database/database.sqlite && chmod 666 database/database.sqlite
+# Create SQLite DB (only if you're using sqlite)
+RUN touch database/database.sqlite || true
 
-EXPOSE ${PORT}
+EXPOSE 10000
 
 CMD ["apache2-foreground"]
