@@ -31,30 +31,35 @@ COPY . .
 # Install dependencies
 RUN composer install --no-dev --optimize-autoloader --no-interaction --no-progress
 
-# Set correct permissions (IMPORTANT FIX)
+# Create necessary directories
+RUN mkdir -p storage/framework/{sessions,views,cache} \
+    bootstrap/cache \
+    database
+
+# Set proper permissions
 RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 775 storage bootstrap/cache
+    && chmod -R 775 storage bootstrap/cache database
 
-# 🔥 FIX 1: Proper Apache port config for Render
+# Create SQLite database if needed
+RUN touch database/database.sqlite && chmod 666 database/database.sqlite
+
+# Configure Apache for Render
 RUN sed -i 's/Listen 80/Listen 10000/g' /etc/apache2/ports.conf \
-    && sed -i 's/:80/:10000/g' /etc/apache2/sites-available/000-default.conf
+    && sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
 
-# 🔥 FIX 2: Correct DocumentRoot to Laravel public folder
-RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
+# Configure .htaccess support
+RUN echo '<Directory /var/www/html/public>' > /etc/apache2/conf-available/laravel.conf && \
+    echo '    Options Indexes FollowSymLinks' >> /etc/apache2/conf-available/laravel.conf && \
+    echo '    AllowOverride All' >> /etc/apache2/conf-available/laravel.conf && \
+    echo '    Require all granted' >> /etc/apache2/conf-available/laravel.conf && \
+    echo '</Directory>' >> /etc/apache2/conf-available/laravel.conf && \
+    a2enconf laravel
 
-# 🔥 FIX 3: Allow .htaccess (VERY IMPORTANT)
-RUN echo '<Directory /var/www/html/public>' >> /etc/apache2/apache2.conf \
-    && echo '    AllowOverride All' >> /etc/apache2/apache2.conf \
-    && echo '    Require all granted' >> /etc/apache2/apache2.conf \
-    && echo '</Directory>' >> /etc/apache2/apache2.conf
-
-# Enable PHP error logging (for debugging)
+# Enable PHP error logging
 RUN echo "display_errors=On" >> /usr/local/etc/php/conf.d/errors.ini \
     && echo "display_startup_errors=On" >> /usr/local/etc/php/conf.d/errors.ini \
-    && echo "error_reporting=E_ALL" >> /usr/local/etc/php/conf.d/errors.ini
-
-# Create SQLite DB (only if you're using sqlite)
-RUN touch database/database.sqlite || true
+    && echo "error_reporting=E_ALL" >> /usr/local/etc/php/conf.d/errors.ini \
+    && echo "log_errors=On" >> /usr/local/etc/php/conf.d/errors.ini
 
 EXPOSE 10000
 
