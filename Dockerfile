@@ -25,11 +25,16 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy composer files first for better caching
+# Create artisan file first so composer post-install commands work
+RUN touch artisan && chmod +x artisan
+
+# Copy composer files
 COPY composer.json composer.lock ./
+
+# Install dependencies (artisan exists now)
 RUN composer install --no-dev --optimize-autoloader --no-interaction --no-progress
 
-# Copy the rest of the application
+# Copy the rest of the application (overwrites artisan if exists)
 COPY . .
 
 # Create required directories and set permissions
