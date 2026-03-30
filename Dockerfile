@@ -10,8 +10,6 @@ RUN apt-get update && apt-get install -y \
     libsqlite3-dev \
     zip \
     unzip \
-    nodejs \
-    npm \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -30,10 +28,6 @@ WORKDIR /var/www/html
 # Copy composer files first for better caching
 COPY composer.json composer.lock ./
 RUN composer install --no-dev --optimize-autoloader --no-interaction --no-progress
-
-# Copy npm files for better caching
-COPY package.json package-lock.json ./
-RUN npm ci && npm run production
 
 # Copy the rest of the application
 COPY . .
