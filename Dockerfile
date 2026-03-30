@@ -25,17 +25,11 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Set working directory
 WORKDIR /var/www/html
 
-# Create artisan file first so composer post-install commands work
-RUN touch artisan && chmod +x artisan
-
-# Copy composer files
-COPY composer.json composer.lock ./
-
-# Install dependencies (artisan exists now)
-RUN composer install --no-dev --optimize-autoloader --no-interaction --no-progress
-
-# Copy the rest of the application (overwrites artisan if exists)
+# Copy all application files first
 COPY . .
+
+# Install PHP dependencies
+RUN composer install --no-dev --optimize-autoloader --no-interaction --no-progress
 
 # Create required directories and set permissions
 RUN mkdir -p storage/framework/{sessions,views,cache} \
@@ -50,20 +44,19 @@ RUN chown -R www-data:www-data /var/www/html \
 
 # Configure Apache for Render
 ENV PORT=10000
-RUN sed -i "s/Listen 80/Listen ${PORT}/g" /etc/apache2/ports.conf \
-    && sed -i "s/:80/:${PORT}/g" /etc/apache2/sites-available/000-default.conf
+RUN sed -i "s/Listen 80/Listen ${PORT}/g" /etc/apache2/ports.conf
 
-# Configure Apache virtual host for Laravel
-RUN echo '<VirtualHost *:${PORT}> \
-    DocumentRoot /var/www/html/public \
-    <Directory /var/www/html/public> \
-        Options Indexes FollowSymLinks \
-        AllowOverride All \
-        Require all granted \
-    </Directory> \
-    ErrorLog ${APACHE_LOG_DIR}/error.log \
-    CustomLog ${APACHE_LOG_DIR}/access.log combined \
-</VirtualHost>' > /etc/apache2/sites-available/000-default.conf
+# Configure Apache virtual host for Laravel (FIXED)
+RUN echo '<VirtualHost *:${PORT}>' > /etc/apache2/sites-available/000-default.conf && \
+    echo '    DocumentRoot /var/www/html/public' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    <Directory /var/www/html/public>' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '        Options Indexes FollowSymLinks' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '        AllowOverride All' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '        Require all granted' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    </Directory>' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    ErrorLog ${APACHE_LOG_DIR}/error.log' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    CustomLog ${APACHE_LOG_DIR}/access.log combined' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '</VirtualHost>' >> /etc/apache2/sites-available/000-default.conf
 
 EXPOSE ${PORT}
 
