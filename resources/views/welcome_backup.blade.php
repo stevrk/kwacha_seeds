@@ -151,10 +151,12 @@
                 <a href="#" class="text-white/70 hover:text-white transition"><i class="fab fa-facebook-f text-sm"></i></a>
                 <a href="#" class="text-white/70 hover:text-white transition"><i class="fab fa-whatsapp text-sm"></i></a>
                 <a href="#" class="text-white/70 hover:text-white transition"><i class="fab fa-instagram text-sm"></i></a>
+                <a href="#" class="text-white/70 hover:text-white transition"><i class="fab fa-tiktok text-sm"></i></a>
             </div>
         </div>
     </div>
 </div>
+
 
 <!-- ========== MAIN NAVIGATION ========== -->
 <nav id="mainNavbar" class="navbar fixed top-0 left-0 w-full z-50 shadow-md" style="background: var(--kwacha-green);">

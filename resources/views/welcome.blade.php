@@ -283,22 +283,26 @@
                 </div>
                 
                 <!-- Contact Info -->
-                <div class="hidden md:flex items-center gap-4 lg:gap-6">
-                    <div class="flex items-center gap-2 text-white/80 text-sm" style="font-family: 'Inter', sans-serif;">
-                        <i class="fas fa-phone-alt text-orange-400 text-xs"></i>
-                        <span>+265 998 823 330</span>
-                    </div>
-                    <div class="flex items-center gap-2 text-white/80 text-sm" style="font-family: 'Inter', sans-serif;">
-                        <i class="fas fa-envelope text-orange-400 text-xs"></i>
-                        <span>info@kwachaseeds.mw</span>
-                    </div>
-                    <div class="flex items-center gap-3 border-l border-white/20 pl-4">
-                        <a href="#" class="text-white/70 hover:text-white transition"><i class="fab fa-facebook-f text-base"></i></a>
-                        <a href="#" class="text-white/70 hover:text-white transition"><i class="fab fa-whatsapp text-base"></i></a>
-                        <a href="#" class="text-white/70 hover:text-white transition"><i class="fab fa-instagram text-base"></i></a>
-                        <a href="#" class="text-white/70 hover:text-white transition"><i class="fab fa-twitter text-base"></i></a>
-                    </div>
-                </div>
+             <div id="topContactBar" class="hidden md:block top-contact-bar" style="background: var(--kwacha-green); border-bottom: 1px solid rgba(255,255,255,0.15);">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-2.5">
+        <div class="flex justify-end items-center gap-6 text-white/80 text-sm">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-phone-alt text-orange-400 text-xs"></i>
+                <span>+265 998 823 330</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fas fa-envelope text-orange-400 text-xs"></i>
+                <span>info@kwachaseeds.mw</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="#" class="text-white/70 hover:text-white transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                <a href="#" class="text-white/70 hover:text-white transition"><i class="fab fa-whatsapp text-sm"></i></a>
+                <a href="#" class="text-white/70 hover:text-white transition"><i class="fab fa-instagram text-sm"></i></a>
+                <a href="#" class="text-white/70 hover:text-white transition"><i class="fab fa-tiktok text-sm"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
                 
                 <!-- Mobile Menu Button - Animated -->
                 <button id="mobileMenuBtn" class="md:hidden text-white text-2xl focus:outline-none menu-icon">
@@ -324,10 +328,11 @@
                         <div><i class="fas fa-phone-alt text-orange-400 mr-2 w-4"></i> +265 998 823 330</div>
                         <div><i class="fas fa-envelope text-orange-400 mr-2 w-4"></i> info@kwachaseeds.mw</div>
                         <div class="flex justify-center gap-4 pt-2">
-                            <a href="#" class="text-white/70 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="text-white/70 hover:text-white"><i class="fab fa-whatsapp"></i></a>
-                            <a href="#" class="text-white/70 hover:text-white"><i class="fab fa-instagram"></i></a>
-                        </div>
+                        <a href="#" class="text-white/70 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white/70 hover:text-white"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="text-white/70 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white/70 hover:text-white"><i class="fab fa-tiktok"></i></a>
+                    </div>
                     </div>
                     <a href="#home" class="text-white/90 hover:text-white py-2" style="font-family: 'Inter', sans-serif;">Home</a>
                     <a href="#about" class="text-white/90 hover:text-white py-2" style="font-family: 'Inter', sans-serif;">About</a>
