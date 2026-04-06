@@ -136,20 +136,6 @@
             opacity: 1;
         }
         
-        /* Carousel Styles */
-        .carousel-slide {
-            transition: opacity 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-        }
-        
-        @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-40px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        
-        .slide-content {
-            animation: slideInLeft 0.7s ease-out forwards;
-        }
-        
         /* Hover effects */
         .logo-container:hover {
             transform: scale(1.02);
@@ -179,21 +165,6 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(255,255,255,0.2);
             transition: all 0.3s ease;
-        }
-        
-        /* Carousel button hover */
-        .carousel-btn:hover {
-            background: rgba(0,0,0,0.7);
-            transform: scale(1.05);
-        }
-        
-        /* Mobile menu button animation */
-        .menu-icon {
-            transition: all 0.3s ease-in-out;
-        }
-        
-        .menu-icon.rotated {
-            transform: rotate(90deg);
         }
         
         /* Smooth scroll behavior */
@@ -249,36 +220,18 @@
             <!-- Row 1: Logo + Contact Info -->
             <div class="flex items-center justify-between py-4 md:py-5">
                 
-                <!-- Logo Section - Single instance (FIXED - removed duplicate) -->
-                <div class="flex items-center gap-3 md:gap-5 lg:gap-6">
-                    
-                    <!-- Logo Container -->
-                    <div class="logo-container rounded-full bg-white flex items-center justify-center 
-                                shadow-md hover:shadow-xl transition-all duration-300 ease-in-out 
-                                flex-shrink-0
-                                w-[45px] h-[45px] 
-                                md:w-[65px] md:h-[65px] 
-                                lg:w-[75px] lg:h-[75px]
-                                hover:scale-105"
-                         style="cursor: pointer;">
-                        <img src="{{ asset('images/kwacha_seeds_logo.png') }}" 
-                             alt="Kwacha Seeds Logo" 
-                             class="object-contain 
-                                    w-12 h-12
-                                    md:w-20 md:h-20 
-                                    lg:w-19 lg:h-19">
+                <!-- Large Logo Section -->
+                <div class="flex items-center gap-5">
+                    <!-- Large Circular Logo Container -->
+                    <div class="logo-container rounded-full bg-white flex items-center justify-center shadow-lg flex-shrink-0" style="width: 70px; height: 70px; cursor: pointer;">
+                        <img src="{{ asset('images/kwacha_seeds_logo.png') }}" alt="Kwacha Seeds Logo" class="w-19 h-19 object-contain">
                     </div>
-
-                    <!-- Brand Text -->
-                    <div class="flex flex-col leading-tight">
-                        <span class="text-base md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight whitespace-nowrap"
-                              style="font-family: 'Inter', sans-serif; color: white;">
+                    <!-- Large Brand Text -->
+                    <div class="flex flex-col">
+                        <span class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight whitespace-nowrap" style="font-family: 'Inter', sans-serif; color: white;">
                             Kwacha <span style="color: var(--accent-orange);">Seeds</span>
                         </span>
-                        <span class="text-[10px] md:text-xs lg:text-sm text-white/80 tracking-wide hidden sm:block"
-                              style="font-family: 'Inter', sans-serif;">
-                            Empowering Malawi's Farmers
-                        </span>
+                        <span class="text-[11px] md:text-sm text-white/80 tracking-wide hidden sm:block" style="font-family: 'Inter', sans-serif;">Empowering Malawi's Farmers</span>
                     </div>
                 </div>
                 
@@ -300,9 +253,9 @@
                     </div>
                 </div>
                 
-                <!-- Mobile Menu Button - Animated -->
-                <button id="mobileMenuBtn" class="md:hidden text-white text-2xl focus:outline-none menu-icon">
-                    <i id="menuIcon" class="fas fa-bars"></i>
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
                 </button>
             </div>
             
@@ -341,127 +294,32 @@
         </div>
     </nav>
 
-    <!-- ========== HERO CAROUSEL SECTION ========== -->
-    <!-- ========== HERO CAROUSEL SECTION ========== -->
-<section id="home">
-    <div class="relative w-full">
-        <!-- Final precise adjustment - eliminating the last tiny pixel -->
-        <!-- Mobile: 66px, Tablet: 122px, Desktop: 132px -->
-        <div class="h-[66px] md:h-[122px] lg:h-[132px]"></div>
-        <div id="carousel" class="relative h-[400px] md:h-[500px] overflow-hidden">
-
-            <!-- Slide 1 - Soya Field -->
-            <div class="carousel-slide absolute inset-0 opacity-100" data-active="true">
-                <div class="absolute inset-0">
-                    <img src="{{ asset('images/soya_field.jpg') }}" class="w-full h-full object-cover" alt="Soya field">
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
-                </div>
-                <div class="relative h-full flex items-center justify-center">
-                    <div class="max-w-7xl mx-auto px-6 lg:px-10 w-full">
-                        <div class="max-w-xl text-center md:text-left">
-                            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 md:mb-3 leading-tight slide-content" style="font-family: 'Playfair Display', serif;">
-                                Fast-Maturing Seeds<br>
-                                <span style="color: var(--accent-orange);">Perfect for Malawi's Climate</span>
-                            </h1>
-                            <p class="text-xs sm:text-sm md:text-base text-gray-200 mb-3 md:mb-4 slide-content">
-                                Reliable performance, early maturity, and high yields for every season.
-                            </p>
-                            <a href="#products" class="inline-block px-4 py-1.5 md:px-5 md:py-2.5 rounded-md font-semibold text-white transition hover:opacity-90 slide-content text-sm md:text-base" style="background: var(--kwacha-green);">
-                                View Seeds <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 2 - Maize Harvest -->
-            <div class="carousel-slide absolute inset-0 opacity-0" data-active="false">
-                <div class="absolute inset-0">
-                    <img src="{{ asset('images/malawi_harvest.jpg') }}" class="w-full h-full object-cover" alt="Maize harvest">
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
-                </div>
-                <div class="relative h-full flex items-center justify-center">
-                    <div class="max-w-7xl mx-auto px-6 lg:px-10 w-full">
-                        <div class="max-w-xl text-center md:text-left">
-                            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 md:mb-3 slide-content" style="font-family: 'Playfair Display', serif;">
-                                Abundant Harvests<br>
-                                <span style="color: var(--accent-orange);">Season After Season</span>
-                            </h1>
-                            <p class="text-xs sm:text-sm md:text-base text-gray-200 mb-3 md:mb-4 slide-content">
-                                Strong, reliable maize varieties that deliver consistent and high yields.
-                            </p>
-                            <a href="#products" class="inline-block px-4 py-1.5 md:px-5 md:py-2.5 rounded-md font-semibold text-white transition hover:opacity-90 slide-content text-sm md:text-base" style="background: var(--kwacha-green);">
-                                Explore Seeds <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 3 - Farmer Support -->
-            <div class="carousel-slide absolute inset-0 opacity-0" data-active="false">
-                <div class="absolute inset-0">
-                    <img src="{{ asset('images/Farmer_guide.jpg') }}" class="w-full h-full object-cover" alt="Farmer support">
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
-                </div>
-                <div class="relative h-full flex items-center justify-center">
-                    <div class="max-w-7xl mx-auto px-6 lg:px-10 w-full">
-                        <div class="max-w-xl text-center md:text-left">
-                            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 md:mb-3 slide-content" style="font-family: 'Playfair Display', serif;">
-                                Growing Together<br>
-                                <span style="color: var(--accent-orange);">With Malawi's Farmers</span>
-                            </h1>
-                            <p class="text-xs sm:text-sm md:text-base text-gray-200 mb-3 md:mb-4 slide-content">
-                                We work hand in hand with farmers to improve yields, incomes, and livelihoods.
-                            </p>
-                            <a href="#contact" class="inline-block px-4 py-1.5 md:px-5 md:py-2.5 rounded-md font-semibold text-white transition hover:opacity-90 slide-content text-sm md:text-base" style="background: var(--kwacha-green);">
-                                Get in Touch <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Dots Navigation -->
-        <div class="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
-            <span class="dot-nav w-2 h-2 rounded-full bg-white cursor-pointer transition-all"></span>
-            <span class="dot-nav w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all"></span>
-            <span class="dot-nav w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all"></span>
-        </div>
-
-        <!-- Previous Button -->
-        <button id="prevSlide" class="carousel-btn absolute left-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 rounded-full bg-black/30 text-white hover:bg-black/50 transition flex items-center justify-center">
-            <i class="fas fa-chevron-left text-xs md:text-sm"></i>
-        </button>
-
-        <!-- Next Button -->
-        <button id="nextSlide" class="carousel-btn absolute right-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 rounded-full bg-black/30 text-white hover:bg-black/50 transition flex items-center justify-center">
-            <i class="fas fa-chevron-right text-xs md:text-sm"></i>
-        </button>
-    </div>
-</section>
- 
-
-
-
     <!-- ========== MAIN CONTENT ========== -->
-    <main>
-        <div class="min-h-[50vh] flex items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100 py-16">
+    <main class="mt-[160px] md:mt-[180px]">
+        <div class="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100">
             <div class="text-center px-4">
                 <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <i class="fas fa-check-circle text-green-600 text-5xl"></i>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Welcome to Kwacha Seeds</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Clean Navbar - No Scroll Effect</h2>
                 <p class="text-gray-600 max-w-md mx-auto text-lg">
-                    Your trusted partner for quality seeds in Malawi.
+                    This version has a <strong class="text-orange-600">fixed large navbar</strong> that never shrinks.<br>
+                    Perfect for desktop viewing!
                 </p>
                 <div class="mt-8 flex flex-wrap gap-3 justify-center">
-                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">🌱 Quality Seeds</div>
-                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">🚜 Farmer Support</div>
-                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">📈 High Yields</div>
-                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">💪 Resilient Varieties</div>
+                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">📐 Large logo (70px circle)</div>
+                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">📝 Big brand text (text-3xl/4xl)</div>
+                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">✅ Consistent 'Inter' font</div>
+                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">🎯 No scroll transformation</div>
+                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">💫 Smooth hover effects</div>
+                </div>
+                
+                <!-- Navigation hint -->
+                <div class="mt-10 p-4 bg-white rounded-lg shadow-md max-w-md mx-auto">
+                    <p class="text-gray-500 text-sm">
+                        <i class="fas fa-mouse-pointer text-orange-500 mr-2"></i>
+                        Hover over the nav links to see the underline animation!
+                    </p>
                 </div>
             </div>
         </div>
@@ -491,7 +349,7 @@
                 <div class="text-center sm:text-left">
                     <h4 class="font-semibold mb-3 text-lg" style="font-family: 'Inter', sans-serif;">Quick Links</h4>
                     <ul class="space-y-2 text-gray-400 text-sm" style="font-family: 'Inter', sans-serif;">
-                        <li><a href="#home" class="hover:text-orange-400 transition">Home</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition">Home</a></li>
                         <li><a href="#" class="hover:text-orange-400 transition">About</a></li>
                         <li><a href="#" class="hover:text-orange-400 transition">Products</a></li>
                         <li><a href="#" class="hover:text-orange-400 transition">Farmer's Hub</a></li>
@@ -556,113 +414,28 @@
     
     // Loading screen simulation
     window.addEventListener('load', function() {
+        // Wait 1.5 seconds to show the loading animation
         setTimeout(function() {
             const loadingScreen = document.getElementById('loadingScreen');
             const mainContent = document.getElementById('mainContent');
             
+            // Fade out loading screen
             loadingScreen.style.opacity = '0';
             
+            // After fade out, hide loading screen and show main content
             setTimeout(function() {
                 loadingScreen.style.display = 'none';
                 mainContent.classList.add('visible');
             }, 500);
-        }, 1500);
+        }, 1500); // Adjust this value to control how long the loading screen shows
     });
     
-    // ========== CAROUSEL LOGIC ==========
-    const slides = document.querySelectorAll('.carousel-slide');
-    const dots = document.querySelectorAll('.dot-nav');
-    const prevBtn = document.getElementById('prevSlide');
-    const nextBtn = document.getElementById('nextSlide');
-    let currentIndex = 0;
-    let transitioning = false;
-    let autoTimer;
-
-    function updateSlide(index) {
-        if (transitioning) return;
-        transitioning = true;
-        
-        let newIndex = (index + slides.length) % slides.length;
-        
-        slides.forEach((slide, i) => {
-            slide.style.opacity = i === newIndex ? '1' : '0';
-            slide.setAttribute('data-active', i === newIndex ? 'true' : 'false');
-        });
-        
-        dots.forEach((dot, i) => {
-            dot.style.background = i === newIndex ? 'white' : 'rgba(255,255,255,0.5)';
-            dot.style.transform = i === newIndex ? 'scale(1.2)' : 'scale(1)';
-        });
-        
-        currentIndex = newIndex;
-        
-        setTimeout(() => {
-            transitioning = false;
-        }, 700);
-    }
-
-    function nextSlide() {
-        updateSlide(currentIndex + 1);
-        resetAutoTimer();
-    }
-
-    function prevSlide() {
-        updateSlide(currentIndex - 1);
-        resetAutoTimer();
-    }
-
-    function resetAutoTimer() {
-        if (autoTimer) clearInterval(autoTimer);
-        autoTimer = setInterval(nextSlide, 5500);
-    }
-
-    // Event listeners
-    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-    
-    dots.forEach((dot, i) => {
-        dot.addEventListener('click', () => {
-            updateSlide(i);
-            resetAutoTimer();
-        });
-    });
-
-    // Pause on hover
-    const carouselDiv = document.getElementById('carousel');
-    if (carouselDiv) {
-        carouselDiv.addEventListener('mouseenter', () => {
-            if (autoTimer) clearInterval(autoTimer);
-        });
-        carouselDiv.addEventListener('mouseleave', () => {
-            autoTimer = setInterval(nextSlide, 5500);
-        });
-    }
-
-    // Initialize
-    updateSlide(0);
-    autoTimer = setInterval(nextSlide, 5500);
-    
-    // ========== MOBILE MENU TOGGLE WITH ICON ANIMATION ==========
+    // Mobile menu toggle
     const menuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenuDiv = document.getElementById('mobileMenu');
-    const menuIcon = document.getElementById('menuIcon');
-    
     if(menuBtn) {
         menuBtn.addEventListener('click', () => {
             mobileMenuDiv.classList.toggle('hidden');
-            
-            // Animate icon between hamburger and X
-            if (!mobileMenuDiv.classList.contains('hidden')) {
-                // Menu is open - change to X
-                menuIcon.classList.remove('fa-bars');
-                menuIcon.classList.add('fa-times');
-                menuBtn.classList.add('rotated');
-            } else {
-                // Menu is closed - change back to hamburger
-                menuIcon.classList.remove('fa-times');
-                menuIcon.classList.add('fa-bars');
-                menuBtn.classList.remove('rotated');
-            }
         });
     }
     
@@ -673,13 +446,7 @@
             if(target) {
                 e.preventDefault();
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                if(mobileMenuDiv && !mobileMenuDiv.classList.contains('hidden')) {
-                    mobileMenuDiv.classList.add('hidden');
-                    // Reset icon when closing menu via link click
-                    menuIcon.classList.remove('fa-times');
-                    menuIcon.classList.add('fa-bars');
-                    menuBtn.classList.remove('rotated');
-                }
+                if(mobileMenuDiv) mobileMenuDiv.classList.add('hidden');
             }
         });
     });
