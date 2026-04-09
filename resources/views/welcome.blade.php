@@ -456,11 +456,11 @@
     <footer style="background: var(--kwacha-green);" class="text-white py-12 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <!-- Footer Columns -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <!-- Footer Columns - Changed from 5 to 4 columns -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             
             <!-- Logo & Brand Column - Centered content -->
-            <div class="text-center lg:col-span-1">
+            <div class="text-center">
                 <div class="logo-container flex items-center justify-center 
                             transition-all duration-300 ease-in-out 
                             flex-shrink-0
@@ -523,19 +523,6 @@
                     <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            
-            <!-- Newsletter Column - Centered -->
-            <div class="text-center">
-                <h4 class="font-semibold mb-3 text-lg text-white" style="font-family: 'Inter', sans-serif;">Newsletter</h4>
-                <p class="text-white/70 text-sm mb-2" style="font-family: 'Inter', sans-serif;">Get seasonal planting alerts & offers.</p>
-                <div class="flex max-w-xs mx-auto">
-                    <input type="email" placeholder="Your email" class="flex-1 p-2 rounded-l-md text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500" style="font-family: 'Inter', sans-serif;">
-                    <button class="px-4 rounded-r-md hover:opacity-80 transition" style="background: var(--accent-orange);">
-                        <i class="fas fa-arrow-right text-white"></i>
-                    </button>
-                </div>
-                <p class="text-xs text-white/50 mt-2" style="font-family: 'Inter', sans-serif;">We respect your privacy. Unsubscribe anytime.</p>
-            </div>
         </div>
         
         <!-- Bottom Footer -->
@@ -565,6 +552,7 @@
 </footer>
     
 </div>
+
 
 
 <script>
