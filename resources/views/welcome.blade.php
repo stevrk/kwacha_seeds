@@ -231,15 +231,16 @@
                 
                 <!-- Left Side: Contact Info -->
                 <div class="flex items-center gap-6">
-                    <div class="flex items-center gap-2 text-white/90 text-sm" style="font-family: 'Inter', sans-serif;">
-                        <i class="fas fa-phone-alt" style="color: var(--accent-orange); font-size: 12px;"></i>
-                        <span>+265 998 823 330</span>
-                    </div>
-                    <div class="flex items-center gap-2 text-white/90 text-sm" style="font-family: 'Inter', sans-serif;">
-                        <i class="fas fa-envelope" style="color: var(--accent-orange); font-size: 12px;"></i>
-                        <span>info@kwachaseeds.mw</span>
-                    </div>
+                <div class="flex items-center gap-2 text-white/90 text-sm" style="font-family: 'Inter', sans-serif;">
+                    <i class="fas fa-phone-alt" style="color: white; font-size: 12px;"></i>
+                    <span>+265 998 823 330</span>
                 </div>
+                <div class="flex items-center gap-2 text-white/90 text-sm" style="font-family: 'Inter', sans-serif;">
+                    <i class="fas fa-envelope" style="color: white; font-size: 12px;"></i>
+                    <span>info@kwachaseeds.mw</span>
+                </div>
+            </div>
+                            
                 
                 <!-- Right Side: Follow Us + Social Icons -->
                 <div class="flex items-center gap-4">
@@ -453,10 +454,13 @@
 
     <!-- ========== FOOTER ========== -->
     <footer style="background: var(--kwacha-green);" class="text-white py-12 mt-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Footer Columns -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
             
-            <!-- Centered Logo Section -->
-            <div class="flex flex-col items-center justify-center text-center mb-12">
+            <!-- Logo & Brand Column - Centered content -->
+            <div class="text-center lg:col-span-1">
                 <div class="logo-container flex items-center justify-center 
                             transition-all duration-300 ease-in-out 
                             flex-shrink-0
@@ -464,106 +468,102 @@
                             md:w-[85px] md:h-[85px] 
                             lg:w-[100px] lg:h-[100px]
                             hover:scale-105
-                            overflow-hidden mb-4"
+                            overflow-hidden mb-4 mx-auto"
                      style="cursor: pointer;">
                     <img src="{{ asset('images/white log.png') }}" 
                          alt="Kwacha Seeds Logo" 
                          class="object-cover w-full h-full">
                 </div>
                 
-                <h3 class="text-2xl md:text-3xl font-bold" style="font-family: 'Inter', sans-serif; color: white;">Kwacha Seeds</h3>
-               
-                <p class="text-white/80 text-sm md:text-base max-w-2xl mx-auto mt-4 px-4" style="font-family: 'Inter', sans-serif;">
+                <p class="text-white/70 text-xs md:text-sm mt-3" style="font-family: 'Inter', sans-serif;">
                     Providing Top Reliable Seeds that Boosts Agricultural Productivity, Powered by a Purpose Driven Work Force
                 </p>
             </div>
             
-            <!-- Footer Columns -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 pt-8 border-t border-white/20">
-                
-                <!-- Quick Links Column -->
-                <div class="text-center sm:text-left">
-                    <h4 class="font-semibold mb-3 text-lg text-white" style="font-family: 'Inter', sans-serif;">Quick Links</h4>
-                    <ul class="space-y-2 text-white/70 text-sm" style="font-family: 'Inter', sans-serif;">
-                        <li><a href="#home" class="hover:text-orange-400 transition" style="color: var(--accent-orange);">Home</a></li>
-                        <li><a href="#about" class="hover:text-orange-400 transition">About</a></li>
-                        <li><a href="#products" class="hover:text-orange-400 transition">Products</a></li>
-                        <li><a href="#farmers-hub" class="hover:text-orange-400 transition">Farmer's Hub</a></li>
-                        <li><a href="#dealers" class="hover:text-orange-400 transition">Dealers</a></li>
-                        <li><a href="#contact" class="hover:text-orange-400 transition">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Contact Info Column -->
-                <div class="text-center sm:text-left">
-                    <h4 class="font-semibold mb-3 text-lg text-white" style="font-family: 'Inter', sans-serif;">Contact Us</h4>
-                    <ul class="space-y-2 text-white/70 text-sm" style="font-family: 'Inter', sans-serif;">
-                        <li class="flex items-center justify-center sm:justify-start gap-2">
-                            <i class="fas fa-map-marker-alt" style="color: var(--accent-orange); font-size: 12px;"></i>
-                            <span>Lilongwe, Malawi</span>
-                        </li>
-                        <li class="flex items-center justify-center sm:justify-start gap-2">
-                            <i class="fas fa-phone-alt" style="color: var(--accent-orange); font-size: 12px;"></i>
-                            <span>+265 998 823 330</span>
-                        </li>
-                        <li class="flex items-center justify-center sm:justify-start gap-2">
-                            <i class="fas fa-envelope" style="color: var(--accent-orange); font-size: 12px;"></i>
-                            <span>info@kwachaseeds.mw</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Social Media Column -->
-                <div class="text-center sm:text-left">
-                    <h4 class="font-semibold mb-3 text-lg text-white" style="font-family: 'Inter', sans-serif;">Follow Us Online</h4>
-                    <div class="flex items-center justify-center sm:justify-start gap-4">
-                        <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-tiktok"></i></a>
-                        <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Newsletter Column -->
-                <div class="text-center sm:text-left">
-                    <h4 class="font-semibold mb-3 text-lg text-white" style="font-family: 'Inter', sans-serif;">Newsletter</h4>
-                    <p class="text-white/70 text-sm mb-2" style="font-family: 'Inter', sans-serif;">Get seasonal planting alerts & offers.</p>
-                    <div class="flex max-w-xs mx-auto sm:mx-0">
-                        <input type="email" placeholder="Your email" class="flex-1 p-2 rounded-l-md text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500" style="font-family: 'Inter', sans-serif;">
-                        <button class="px-4 rounded-r-md hover:opacity-80 transition" style="background: var(--accent-orange);">
-                            <i class="fas fa-arrow-right text-white"></i>
-                        </button>
-                    </div>
-                    <p class="text-xs text-white/50 mt-2" style="font-family: 'Inter', sans-serif;">We respect your privacy. Unsubscribe anytime.</p>
+            <!-- Quick Links Column - Centered -->
+            <div class="text-center">
+                <h4 class="font-semibold mb-3 text-lg text-white" style="font-family: 'Inter', sans-serif;">Quick Links</h4>
+                <ul class="space-y-2 text-white/70 text-sm" style="font-family: 'Inter', sans-serif;">
+                    <li><a href="#home" class="hover:opacity-80 transition" style="color: var(--accent-orange);">Home</a></li>
+                    <li><a href="#about" class="hover:text-orange-400 transition">About</a></li>
+                    <li><a href="#products" class="hover:text-orange-400 transition">Products</a></li>
+                    <li><a href="#farmers-hub" class="hover:text-orange-400 transition">Farmer's Hub</a></li>
+                    <li><a href="#dealers" class="hover:text-orange-400 transition">Dealers</a></li>
+                    <li><a href="#contact" class="hover:text-orange-400 transition">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Info Column - Centered -->
+            <div class="text-center">
+                <h4 class="font-semibold mb-3 text-lg text-white" style="font-family: 'Inter', sans-serif;">Contact Us</h4>
+                <ul class="space-y-2 text-white/70 text-sm" style="font-family: 'Inter', sans-serif;">
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="fas fa-map-marker-alt" style="color: white; font-size: 12px;"></i>
+                        <span>Lilongwe, Malawi</span>
+                    </li>
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="fas fa-phone-alt" style="color: white; font-size: 12px;"></i>
+                        <span>+265 998 823 330</span>
+                    </li>
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="fas fa-envelope" style="color: white; font-size: 12px;"></i>
+                        <span>info@kwachaseeds.mw</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Social Media Column - Centered -->
+            <div class="text-center">
+                <h4 class="font-semibold mb-3 text-lg text-white" style="font-family: 'Inter', sans-serif;">Follow Us Online</h4>
+                <div class="flex items-center justify-center gap-4">
+                    <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
             
-            <!-- Bottom Footer -->
-            <div class="border-t border-white/20 mt-10 pt-6">
-                <div class="flex flex-col gap-4 text-center">
-                    <div>
-                        <p class="text-white/60 text-xs sm:text-sm" style="font-family: 'Inter', sans-serif;">
-                            &copy; <span id="currentYear"></span> Kwacha Seeds Limited
-                        </p>
-                        <p class="text-xs sm:text-sm font-medium mt-1" style="color: var(--accent-orange); font-family: 'Inter', sans-serif;">
-                            Providing Top Reliable Seeds
-                        </p>
-                    </div>
-                    <div class="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3">
-                        <p class="text-white/60 text-xs sm:text-sm" style="font-family: 'Inter', sans-serif;">
-                            Designed and Developed by <span style="color: var(--accent-orange); font-weight: 600;">ICT LABS MW</span>
-                        </p>
-                        <span class="hidden sm:inline text-white/30">|</span>
-                        <p class="text-white/60 text-xs sm:text-sm" style="font-family: 'Inter', sans-serif;">
-                            <i class="fas fa-phone-alt" style="color: var(--accent-orange); margin-right: 4px;"></i> 
-                            +265 998 823 330
-                        </p>
-                    </div>
+            <!-- Newsletter Column - Centered -->
+            <div class="text-center">
+                <h4 class="font-semibold mb-3 text-lg text-white" style="font-family: 'Inter', sans-serif;">Newsletter</h4>
+                <p class="text-white/70 text-sm mb-2" style="font-family: 'Inter', sans-serif;">Get seasonal planting alerts & offers.</p>
+                <div class="flex max-w-xs mx-auto">
+                    <input type="email" placeholder="Your email" class="flex-1 p-2 rounded-l-md text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500" style="font-family: 'Inter', sans-serif;">
+                    <button class="px-4 rounded-r-md hover:opacity-80 transition" style="background: var(--accent-orange);">
+                        <i class="fas fa-arrow-right text-white"></i>
+                    </button>
+                </div>
+                <p class="text-xs text-white/50 mt-2" style="font-family: 'Inter', sans-serif;">We respect your privacy. Unsubscribe anytime.</p>
+            </div>
+        </div>
+        
+        <!-- Bottom Footer -->
+        <div class="border-t border-white/20 mt-10 pt-6">
+            <div class="flex flex-col gap-4 text-center">
+                <div>
+                    <p class="text-white/60 text-xs sm:text-sm" style="font-family: 'Inter', sans-serif;">
+                        &copy; <span id="currentYear"></span> Kwacha Seeds Limited
+                    </p>
+                    <p class="text-xs sm:text-sm font-medium mt-1" style="color: var(--accent-orange); font-family: 'Inter', sans-serif;">
+                        Providing Top Reliable Seeds
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3">
+                    <p class="text-white/60 text-xs sm:text-sm" style="font-family: 'Inter', sans-serif;">
+                        Designed and Developed by <span style="color: var(--accent-orange); font-weight: 600;">ICT LABS MW</span>
+                    </p>
+                    <span class="hidden sm:inline text-white/30">|</span>
+                    <p class="text-white/60 text-xs sm:text-sm" style="font-family: 'Inter', sans-serif;">
+                        <i class="fas fa-phone-alt" style="color: var(--accent-orange); margin-right: 4px;"></i> 
+                        +265 998 823 330
+                    </p>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+    
 </div>
 
 
