@@ -432,25 +432,357 @@
     </section>
 
     <!-- ========== MAIN CONTENT ========== -->
-    <main>
-        <div class="min-h-[50vh] flex items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100 py-16">
-            <div class="text-center px-4">
-                <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="fas fa-check-circle text-green-600 text-5xl"></i>
+
+ <!-- ========== ABOUT SECTION ========== -->
+<section id="about" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-12 md:mb-16">
+            <span class="text-sm md:text-base font-semibold tracking-wide uppercase" style="color: var(--accent-orange); letter-spacing: 2px;">Who We Are</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
+                About <span style="color: var(--accent-orange);">Kwacha Seeds</span>
+            </h2>
+            <div class="w-20 h-1 mx-auto rounded-full" style="background: var(--accent-orange);"></div>
+        </div>
+        
+        <!-- Company Description - No card, just clean text -->
+        <div class="mb-16 max-w-5xl mx-auto">
+            <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center" style="font-family: 'Inter', sans-serif; line-height: 1.8;">
+                <span class="font-bold text-xl" style="color: var(--kwacha-green);">Kwacha Seeds Limited</span> is a visionary seed company dedicated to transforming agriculture through high-quality hybrid seeds like <span class="font-semibold" style="color: var(--accent-orange);">maize MH 36</span>, vitamin A-rich orange maize <span class="font-semibold" style="color: var(--accent-orange);">MH42A</span>, wheat (<span class="font-semibold" style="color: var(--accent-orange);">KARS 52</span>), Soybean <span class="font-semibold" style="color: var(--accent-orange);">Chitedze-4</span>, and Groundnuts <span class="font-semibold" style="color: var(--accent-orange);">CG9</span>, prioritizing farmer-centric innovation and sustainability to boost productivity and livelihoods. Committed to excellence over scale, we empower farmers with resilient, nutrient-enhanced crops while fostering integrity, collaboration, and environmental stewardship for a food-secure future.
+            </p>
+        </div>
+        
+        <!-- Vision & Mission Row -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- Vision Card -->
+            <div class="rounded-2xl p-6 md:p-8 transition-all duration-300 hover:transform hover:-translate-y-2" style="background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: rgba(255, 102, 0, 0.2);">
+                        <i class="fas fa-eye text-2xl" style="color: var(--accent-orange);"></i>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-white" style="font-family: 'Inter', sans-serif;">Our Vision</h3>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" style="font-family: 'Inter', sans-serif;">Welcome to Kwacha Seeds</h2>
-                <p class="text-gray-600 max-w-md mx-auto text-lg" style="font-family: 'Inter', sans-serif;">
-                    Your trusted partner for quality seeds in Malawi.
+                <p class="text-white/90 text-base md:text-lg leading-relaxed" style="font-family: 'Inter', sans-serif; line-height: 1.6;">
+                    To inspire excellence by being the best in the production and supply of hybrid seeds that consistently meet the evolving needs of farmers.
                 </p>
-                <div class="mt-8 flex flex-wrap gap-3 justify-center">
-                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm" style="font-family: 'Inter', sans-serif;">🌱 Quality Seeds</div>
-                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm" style="font-family: 'Inter', sans-serif;">🚜 Farmer Support</div>
-                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm" style="font-family: 'Inter', sans-serif;">📈 High Yields</div>
-                    <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm" style="font-family: 'Inter', sans-serif;">💪 Resilient Varieties</div>
+            </div>
+            
+            <!-- Mission Card -->
+            <div class="rounded-2xl p-6 md:p-8 transition-all duration-300 hover:transform hover:-translate-y-2" style="background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: rgba(255, 102, 0, 0.2);">
+                        <i class="fas fa-bullseye text-2xl" style="color: var(--accent-orange);"></i>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-white" style="font-family: 'Inter', sans-serif;">Our Mission</h3>
+                </div>
+                <p class="text-white/90 text-base md:text-lg leading-relaxed" style="font-family: 'Inter', sans-serif; line-height: 1.6;">
+                    To provide high-yielding, quality seeds that boost agricultural productivity, elevate livelihoods, and foster a thriving agricultural sector, powered by a purpose-driven workforce.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Core Values Section -->
+        <div>
+            <div class="text-center mb-10">
+                <h3 class="text-2xl md:text-3xl font-bold mb-3" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
+                    Our <span style="color: var(--accent-orange);">Core Values</span>
+                </h3>
+                <div class="w-16 h-1 mx-auto rounded-full" style="background: var(--accent-orange);"></div>
+                <p class="text-gray-500 mt-3 text-sm md:text-base">The principles that guide everything we do</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Value 1 - Quality & Excellence -->
+                <div class="bg-white rounded-xl p-6 text-center transition-all duration-300 hover:shadow-xl border border-gray-100 group">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(255, 102, 0, 0.1);">
+                        <i class="fas fa-star text-2xl" style="color: var(--accent-orange);"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3" style="color: var(--kwacha-green); font-family: 'Inter', sans-serif;">QUALITY & EXCELLENCE</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        We prioritize rigorous research, testing, and certification to ensure our seeds meet the highest standards of germination, disease resistance, and yield performance.
+                    </p>
+                </div>
+                
+                <!-- Value 2 - Empowerment & Collaboration -->
+                <div class="bg-white rounded-xl p-6 text-center transition-all duration-300 hover:shadow-xl border border-gray-100 group">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(255, 102, 0, 0.1);">
+                        <i class="fas fa-handshake text-2xl" style="color: var(--accent-orange);"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3" style="color: var(--kwacha-green); font-family: 'Inter', sans-serif;">EMPOWERMENT & COLLABORATION</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        We invest in our workforce, partners, and farming communities through training, knowledge-sharing, and inclusive partnerships that drive collective success.
+                    </p>
+                </div>
+                
+                <!-- Value 3 - Sustainability -->
+                <div class="bg-white rounded-xl p-6 text-center transition-all duration-300 hover:shadow-xl border border-gray-100 group">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(255, 102, 0, 0.1);">
+                        <i class="fas fa-leaf text-2xl" style="color: var(--accent-orange);"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3" style="color: var(--kwacha-green); font-family: 'Inter', sans-serif;">SUSTAINABILITY</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        We promote environmentally responsible practices and seed varieties that conserve resources, enhance soil health, and support long-term food security.
+                    </p>
+                </div>
+                
+                <!-- Value 4 - Integrity & Transparency -->
+                <div class="bg-white rounded-xl p-6 text-center transition-all duration-300 hover:shadow-xl border border-gray-100 group">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(255, 102, 0, 0.1);">
+                        <i class="fas fa-shield-alt text-2xl" style="color: var(--accent-orange);"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3" style="color: var(--kwacha-green); font-family: 'Inter', sans-serif;">INTEGRITY & TRANSPARENCY</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        We operate with honesty, fairness, and accountability in every interaction, building trust with farmers, suppliers, and stakeholders.
+                    </p>
                 </div>
             </div>
         </div>
-    </main>
+        
+        <!-- CTA Banner -->
+        <div class="mt-16 rounded-2xl overflow-hidden">
+            <div class="py-8 px-6 text-center" style="background: linear-gradient(135deg, #fff5eb 0%, #ffe8d9 100%);">
+                <p class="text-gray-700 text-base md:text-lg mb-4" style="font-family: 'Inter', sans-serif;">
+                    🌱 <span class="font-semibold" style="color: var(--kwacha-green);">Join us</span> in transforming agriculture across Malawi — one seed at a time.
+                </p>
+                <a href="#contact" class="inline-block px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:transform hover:-translate-y-1" style="background: var(--accent-orange); color: white; font-family: 'Inter', sans-serif;">
+                    Partner With Us <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- ========== PRODUCTS SECTION ========== -->
+<section id="products" class="py-16 md:py-24" style="background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-12 md:mb-16">
+            <span class="text-sm md:text-base font-semibold tracking-wide uppercase" style="color: var(--accent-orange); letter-spacing: 2px;">Our Premium Range</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4" style="font-family: 'Inter', sans-serif; color: white;">
+                Our <span style="color: var(--accent-orange);">Products</span>
+            </h2>
+            <div class="w-20 h-1 mx-auto rounded-full" style="background: var(--accent-orange);"></div>
+            <p class="text-white/80 mt-4 max-w-2xl mx-auto">High-quality, high-yielding seed varieties trusted by farmers across Malawi</p>
+        </div>
+        
+        <!-- Products Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Product 1 - Soybean (Chitedze 4) -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="{{ asset('images/products/soybean.jpg') }}" class="w-full h-full object-cover" alt="Soybean Chitedze 4">
+                    <div class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold" style="color: var(--kwacha-green);">
+                        New Variety
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-bold" style="color: var(--kwacha-green);">SOYBEAN SEED</h3>
+                        <span class="text-sm font-semibold px-2 py-1 rounded" style="background: rgba(255, 102, 0, 0.1); color: var(--accent-orange);">CHITEDZE 4</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Chitedze-4 is the newest soybean variety in Malawi since Tikolore was released in 2011.
+                    </p>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Adaptable to climate change</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Resistant to pests and diseases</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Rust tolerant</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Medium maturity (120-130 days)</span>
+                        </div>
+                    </div>
+                    <div class="border-t pt-3 mt-2">
+                        <p class="text-sm font-semibold" style="color: var(--kwacha-green);">Yield: <span class="text-gray-700">Up to 4,000 kg/hectare</span></p>
+                    </div>
+                    <button class="w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;">
+                        <i class="fas fa-shopping-cart mr-2"></i> Enquire Now
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 2 - Wheat (KARS Wheat 52) -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="{{ asset('images/products/wheat-seed.jpg') }}" alt="Wheat KARS 52" class="w-full h-full object-cover object-center">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-bold" style="color: var(--kwacha-green);">WHEAT SEED</h3>
+                        <span class="text-sm font-semibold px-2 py-1 rounded" style="background: rgba(255, 102, 0, 0.1); color: var(--accent-orange);">KARS Wheat 52</span>
+                    </div>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>77cm tall plant height</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Early maturity (92 days)</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Brown grains with stem borer tolerance (score 2.0)</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Wheat rust disease tolerant (score 1.8)</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Suitable for irrigation in mid & low altitude areas</span>
+                        </div>
+                    </div>
+                    <div class="border-t pt-3 mt-2">
+                        <p class="text-sm font-semibold" style="color: var(--kwacha-green);">Yield: <span class="text-gray-700">Up to 9 tons/hectare</span></p>
+                    </div>
+                    <button class="w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;">
+                        <i class="fas fa-shopping-cart mr-2"></i> Enquire Now
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 3 - White Maize (MH36) -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="{{ asset('images/products/maize-seed.jpg') }}" alt="White Maize MH36" class="w-full h-full object-cover object-center">
+                    <div class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold" style="color: var(--kwacha-green);">
+                        Best Seller
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-bold" style="color: var(--kwacha-green);">WHITE MAIZE SEED</h3>
+                        <span class="text-sm font-semibold px-2 py-1 rounded" style="background: rgba(255, 102, 0, 0.1); color: var(--accent-orange);">MH36</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-3">Poundable flint hybrid with excellent grain texture (score 2.8)</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Plant height: 193cm | Ear height: 94cm</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Grey leaf spot tolerant (1.2)</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Rust tolerant (1.2) | Leaf blight tolerant (2.1)</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Medium maturity (140 days)</span>
+                        </div>
+                    </div>
+                    <div class="border-t pt-3 mt-2">
+                        <p class="text-sm font-semibold" style="color: var(--kwacha-green);">Yield: <span class="text-gray-700">8-10 tons/hectare</span></p>
+                    </div>
+                    <button class="w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;">
+                        <i class="fas fa-shopping-cart mr-2"></i> Enquire Now
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 4 - Orange Maize (MH42A) -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="{{ asset('images/products/maize-orange.jpg') }}" alt="Orange Maize MH42A" class="w-full h-full object-cover object-center">
+                    <div class="absolute top-4 right-4 px-3 py-1 bg-orange-500 text-white rounded-full text-xs font-bold shadow-md">
+                        Rich in Vitamin A
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-bold" style="color: var(--kwacha-green);">ORANGE MAIZE SEED</h3>
+                        <span class="text-sm font-semibold px-2 py-1 rounded" style="background: rgba(255, 102, 0, 0.1); color: var(--accent-orange);">MH42A</span>
+                    </div>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>High yielding (up to 11,000 kg/Ha)</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Medium maturity (140 days)</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Drought tolerant</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Disease resistant</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Long shelf life</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Nutrient dense (rich in Vitamin A)</span>
+                        </div>
+                    </div>
+                    <button class="w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;">
+                        <i class="fas fa-shopping-cart mr-2"></i> Enquire Now
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 5 - Groundnut (CG9) -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="{{ asset('images/products/red-nuts.jpg') }}" alt="Groundnut CG9" class="w-full h-full object-cover object-center">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-bold" style="color: var(--kwacha-green);">GROUNDNUT SEED</h3>
+                        <span class="text-sm font-semibold px-2 py-1 rounded" style="background: rgba(255, 102, 0, 0.1); color: var(--accent-orange);">CG9</span>
+                    </div>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>High yielding (2,000-2,500 kg/Ha)</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Medium maturity (145-160 days)</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Resistant to Rosette disease</span>
+                        </div>
+                        <div class="flex items-start gap-2 text-sm text-gray-600">
+                            <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                            <span>Drought tolerant</span>
+                        </div>
+                    </div>
+                    <button class="w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;">
+                        <i class="fas fa-shopping-cart mr-2"></i> Enquire Now
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 6 - Coming Soon / Contact for More -->
+          
+            
+        </div>
+        
+        
+        
+    </div>
+</section>
 
     <!-- ========== FOOTER ========== -->
     <footer style="background: var(--kwacha-green);" class="text-white py-12 mt-12">
@@ -692,3 +1024,7 @@
 
 </body>
 </html>
+
+
+
+
