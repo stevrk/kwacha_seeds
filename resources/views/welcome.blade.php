@@ -2053,7 +2053,7 @@
             <form id="quoteForm">
                 <div class="form-row">
                     <div class="form-group">
-                        <label>Full Name *</label>
+                        <label>Customer/Organisation Name</label>
                         <input type="text" id="fullName" required placeholder="Enter your full name">
                     </div>
                     
