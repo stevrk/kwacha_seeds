@@ -554,6 +554,7 @@
     </div>
 </section>
 <!-- ========== PRODUCTS SECTION ========== -->
+
 <section id="products" class="py-16 md:py-24" style="background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         
@@ -607,7 +608,7 @@
                     <div class="border-t pt-3 mt-2">
                         <p class="text-sm font-semibold" style="color: var(--kwacha-green);">Yield: <span class="text-gray-700">Up to 4,000 kg/hectare</span></p>
                     </div>
-                    <button class="w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;">
+                    <button class="enquire-btn w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;" data-product="Soybean (Chitedze 4)">
                         <i class="fas fa-shopping-cart mr-2"></i> Enquire Now
                     </button>
                 </div>
@@ -648,7 +649,7 @@
                     <div class="border-t pt-3 mt-2">
                         <p class="text-sm font-semibold" style="color: var(--kwacha-green);">Yield: <span class="text-gray-700">Up to 9 tons/hectare</span></p>
                     </div>
-                    <button class="w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;">
+                    <button class="enquire-btn w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;" data-product="Wheat (KARS 52)">
                         <i class="fas fa-shopping-cart mr-2"></i> Enquire Now
                     </button>
                 </div>
@@ -689,7 +690,7 @@
                     <div class="border-t pt-3 mt-2">
                         <p class="text-sm font-semibold" style="color: var(--kwacha-green);">Yield: <span class="text-gray-700">8-10 tons/hectare</span></p>
                     </div>
-                    <button class="w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;">
+                    <button class="enquire-btn w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;" data-product="White Maize (MH36)">
                         <i class="fas fa-shopping-cart mr-2"></i> Enquire Now
                     </button>
                 </div>
@@ -698,7 +699,7 @@
             <!-- Product 4 - Orange Maize (MH42A) -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <div class="relative h-56 overflow-hidden">
-                    <img src="{{ asset('images/products/maize-orange.jpg') }}" alt="Orange Maize MH42A" class="w-full h-full object-cover object-center">
+                    <img src="{{ asset('images/products/maize-orange1.jpg') }}" alt="Orange Maize MH42A" class="w-full h-full object-cover object-center">
                     <div class="absolute top-4 right-4 px-3 py-1 bg-orange-500 text-white rounded-full text-xs font-bold shadow-md">
                         Rich in Vitamin A
                     </div>
@@ -734,7 +735,7 @@
                             <span>Nutrient dense (rich in Vitamin A)</span>
                         </div>
                     </div>
-                    <button class="w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;">
+                    <button class="enquire-btn w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;" data-product="Orange Maize (MH42A)">
                         <i class="fas fa-shopping-cart mr-2"></i> Enquire Now
                     </button>
                 </div>
@@ -768,27 +769,605 @@
                             <span>Drought tolerant</span>
                         </div>
                     </div>
-                    <button class="w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;">
+                    <button class="enquire-btn w-full mt-4 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105" style="background: var(--kwacha-green); color: white;" data-product="Groundnut (CG9)">
                         <i class="fas fa-shopping-cart mr-2"></i> Enquire Now
                     </button>
                 </div>
             </div>
             
-            <!-- Product 6 - Coming Soon / Contact for More -->
-          
-            
         </div>
-        
-        
         
     </div>
 </section>
 
+<!--Framers Hub -->
+<!-- ========== FARMER'S HUB SECTION ========== -->
+<section id="farmers-hub" class="py-16 md:py-24" style="background: #f8f9fa;">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
+                Farmer's <span style="color: var(--accent-orange);">Hub</span>
+            </h2>
+            <div class="w-16 h-0.5 mx-auto mt-3 rounded-full" style="background: var(--accent-orange);"></div>
+            <p class="text-gray-500 mt-3 text-sm">Your go-to resource for successful farming</p>
+        </div>
+        
+        <!-- 3 Column Grid -->
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Card 1: Educational Resource Center -->
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4" style="background: rgba(255, 102, 0, 0.1);">
+                    <i class="fas fa-graduation-cap text-xl" style="color: var(--accent-orange);"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3" style="color: var(--kwacha-green);">Educational Resource Center</h3>
+                <p class="text-gray-500 text-sm mb-4">Learn best farming practices, planting techniques, and crop management tips.</p>
+                
+                <div class="space-y-3">
+                    <div class="flex items-start gap-2">
+                        <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                        <span class="text-sm text-gray-600">Step-by-step planting guides</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                        <span class="text-sm text-gray-600">Pest and disease identification</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                        <span class="text-sm text-gray-600">Fertilizer application tips</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fas fa-check-circle text-xs mt-0.5" style="color: var(--accent-orange);"></i>
+                        <span class="text-sm text-gray-600">Harvesting and storage techniques</span>
+                    </div>
+                </div>
+                
+                <button class="w-full mt-5 text-sm font-medium py-2 rounded-lg transition" style="color: var(--accent-orange); border: 1px solid var(--accent-orange); background: transparent;">
+                    Explore Resources
+                </button>
+            </div>
+            
+            <!-- Card 2: Frequently Asked Questions -->
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4" style="background: rgba(255, 102, 0, 0.1);">
+                    <i class="fas fa-question-circle text-xl" style="color: var(--accent-orange);"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3" style="color: var(--kwacha-green);">Frequently Asked Questions</h3>
+                <p class="text-gray-500 text-sm mb-4">Quick answers about seeds, farming, and our company.</p>
+                
+                <div class="space-y-3">
+                    <details class="group">
+                        <summary class="cursor-pointer list-none flex justify-between items-center text-gray-700 font-medium text-sm">
+                            What makes your seeds different?
+                            <i class="fas fa-chevron-down group-open:rotate-180 transition-transform text-xs"></i>
+                        </summary>
+                        <p class="text-gray-500 text-xs mt-2 pl-2">Our seeds are MBS certified, disease-resistant, and tested for high germination rates.</p>
+                    </details>
+                    <details class="group">
+                        <summary class="cursor-pointer list-none flex justify-between items-center text-gray-700 font-medium text-sm">
+                            How do I become a dealer?
+                            <i class="fas fa-chevron-down group-open:rotate-180 transition-transform text-xs"></i>
+                        </summary>
+                        <p class="text-gray-500 text-xs mt-2 pl-2">Contact our sales team to discuss partnership opportunities and requirements.</p>
+                    </details>
+                    <details class="group">
+                        <summary class="cursor-pointer list-none flex justify-between items-center text-gray-700 font-medium text-sm">
+                            Do you offer bulk discounts?
+                            <i class="fas fa-chevron-down group-open:rotate-180 transition-transform text-xs"></i>
+                        </summary>
+                        <p class="text-gray-500 text-xs mt-2 pl-2">Yes, contact us for volume-based pricing on large orders.</p>
+                    </details>
+                    <details class="group">
+                        <summary class="cursor-pointer list-none flex justify-between items-center text-gray-700 font-medium text-sm">
+                            How should I store seeds?
+                            <i class="fas fa-chevron-down group-open:rotate-180 transition-transform text-xs"></i>
+                        </summary>
+                        <p class="text-gray-500 text-xs mt-2 pl-2">Keep in cool, dry place away from direct sunlight and moisture.</p>
+                    </details>
+                </div>
+                
+                <button class="w-full mt-5 text-sm font-medium py-2 rounded-lg transition" style="color: var(--accent-orange); border: 1px solid var(--accent-orange); background: transparent;">
+                    View All FAQs
+                </button>
+            </div>
+            
+            <!-- Card 3: Downloadable Resources -->
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4" style="background: rgba(255, 102, 0, 0.1);">
+                    <i class="fas fa-download text-xl" style="color: var(--accent-orange);"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3" style="color: var(--kwacha-green);">Downloadable Resources</h3>
+                <p class="text-gray-500 text-sm mb-4">Free PDF guides, calendars, and tools for farmers.</p>
+                
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 transition cursor-pointer" id="downloadCalendar">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-calendar-alt" style="color: var(--accent-orange);"></i>
+                            <span class="text-sm text-gray-700">Planting Calendar 2025</span>
+                        </div>
+                        <i class="fas fa-download text-xs text-gray-400"></i>
+                    </div>
+                    <div class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 transition cursor-pointer" id="downloadPestGuide">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-bug" style="color: var(--accent-orange);"></i>
+                            <span class="text-sm text-gray-700">Pest Control Guide</span>
+                        </div>
+                        <i class="fas fa-download text-xs text-gray-400"></i>
+                    </div>
+                    <div class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 transition cursor-pointer" id="downloadFertilizerGuide">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-leaf" style="color: var(--accent-orange);"></i>
+                            <span class="text-sm text-gray-700">Fertilizer Application Chart</span>
+                        </div>
+                        <i class="fas fa-download text-xs text-gray-400"></i>
+                    </div>
+                    <div class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 transition cursor-pointer" id="downloadSeedGuide">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-seedling" style="color: var(--accent-orange);"></i>
+                            <span class="text-sm text-gray-700">Seed Selection Guide</span>
+                        </div>
+                        <i class="fas fa-download text-xs text-gray-400"></i>
+                    </div>
+                </div>
+                
+                <button class="w-full mt-5 text-sm font-medium py-2 rounded-lg transition" style="color: var(--accent-orange); border: 1px solid var(--accent-orange); background: transparent;">
+                    More Resources
+                </button>
+            </div>
+        </div>
+        
+        <!-- Hotline Banner -->
+        <div class="mt-10 text-center p-4 rounded-xl" style="background: #e8f5e9;">
+            <p class="text-sm text-gray-700">
+                <i class="fas fa-headset mr-2" style="color: var(--accent-orange);"></i>
+                Still have questions? Call our agronomy expert: 
+                <strong style="color: var(--kwacha-green);">+265 888 123 456</strong>
+                <span class="text-gray-500 text-xs ml-2">Mon-Sat, 8am-5pm</span>
+            </p>
+        </div>
+        
+    </div>
+</section>
+
+<script>
+    // Download handlers
+    const downloadCalendar = document.getElementById('downloadCalendar');
+    const downloadPestGuide = document.getElementById('downloadPestGuide');
+    const downloadFertilizerGuide = document.getElementById('downloadFertilizerGuide');
+    const downloadSeedGuide = document.getElementById('downloadSeedGuide');
+    
+    function handleDownload(resourceName) {
+        alert(`📄 "${resourceName}" will be available for download soon.\n\nFor immediate assistance, please contact our support team.`);
+    }
+    
+    if (downloadCalendar) {
+        downloadCalendar.addEventListener('click', () => handleDownload('Planting Calendar 2025'));
+    }
+    if (downloadPestGuide) {
+        downloadPestGuide.addEventListener('click', () => handleDownload('Pest Control Guide'));
+    }
+    if (downloadFertilizerGuide) {
+        downloadFertilizerGuide.addEventListener('click', () => handleDownload('Fertilizer Application Chart'));
+    }
+    if (downloadSeedGuide) {
+        downloadSeedGuide.addEventListener('click', () => handleDownload('Seed Selection Guide'));
+    }
+    
+    // Button handlers
+    const exploreBtn = document.querySelector('.group .w-full');
+    const faqBtn = document.querySelectorAll('.bg-white .w-full')[2];
+    const moreResourcesBtn = document.querySelectorAll('.bg-white .w-full')[3];
+    
+    if (exploreBtn) {
+        exploreBtn.addEventListener('click', () => {
+            alert('📚 Educational resources coming soon! Check back for guides, videos, and tutorials.');
+        });
+    }
+    
+    if (faqBtn) {
+        faqBtn.addEventListener('click', () => {
+            alert('❓ Visit our FAQ section for more answers or contact our support team directly.');
+        });
+    }
+    
+    if (moreResourcesBtn) {
+        moreResourcesBtn.addEventListener('click', () => {
+            alert('📁 More downloadable resources will be added regularly. Stay tuned!');
+        });
+    }
+</script>
+
+
+
+<!-- ========== DEALERS SECTION ========== -->
+
+<section id="dealers" class="py-16 md:py-24" style="background: linear-gradient(135deg, #fff5eb 0%, #ffe8d9 100%);">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
+                Find a <span style="color: var(--accent-orange);">Dealer</span>
+            </h2>
+            <div class="w-16 h-0.5 mx-auto mt-3 rounded-full" style="background: var(--accent-orange);"></div>
+            <p class="text-gray-600 mt-3 text-sm">Locate authorized Kwacha Seeds dealers near you</p>
+        </div>
+        
+        <!-- Search and Filter Section -->
+        <div class="max-w-4xl mx-auto mb-10">
+            <div class="grid md:grid-cols-2 gap-4">
+                <!-- District Filter -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Select District</label>
+                    <select id="districtFilter" class="w-full p-3 border border-orange-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white">
+                        <option value="">All Districts</option>
+                        <option value="Lilongwe">Lilongwe</option>
+                        <option value="Blantyre">Blantyre</option>
+                        <option value="Mzuzu">Mzuzu</option>
+                        <option value="Zomba">Zomba</option>
+                        <option value="Kasungu">Kasungu</option>
+                        <option value="Mangochi">Mangochi</option>
+                        <option value="Salima">Salima</option>
+                        <option value="Dedza">Dedza</option>
+                        <option value="Ntcheu">Ntcheu</option>
+                        <option value="Mchinji">Mchinji</option>
+                        <option value="Nkhotakota">Nkhotakota</option>
+                        <option value="Karonga">Karonga</option>
+                        <option value="Chitipa">Chitipa</option>
+                    </select>
+                </div>
+                
+                <!-- Trading Center Filter -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Trading Center</label>
+                    <select id="tradingCenterFilter" class="w-full p-3 border border-orange-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white">
+                        <option value="">All Trading Centers</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-3 justify-between items-center mt-5">
+                <div class="flex gap-3">
+                    <button id="searchDealersBtn" class="px-6 py-2 rounded-lg font-medium transition flex items-center gap-2" style="background: var(--accent-orange); color: white;">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                    <button id="resetFiltersBtn" class="px-6 py-2 rounded-lg font-medium transition flex items-center gap-2 bg-white text-gray-700 hover:bg-orange-50 border border-orange-200">
+                        <i class="fas fa-undo-alt"></i> Reset
+                    </button>
+                </div>
+                <div id="resultsCount" class="text-sm text-gray-500">
+                    <i class="fas fa-store mr-1" style="color: var(--accent-orange);"></i> <span id="dealerCount">0</span> dealers found
+                </div>
+            </div>
+        </div>
+        
+        <!-- Dealers Grid -->
+        <div id="dealersGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dealers will be dynamically loaded here -->
+        </div>
+        
+        <!-- Pagination -->
+        <div id="paginationControls" class="flex justify-center items-center gap-3 mt-10">
+            <button id="prevPageBtn" class="px-4 py-2 border border-orange-200 rounded-lg bg-white text-gray-700 hover:bg-orange-50 transition disabled:opacity-50 disabled:cursor-not-allowed">
+                <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <div id="pageNumbers" class="flex gap-2"></div>
+            <button id="nextPageBtn" class="px-4 py-2 border border-orange-200 rounded-lg bg-white text-gray-700 hover:bg-orange-50 transition disabled:opacity-50 disabled:cursor-not-allowed">
+                Next <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <!-- No Results Message -->
+        <div id="noResultsMessage" class="text-center py-12 hidden">
+            <i class="fas fa-map-marker-alt text-5xl text-orange-300 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-600 mb-2">No Dealers Found</h3>
+            <p class="text-gray-500">Try selecting a different district or contact us directly.</p>
+            <a href="#contact" class="inline-block mt-4 px-6 py-2 rounded-lg transition" style="background: var(--accent-orange); color: white;">
+                Contact Us for Help
+            </a>
+        </div>
+        
+        <!-- Become a Dealer CTA -->
+        <div class="mt-12 text-center p-8 rounded-2xl" style="background: linear-gradient(135deg, var(--accent-orange) 0%, #e05a00 100%);">
+            <i class="fas fa-handshake text-3xl mb-3 text-white/80"></i>
+            <h3 class="text-2xl font-bold mb-2 text-white">Want to Become a Kwacha Seeds Dealer?</h3>
+            <p class="text-white/80 mb-4">Join our network of authorized stockists across Malawi.</p>
+            <a href="#contact" class="inline-block bg-white px-8 py-3 rounded-lg font-semibold transition hover:transform hover:-translate-y-1" style="color: var(--accent-orange);">
+                Apply to Become a Stockist →
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Dealers Data
+    const dealersData = [
+        // Lilongwe
+        { id: 1, name: "AgroPlus Dealers", district: "Lilongwe", tradingCenter: "City Centre", address: "Opposite Area 18 Market", phone: "+265 999 123 456", hours: "Mon-Sat 8am-5pm", rating: 4.8 },
+        { id: 2, name: "Green Harvest Supplies", district: "Lilongwe", tradingCenter: "Area 25", address: "Near Shoprite, Area 25", phone: "+265 888 234 567", hours: "Mon-Fri 7:30am-6pm", rating: 4.5 },
+        { id: 3, name: "Kwacha Seeds Depot", district: "Lilongwe", tradingCenter: "Kanengo", address: "Industrial Area, Plot 12", phone: "+265 991 345 678", hours: "Mon-Sat 8am-4:30pm", rating: 4.9 },
+        { id: 4, name: "Farmers Choice Agro", district: "Lilongwe", tradingCenter: "Lumbadzi", address: "Main Road", phone: "+265 881 456 789", hours: "Mon-Sat 7am-6pm", rating: 4.3 },
+        { id: 5, name: "Lilongwe Agro Center", district: "Lilongwe", tradingCenter: "Kawale", address: "Kawale Market, Shop 8", phone: "+265 999 567 890", hours: "Mon-Sat 8am-5pm", rating: 4.4 },
+        // Blantyre
+        { id: 6, name: "Farmers Choice Ltd", district: "Blantyre", tradingCenter: "Limbe", address: "Ginnery Corner", phone: "+265 888 765 432", hours: "Mon-Fri 8am-5pm", rating: 4.7 },
+        { id: 7, name: "Blantyre Agro Center", district: "Blantyre", tradingCenter: "Chichiri", address: "Chichiri Shopping Mall", phone: "+265 999 876 543", hours: "Mon-Sat 8am-6pm", rating: 4.4 },
+        { id: 8, name: "Southern Seeds Supplies", district: "Blantyre", tradingCenter: "Manase", address: "Manase Township", phone: "+265 881 987 654", hours: "Mon-Sat 7:30am-5pm", rating: 4.6 },
+        // Mzuzu
+        { id: 9, name: "Northern Agro Hub", district: "Mzuzu", tradingCenter: "City Centre", address: "Opposite Mzuzu Stadium", phone: "+265 881 234 567", hours: "Mon-Fri 8am-5pm", rating: 4.8 },
+        { id: 10, name: "Mzuzu Seed Store", district: "Mzuzu", tradingCenter: "Chibavi", address: "Chibavi Township", phone: "+265 999 345 678", hours: "Mon-Sat 8am-5pm", rating: 4.3 },
+        // Zomba
+        { id: 11, name: "Zomba Agro Center", district: "Zomba", tradingCenter: "City Centre", address: "Opposite Zomba Market", phone: "+265 991 567 890", hours: "Mon-Sat 8am-5pm", rating: 4.4 },
+        // Kasungu
+        { id: 12, name: "Kasungu Farmers Hub", district: "Kasungu", tradingCenter: "Town Centre", address: "Main Road", phone: "+265 999 789 012", hours: "Mon-Sat 7am-5pm", rating: 4.6 },
+        // Mangochi
+        { id: 13, name: "Mangochi Agro Dealers", district: "Mangochi", tradingCenter: "Town Centre", address: "Near Mangochi Boma", phone: "+265 991 901 234", hours: "Mon-Sat 8am-5pm", rating: 4.3 },
+        // Salima
+        { id: 14, name: "Salima Agro Supplies", district: "Salima", tradingCenter: "Town Centre", address: "Opposite Salima Market", phone: "+265 999 123 890", hours: "Mon-Sat 7:30am-5pm", rating: 4.4 },
+        // Dedza
+        { id: 15, name: "Dedza Farmers Choice", district: "Dedza", tradingCenter: "Town Centre", address: "Main Road", phone: "+265 888 234 901", hours: "Mon-Sat 8am-5pm", rating: 4.5 },
+        // Ntcheu
+        { id: 16, name: "Ntcheu Agro Center", district: "Ntcheu", tradingCenter: "Town Centre", address: "Along M1 Road", phone: "+265 991 345 012", hours: "Mon-Sat 8am-5pm", rating: 4.3 },
+        // Mchinji
+        { id: 17, name: "Mchinji Seed Store", district: "Mchinji", tradingCenter: "Border Post", address: "Near Mchinji Border", phone: "+265 881 456 123", hours: "Mon-Sat 7am-6pm", rating: 4.1 },
+        // Karonga
+        { id: 18, name: "Karonga Farmers Hub", district: "Karonga", tradingCenter: "Town Centre", address: "Main Market Area", phone: "+265 888 678 345", hours: "Mon-Sat 7:30am-5pm", rating: 4.3 }
+    ];
+
+    let currentPage = 1;
+    let currentDealers = [...dealersData];
+    const itemsPerPage = 6;
+
+    // Get unique trading centers
+    function getTradingCenters(district) {
+        if (!district) {
+            return [...new Set(dealersData.map(d => d.tradingCenter))].sort();
+        }
+        return [...new Set(dealersData.filter(d => d.district === district).map(d => d.tradingCenter))].sort();
+    }
+
+    // Populate trading center dropdown
+    function populateTradingCenters(district) {
+        const tradingSelect = document.getElementById('tradingCenterFilter');
+        if (!tradingSelect) return;
+        
+        const centers = getTradingCenters(district);
+        tradingSelect.innerHTML = '<option value="">All Trading Centers</option>';
+        centers.forEach(center => {
+            const option = document.createElement('option');
+            option.value = center;
+            option.textContent = center;
+            tradingSelect.appendChild(option);
+        });
+    }
+
+    // Display dealers
+    function displayDealers(dealers) {
+        const grid = document.getElementById('dealersGrid');
+        const noResults = document.getElementById('noResultsMessage');
+        const countSpan = document.getElementById('dealerCount');
+        const pagination = document.getElementById('paginationControls');
+        
+        if (!grid) return;
+        
+        countSpan.textContent = dealers.length;
+        
+        if (dealers.length === 0) {
+            grid.innerHTML = '';
+            grid.classList.add('hidden');
+            if (noResults) noResults.classList.remove('hidden');
+            if (pagination) pagination.classList.add('hidden');
+            return;
+        }
+        
+        grid.classList.remove('hidden');
+        if (noResults) noResults.classList.add('hidden');
+        if (pagination) pagination.classList.remove('hidden');
+        
+        const totalPages = Math.ceil(dealers.length / itemsPerPage);
+        const start = (currentPage - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        const dealersToShow = dealers.slice(start, end);
+        
+        grid.innerHTML = dealersToShow.map(dealer => `
+            <div class="border border-orange-100 rounded-xl p-5 bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-store text-xl" style="color: var(--accent-orange);"></i>
+                        <h3 class="font-bold text-lg" style="color: var(--kwacha-green);">${dealer.name}</h3>
+                    </div>
+                    <div class="flex items-center gap-1 px-2 py-1 rounded-full" style="background: rgba(255, 102, 0, 0.1);">
+                        <i class="fas fa-star text-xs" style="color: var(--accent-orange);"></i>
+                        <span class="text-xs font-semibold" style="color: var(--kwacha-green);">${dealer.rating}</span>
+                    </div>
+                </div>
+                <div class="space-y-2 text-sm text-gray-600">
+                    <div class="flex items-start gap-2">
+                        <i class="fas fa-map-marker-alt text-xs mt-1" style="color: var(--accent-orange);"></i>
+                        <div>
+                            <p class="font-medium">${dealer.district} - ${dealer.tradingCenter}</p>
+                            <p class="text-gray-400 text-xs">${dealer.address}</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-phone-alt text-xs" style="color: var(--accent-orange);"></i>
+                        <a href="tel:${dealer.phone}" class="hover:underline">${dealer.phone}</a>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-clock text-xs text-gray-400"></i>
+                        <span class="text-gray-400 text-xs">${dealer.hours}</span>
+                    </div>
+                </div>
+                <div class="mt-4 pt-3 border-t border-orange-100 flex gap-2">
+                    <button onclick="window.location.href='tel:${dealer.phone}'" class="flex-1 py-2 rounded-lg text-sm font-medium transition" style="background: var(--accent-orange); color: white;">
+                        <i class="fas fa-phone-alt text-xs mr-1"></i> Call
+                    </button>
+                    <button onclick="showDirections('${dealer.name}')" class="flex-1 py-2 rounded-lg text-sm font-medium transition border" style="border-color: var(--accent-orange); color: var(--accent-orange);">
+                        <i class="fas fa-directions text-xs mr-1"></i> Directions
+                    </button>
+                </div>
+            </div>
+        `).join('');
+        
+        updatePagination(dealers.length, totalPages);
+    }
+
+    // Update pagination controls
+    function updatePagination(total, totalPages) {
+        const prevBtn = document.getElementById('prevPageBtn');
+        const nextBtn = document.getElementById('nextPageBtn');
+        const pageNumbers = document.getElementById('pageNumbers');
+        
+        if (!prevBtn || !nextBtn || !pageNumbers) return;
+        
+        prevBtn.disabled = currentPage === 1;
+        nextBtn.disabled = currentPage === totalPages;
+        
+        pageNumbers.innerHTML = '';
+        
+        let startPage = Math.max(1, currentPage - 2);
+        let endPage = Math.min(totalPages, currentPage + 2);
+        
+        if (startPage > 1) {
+            pageNumbers.appendChild(createPageBtn(1));
+            if (startPage > 2) {
+                const dots = document.createElement('span');
+                dots.className = 'px-2 text-gray-500';
+                dots.textContent = '...';
+                pageNumbers.appendChild(dots);
+            }
+        }
+        
+        for (let i = startPage; i <= endPage; i++) {
+            pageNumbers.appendChild(createPageBtn(i));
+        }
+        
+        if (endPage < totalPages) {
+            if (endPage < totalPages - 1) {
+                const dots = document.createElement('span');
+                dots.className = 'px-2 text-gray-500';
+                dots.textContent = '...';
+                pageNumbers.appendChild(dots);
+            }
+            pageNumbers.appendChild(createPageBtn(totalPages));
+        }
+    }
+
+    // Create page button
+    function createPageBtn(page) {
+        const btn = document.createElement('button');
+        btn.textContent = page;
+        btn.className = `px-3 py-1 rounded-lg transition ${currentPage === page ? 'text-white' : 'bg-white border border-orange-200 text-gray-700 hover:bg-orange-50'}`;
+        if (currentPage === page) {
+            btn.style.background = '#ff6600';
+        } else {
+            btn.style.background = 'white';
+        }
+        btn.onclick = () => {
+            currentPage = page;
+            displayDealers(currentDealers);
+            document.getElementById('dealers').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        };
+        return btn;
+    }
+
+    // Filter dealers
+    function filterDealers() {
+        const district = document.getElementById('districtFilter').value;
+        const tradingCenter = document.getElementById('tradingCenterFilter').value;
+        
+        let filtered = [...dealersData];
+        if (district) filtered = filtered.filter(d => d.district === district);
+        if (tradingCenter) filtered = filtered.filter(d => d.tradingCenter === tradingCenter);
+        
+        currentDealers = filtered;
+        currentPage = 1;
+        displayDealers(currentDealers);
+    }
+
+    // Reset filters
+    function resetFilters() {
+        document.getElementById('districtFilter').value = '';
+        document.getElementById('tradingCenterFilter').value = '';
+        populateTradingCenters('');
+        currentDealers = [...dealersData];
+        currentPage = 1;
+        displayDealers(currentDealers);
+    }
+
+    // Show directions
+    function showDirections(storeName) {
+        alert(`📍 Directions to ${storeName}\n\nGoogle Maps link will be available soon. Please call the dealer for directions.`);
+    }
+
+    // Initialize event listeners
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get elements
+        const districtFilter = document.getElementById('districtFilter');
+        const tradingFilter = document.getElementById('tradingCenterFilter');
+        const searchBtn = document.getElementById('searchDealersBtn');
+        const resetBtn = document.getElementById('resetFiltersBtn');
+        const prevBtn = document.getElementById('prevPageBtn');
+        const nextBtn = document.getElementById('nextPageBtn');
+        
+        // Add event listeners
+        if (districtFilter) {
+            districtFilter.addEventListener('change', function() {
+                populateTradingCenters(this.value);
+                filterDealers();
+            });
+        }
+        
+        if (tradingFilter) tradingFilter.addEventListener('change', filterDealers);
+        if (searchBtn) searchBtn.addEventListener('click', filterDealers);
+        if (resetBtn) resetBtn.addEventListener('click', resetFilters);
+        
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayDealers(currentDealers);
+                    document.getElementById('dealers').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        }
+        
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                const totalPages = Math.ceil(currentDealers.length / itemsPerPage);
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayDealers(currentDealers);
+                    document.getElementById('dealers').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        }
+        
+        // Initialize
+        populateTradingCenters('');
+        displayDealers(dealersData);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- ========== FOOTER ========== -->
-    <footer style="background: var(--kwacha-green);" class="text-white py-12 mt-12">
+<footer id="contact" style="background: var(--kwacha-green);" class="text-white py-12 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <!-- Footer Columns - Changed from 5 to 4 columns -->
+        <!-- Footer Columns - 4 columns -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             
             <!-- Logo & Brand Column - Centered content -->
@@ -844,16 +1423,17 @@
                 </ul>
             </div>
             
-            <!-- Social Media Column - Centered -->
+            <!-- Newsletter Column - Centered (Restored) -->
             <div class="text-center">
-                <h4 class="font-semibold mb-3 text-lg text-white" style="font-family: 'Inter', sans-serif;">Follow Us Online</h4>
-                <div class="flex items-center justify-center gap-4">
-                    <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-tiktok"></i></a>
-                    <a href="#" class="text-white/80 hover:text-white transition text-xl"><i class="fab fa-youtube"></i></a>
+                <h4 class="font-semibold mb-3 text-lg text-white" style="font-family: 'Inter', sans-serif;">Newsletter</h4>
+                <p class="text-white/70 text-sm mb-2" style="font-family: 'Inter', sans-serif;">Get seasonal planting alerts & offers.</p>
+                <div class="flex max-w-xs mx-auto">
+                    <input type="email" placeholder="Your email" class="flex-1 p-2 rounded-l-md text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500" style="font-family: 'Inter', sans-serif;">
+                    <button class="px-4 rounded-r-md hover:opacity-80 transition" style="background: var(--accent-orange);">
+                        <i class="fas fa-arrow-right text-white"></i>
+                    </button>
                 </div>
+                <p class="text-xs text-white/50 mt-2" style="font-family: 'Inter', sans-serif;">We respect your privacy. Unsubscribe anytime.</p>
             </div>
         </div>
         
@@ -1021,6 +1601,910 @@
         });
     });
 </script>
+
+
+
+
+
+<!-- ========== QUOTE MODAL POPUP ========== -->
+
+<style>
+    /* Modal Styles */
+    .quote-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(8px);
+    }
+    
+    .quote-modal.active {
+        display: flex;
+    }
+    
+    .quote-modal-content {
+        background: white;
+        border-radius: 24px;
+        max-width: 1000px;
+        width: 90%;
+        max-height: 85vh;
+        overflow-y: auto;
+        position: relative;
+        animation: modalSlideIn 0.3s ease-out;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+    
+    @media (min-width: 1280px) {
+        .quote-modal-content {
+            max-width: 1100px;
+        }
+    }
+    
+    @keyframes modalSlideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px) scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    
+    .quote-modal-header {
+        background: var(--kwacha-green);
+        color: white;
+        padding: 24px 28px;
+        border-radius: 24px 24px 0 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    
+    .quote-modal-header h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+    }
+    
+    @media (min-width: 768px) {
+        .quote-modal-header h3 {
+            font-size: 1.75rem;
+        }
+    }
+    
+    .quote-modal-body {
+        padding: 30px;
+    }
+    
+    @media (min-width: 768px) {
+        .quote-modal-body {
+            padding: 40px;
+        }
+    }
+    
+    .quote-modal-close {
+        position: absolute;
+        right: 24px;
+        top: 20px;
+        font-size: 28px;
+        cursor: pointer;
+        color: white;
+        transition: transform 0.2s;
+        background: rgba(255,255,255,0.2);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .quote-modal-close:hover {
+        transform: rotate(90deg);
+        background: rgba(255,255,255,0.3);
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #333;
+        font-size: 14px;
+    }
+    
+    .form-group input, .form-group select {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1.5px solid #e5e7eb;
+        border-radius: 12px;
+        font-size: 14px;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .form-group input:focus, .form-group select:focus {
+        outline: none;
+        border-color: var(--accent-orange);
+        box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.1);
+    }
+    
+    /* Seed Items Table */
+    .seeds-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    
+    .seeds-table th {
+        background: #f5f5f5;
+        padding: 12px;
+        text-align: left;
+        font-weight: 600;
+        color: var(--kwacha-green);
+        font-size: 14px;
+    }
+    
+    .seeds-table td {
+        padding: 12px;
+        border-bottom: 1px solid #e5e7eb;
+        vertical-align: middle;
+    }
+    
+    .seed-quantity {
+        width: 100px;
+        padding: 8px;
+        border: 1.5px solid #e5e7eb;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .seed-quantity:focus {
+        outline: none;
+        border-color: var(--accent-orange);
+    }
+    
+    .remove-row-btn {
+        background: #fee2e2;
+        border: none;
+        color: #dc2626;
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .remove-row-btn:hover {
+        background: #dc2626;
+        color: white;
+        transform: scale(1.05);
+    }
+    
+    .grand-total {
+        background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);
+        color: white;
+        padding: 16px 20px;
+        border-radius: 12px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .submit-btn {
+        width: 100%;
+        padding: 16px;
+        background: var(--kwacha-green);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-family: 'Inter', sans-serif;
+        margin-top: 20px;
+    }
+    
+    .submit-btn:hover {
+        background: var(--kwacha-green-light);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(10, 59, 10, 0.3);
+    }
+    
+    .section-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--kwacha-green);
+        margin: 20px 0 15px 0;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--accent-orange);
+        display: inline-block;
+    }
+    
+    /* Two-column layout for large screens */
+    @media (min-width: 768px) {
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    }
+    
+    .add-more-btn {
+        background: transparent;
+        border: 2px dashed var(--accent-orange);
+        color: var(--accent-orange);
+        padding: 10px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 600;
+        margin: 10px 0;
+        transition: all 0.3s;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .add-more-btn:hover {
+        background: var(--accent-orange);
+        color: white;
+    }
+    
+    /* Custom Confirmation Modal */
+    .confirm-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 10000;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+    }
+    
+    .confirm-modal-overlay.active {
+        display: flex;
+    }
+    
+    .confirm-modal {
+        background: white;
+        border-radius: 28px;
+        max-width: 500px;
+        width: 90%;
+        overflow: hidden;
+        animation: modalSlideIn 0.3s ease-out;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    }
+    
+    .confirm-modal-header {
+        background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);
+        color: white;
+        padding: 20px 24px;
+    }
+    
+    .confirm-modal-header h4 {
+        margin: 0;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    
+    .confirm-modal-body {
+        padding: 24px;
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+    
+    .confirm-modal-footer {
+        padding: 16px 24px;
+        background: #f8f9fa;
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+    }
+    
+    .confirm-btn {
+        padding: 10px 24px;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+        border: none;
+        font-size: 14px;
+    }
+    
+    .confirm-btn-primary {
+        background: var(--kwacha-green);
+        color: white;
+    }
+    
+    .confirm-btn-primary:hover {
+        background: var(--kwacha-green-light);
+        transform: translateY(-2px);
+    }
+    
+    .confirm-btn-secondary {
+        background: #e5e7eb;
+        color: #333;
+    }
+    
+    .confirm-btn-secondary:hover {
+        background: #d1d5db;
+    }
+    
+    .order-summary-item {
+        background: #f8f9fa;
+        padding: 12px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    
+    .detail-row {
+        display: flex;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .detail-label {
+        width: 100px;
+        font-weight: 600;
+        color: var(--kwacha-green);
+    }
+    
+    .detail-value {
+        flex: 1;
+        color: #333;
+    }
+    
+    .warning-box {
+        background: #fff3e0;
+        border-left: 4px solid var(--accent-orange);
+        padding: 12px 16px;
+        border-radius: 12px;
+        margin-top: 16px;
+    }
+    
+    /* Success Modal with Tick Animation */
+    .success-modal {
+        text-align: center;
+    }
+    
+    .success-check {
+        width: 80px;
+        height: 80px;
+        background: var(--kwacha-green);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        animation: scaleIn 0.3s ease-out, pulse 0.5s ease-out 0.3s;
+    }
+    
+    @keyframes scaleIn {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .success-check i {
+        font-size: 40px;
+        color: white;
+        animation: checkDraw 0.4s ease-out 0.2s both;
+    }
+    
+    @keyframes checkDraw {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+</style>
+
+<div id="quoteModal" class="quote-modal">
+    <div class="quote-modal-content">
+        <div class="quote-modal-header">
+            <h3 style="font-family: 'Inter', sans-serif;">Bulk Quote Request</h3>
+            <span class="quote-modal-close">&times;</span>
+        </div>
+        <div class="quote-modal-body">
+            <form id="quoteForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" id="fullName" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" id="email" required placeholder="your@email.com">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" id="phone" required placeholder="+265 XXXX XXXX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Delivery Location</label>
+                        <input type="text" id="location" placeholder="City/District, Malawi">
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="section-title">Select Seeds & Quantities</h4>
+                </div>
+                
+                <!-- Seeds Table -->
+                <table class="seeds-table" id="seedsTable">
+                    <thead>
+                        <tr>
+                            <th>Seed Type</th>
+                            <th>Pack Size</th>
+                            <th>Quantity (packs)</th>
+                            <th>Subtotal</th>
+                            <th style="width: 50px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="seedsTableBody">
+                        <tr class="seed-row">
+                            <td>
+                                <select class="seed-type">
+                                    <option value="maize">Premium Maize (MH36)</option>
+                                    <option value="orange-maize">Orange Maize (MH42A)</option>
+                                    <option value="soybean">Soybean (Chitedze 4)</option>
+                                    <option value="wheat">Wheat (KARS 52)</option>
+                                    <option value="groundnut">Groundnut (CG9)</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="pack-size">
+                                    <option value="2">2kg Pack</option>
+                                    <option value="5">5kg Pack</option>
+                                    <option value="25">25kg Pack</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="number" class="seed-quantity" value="0" min="0" step="1">
+                            </td>
+                            <td class="seed-subtotal">MK 0</td>
+                            <td class="text-center">
+                                <button type="button" class="remove-row-btn" title="Remove this seed">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="text-center">
+                    <button type="button" class="add-more-btn" id="addMoreSeedsBtn">
+                        + Add Another Seed Type
+                    </button>
+                </div>
+                
+                <!-- Grand Total -->
+                <div class="grand-total">
+                    <span>GRAND TOTAL:</span>
+                    <span id="grandTotal">MK 0</span>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    Submit Quote Request
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Custom Confirmation Modal -->
+<div id="customConfirmModal" class="confirm-modal-overlay">
+    <div class="confirm-modal">
+        <div class="confirm-modal-header">
+            <h4 id="confirmModalTitle">Verify Your Information</h4>
+        </div>
+        <div class="confirm-modal-body" id="confirmModalBody">
+            <!-- Dynamic content will be inserted here -->
+        </div>
+        <div class="confirm-modal-footer">
+            <button class="confirm-btn confirm-btn-secondary" id="confirmModalCancel">Go Back</button>
+            <button class="confirm-btn confirm-btn-primary" id="confirmModalOk">Confirm & Submit</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Seed Prices (per pack in Malawi Kwacha)
+    const seedPrices = {
+        maize: { 2: 3500, 5: 8000, 25: 35000 },
+        'orange-maize': { 2: 3800, 5: 8500, 25: 38000 },
+        soybean: { 2: 4000, 5: 9000, 25: 40000 },
+        wheat: { 2: 3000, 5: 7000, 25: 30000 },
+        groundnut: { 2: 4500, 5: 10000, 25: 45000 }
+    };
+    
+    // Store form data for confirmation
+    let pendingFormData = null;
+    
+    // Function to calculate subtotal for a row
+    function calculateRowSubtotal(row) {
+        const seedType = row.querySelector('.seed-type').value;
+        const packSize = row.querySelector('.pack-size').value;
+        const quantity = parseInt(row.querySelector('.seed-quantity').value) || 0;
+        
+        const price = seedPrices[seedType][packSize] || 0;
+        const subtotal = price * quantity;
+        
+        const subtotalCell = row.querySelector('.seed-subtotal');
+        subtotalCell.textContent = `MK ${subtotal.toLocaleString()}`;
+        
+        return subtotal;
+    }
+    
+    // Function to calculate grand total
+    function calculateGrandTotal() {
+        const rows = document.querySelectorAll('#seedsTableBody .seed-row');
+        let grandTotal = 0;
+        
+        rows.forEach(row => {
+            const subtotal = calculateRowSubtotal(row);
+            grandTotal += subtotal;
+        });
+        
+        document.getElementById('grandTotal').textContent = `MK ${grandTotal.toLocaleString()}`;
+        return grandTotal;
+    }
+    
+    // Add event listeners to a row
+    function addRowEventListeners(row) {
+        const inputs = row.querySelectorAll('.seed-type, .pack-size, .seed-quantity');
+        inputs.forEach(input => {
+            input.addEventListener('change', () => {
+                calculateRowSubtotal(row);
+                calculateGrandTotal();
+            });
+            input.addEventListener('input', () => {
+                calculateRowSubtotal(row);
+                calculateGrandTotal();
+            });
+        });
+        
+        // Add remove button event listener
+        const removeBtn = row.querySelector('.remove-row-btn');
+        if (removeBtn) {
+            removeBtn.addEventListener('click', function() {
+                const rows = document.querySelectorAll('#seedsTableBody .seed-row');
+                if (rows.length > 1) {
+                    row.remove();
+                    calculateGrandTotal();
+                } else {
+                    // Reset the only row instead of removing it
+                    row.querySelector('.seed-quantity').value = 0;
+                    calculateRowSubtotal(row);
+                    calculateGrandTotal();
+                }
+            });
+        }
+    }
+    
+    // Add new seed row
+    function addNewSeedRow() {
+        const tbody = document.getElementById('seedsTableBody');
+        const newRow = document.createElement('tr');
+        newRow.className = 'seed-row';
+        newRow.innerHTML = `
+            <td>
+                <select class="seed-type">
+                    <option value="maize">Premium Maize (MH36)</option>
+                    <option value="orange-maize">Orange Maize (MH42A)</option>
+                    <option value="soybean">Soybean (Chitedze 4)</option>
+                    <option value="wheat">Wheat (KARS 52)</option>
+                    <option value="groundnut">Groundnut (CG9)</option>
+                </select>
+            </td>
+            <td>
+                <select class="pack-size">
+                    <option value="2">2kg Pack</option>
+                    <option value="5">5kg Pack</option>
+                    <option value="25">25kg Pack</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" class="seed-quantity" value="0" min="0" step="1">
+            </td>
+            <td class="seed-subtotal">MK 0</td>
+            <td class="text-center">
+                <button type="button" class="remove-row-btn" title="Remove this seed">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </td>
+        </tr>
+        `;
+        tbody.appendChild(newRow);
+        addRowEventListeners(newRow);
+    }
+    
+    // Modal functionality
+    const modal = document.getElementById('quoteModal');
+    const closeBtn = document.querySelector('.quote-modal-close');
+    const addMoreBtn = document.getElementById('addMoreSeedsBtn');
+    
+    // Add more seeds button
+    if (addMoreBtn) {
+        addMoreBtn.addEventListener('click', addNewSeedRow);
+    }
+    
+    // Function to open modal
+    function openModal() {
+        if (modal) {
+            document.getElementById('quoteForm').reset();
+            const tbody = document.getElementById('seedsTableBody');
+            tbody.innerHTML = `
+                <tr class="seed-row">
+                    <td>
+                        <select class="seed-type">
+                            <option value="maize">Premium Maize (MH36)</option>
+                            <option value="orange-maize">Orange Maize (MH42A)</option>
+                            <option value="soybean">Soybean (Chitedze 4)</option>
+                            <option value="wheat">Wheat (KARS 52)</option>
+                            <option value="groundnut">Groundnut (CG9)</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="pack-size">
+                            <option value="2">2kg Pack</option>
+                            <option value="5">5kg Pack</option>
+                            <option value="25">25kg Pack</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" class="seed-quantity" value="0" min="0" step="1">
+                    </td>
+                    <td class="seed-subtotal">MK 0</td>
+                    <td class="text-center">
+                        <button type="button" class="remove-row-btn" title="Remove this seed">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+            `;
+            const firstRow = document.querySelector('#seedsTableBody .seed-row');
+            if (firstRow) addRowEventListeners(firstRow);
+            calculateGrandTotal();
+            modal.classList.add('active');
+        }
+    }
+    
+    // Open modal when clicking Get a Quote buttons
+    const getQuoteBtns = document.querySelectorAll('a[href="#get-quote"], .btn-quote, .enquire-btn');
+    getQuoteBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal();
+        });
+    });
+    
+    // Close modal
+    function closeModal() {
+        if (modal) modal.classList.remove('active');
+    }
+    
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) closeModal();
+        });
+    }
+    
+    // Initialize first row event listeners
+    const firstRow = document.querySelector('#seedsTableBody .seed-row');
+    if (firstRow) addRowEventListeners(firstRow);
+    
+    // Custom confirmation modal handlers
+    const confirmModal = document.getElementById('customConfirmModal');
+    const confirmModalBody = document.getElementById('confirmModalBody');
+    const confirmModalTitle = document.getElementById('confirmModalTitle');
+    const confirmOkBtn = document.getElementById('confirmModalOk');
+    const confirmCancelBtn = document.getElementById('confirmModalCancel');
+    
+    function closeConfirmModal() {
+        confirmModal.classList.remove('active');
+        pendingFormData = null;
+    }
+    
+    confirmCancelBtn.addEventListener('click', closeConfirmModal);
+    confirmModal.addEventListener('click', function(e) {
+        if (e.target === confirmModal) closeConfirmModal();
+    });
+    
+    // Show success modal with tick animation
+    function showSuccessModal() {
+        const successHTML = `
+            <div class="success-modal">
+                <div class="success-check">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h3 style="color: var(--kwacha-green); margin-bottom: 15px;">Quote Request Submitted!</h3>
+                <p style="color: #555; margin-bottom: 20px;">We will contact you for confirmation.</p>
+                
+                <div style="background: #f0f7f0; padding: 15px; border-radius: 12px; text-align: left; margin-bottom: 20px;">
+                    <p style="margin-bottom: 10px;"><strong>What happens next:</strong></p>
+                    <ol style="margin-left: 20px; color: #555; line-height: 1.6;">
+                        <li>Our sales team will review your request</li>
+                        <li>You will receive a confirmation call within 24 hours</li>
+                        <li>We will discuss payment options and delivery schedule</li>
+                        <li>A formal quote will be sent to your email</li>
+                    </ol>
+                </div>
+                
+                <button class="confirm-btn confirm-btn-primary" id="closeSuccessBtn" style="padding: 12px 30px;">Close</button>
+            </div>
+        `;
+        
+        confirmModalTitle.innerHTML = 'Request Submitted!';
+        confirmModalBody.innerHTML = successHTML;
+        confirmModal.classList.add('active');
+        
+        // Re-attach event listener after modal content is updated
+        const closeSuccessBtn = document.getElementById('closeSuccessBtn');
+        if (closeSuccessBtn) {
+            closeSuccessBtn.addEventListener('click', function() {
+                closeConfirmModal();
+                closeModal();
+            });
+        }
+    }
+    
+    // Show verification modal
+    function showVerificationModal(formData, seedsList, grandTotal) {
+        const seedsHTML = seedsList.map(seed => `<div class="order-summary-item">${seed}</div>`).join('');
+        
+        const verificationHTML = `
+            <div class="detail-row">
+                <div class="detail-label">Name:</div>
+                <div class="detail-value">${formData.fullName}</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">Email:</div>
+                <div class="detail-value">${formData.email}</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">Phone:</div>
+                <div class="detail-value">${formData.phone}</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">Location:</div>
+                <div class="detail-value">${formData.location}</div>
+            </div>
+            
+            <div style="margin-top: 20px; margin-bottom: 15px;">
+                <strong>Order Summary:</strong>
+            </div>
+            ${seedsHTML}
+            
+            <div class="detail-row" style="border-top: 2px solid var(--kwacha-green); margin-top: 10px; padding-top: 12px;">
+                <div class="detail-label" style="font-weight: bold;">GRAND TOTAL:</div>
+                <div class="detail-value" style="font-weight: bold; color: var(--accent-orange);">MK ${grandTotal.toLocaleString()}</div>
+            </div>
+            
+            <div class="warning-box">
+                <strong>Please verify your contact details are correct!</strong><br>
+                A sales representative will contact you using the information above for confirmation, payment, and delivery logistics.
+            </div>
+        `;
+        
+        confirmModalTitle.innerHTML = 'Verify Your Information';
+        confirmModalBody.innerHTML = verificationHTML;
+        confirmModal.classList.add('active');
+        
+        // Store form data for submission
+        pendingFormData = { formData, seedsList, grandTotal };
+    }
+    
+    // Handle form submission
+    const quoteForm = document.getElementById('quoteForm');
+    if (quoteForm) {
+        quoteForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const location = document.getElementById('location').value || 'Not specified';
+            
+            // Collect seed details
+            const rows = document.querySelectorAll('#seedsTableBody .seed-row');
+            let seedsList = [];
+            let grandTotal = 0;
+            
+            rows.forEach(row => {
+                const seedTypeSelect = row.querySelector('.seed-type');
+                const seedType = seedTypeSelect.options[seedTypeSelect.selectedIndex].text;
+                const packSize = row.querySelector('.pack-size').value;
+                const quantity = parseInt(row.querySelector('.seed-quantity').value) || 0;
+                const price = seedPrices[seedTypeSelect.value][packSize] || 0;
+                const subtotal = price * quantity;
+                
+                if (quantity > 0) {
+                    seedsList.push(`${seedType} (${packSize}kg) - ${quantity} pack(s) = MK ${subtotal.toLocaleString()}`);
+                    grandTotal += subtotal;
+                }
+            });
+            
+            if (seedsList.length === 0) {
+                alert('Please add at least one seed type with quantity greater than 0.');
+                return;
+            }
+            
+            const formData = { fullName, email, phone, location };
+            
+            // Show verification modal
+            showVerificationModal(formData, seedsList, grandTotal);
+        });
+    }
+    
+    // Handle confirm submission
+    confirmOkBtn.addEventListener('click', function() {
+        if (pendingFormData) {
+            // Show success modal with tick animation
+            showSuccessModal();
+            pendingFormData = null;
+        }
+        closeConfirmModal();
+    });
+    
+    // Calculate initial grand total
+    calculateGrandTotal();
+</script>
+
+
+
+
 
 </body>
 </html>
