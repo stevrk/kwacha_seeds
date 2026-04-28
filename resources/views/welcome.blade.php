@@ -224,13 +224,13 @@
     
     <!-- ========== MAIN NAVIGATION ========== -->
     <nav class="fixed top-0 left-0 w-full z-50 shadow-md bg-white">
-        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        
+        <!-- Top Row: Contact + Social (Green background) - DESKTOP ONLY -->
+        <div class="hidden md:flex items-center justify-between py-2.5 px-4 rounded-b-lg mb-0" style="background: var(--kwacha-green); border-radius: 0 0 12px 12px;">
             
-            <!-- Top Row: Contact + Social (Green background) - DESKTOP ONLY -->
-            <div class="hidden md:flex items-center justify-between py-3 px-4 rounded-b-lg mb-0" style="background: var(--kwacha-green); border-radius: 0 0 12px 12px;">
-                
-                <!-- Left Side: Contact Info -->
-                <div class="flex items-center gap-6">
+            <!-- Left Side: Contact Info -->
+            <div class="flex items-center gap-6">
                 <div class="flex items-center gap-2 text-white/90 text-sm" style="font-family: 'Inter', sans-serif;">
                     <i class="fas fa-phone-alt" style="color: white; font-size: 12px;"></i>
                     <span>+265 998 823 330</span>
@@ -240,97 +240,101 @@
                     <span>info@kwachaseeds.mw</span>
                 </div>
             </div>
-                            
-                
-                <!-- Right Side: Follow Us + Social Icons -->
-                <div class="flex items-center gap-4">
-                    <span class="text-white/80 text-sm" style="font-family: 'Inter', sans-serif;">Follow us online</span>
-                    <div class="flex items-center gap-3">
-                        <a href="#" class="text-white/80 hover:text-white transition"><i class="fab fa-facebook-f text-base"></i></a>
-                        <a href="#" class="text-white/80 hover:text-white transition"><i class="fab fa-whatsapp text-base"></i></a>
-                        <a href="#" class="text-white/80 hover:text-white transition"><i class="fab fa-instagram text-base"></i></a>
-                        <a href="#" class="text-white/80 hover:text-white transition"><i class="fab fa-tiktok text-base"></i></a>
-                        <a href="#" class="text-white/80 hover:text-white transition"><i class="fab fa-youtube text-base"></i></a>
-                    </div>
-                </div>
-            </div>
             
-            <!-- Bottom Row: Logo + Navigation Menu (White background) -->
-            <div class="flex items-center justify-between py-4 md:py-5">
-                
-                <!-- Logo Section -->
-                <div class="flex items-center gap-3 md:gap-5 lg:gap-6">
-                
-                    <div class="logo-container flex items-center justify-center 
-                                flex-shrink-0
-                                w-[45px] h-[45px] 
-                                md:w-[65px] md:h-[65px] 
-                                lg:w-[75px] lg:h-[75px]
-                                hover:scale-105
-                                overflow-hidden"
-                         style="cursor: pointer;">
-                        <img src="{{ asset('images/midium quality.png') }}" 
-                             alt="Kwacha Seeds Logo" 
-                             class="object-cover w-full h-full">
-                    </div>
-
-                    <!-- Brand Text -->
-                    <div class="flex flex-col leading-tight">
-                        <span class="text-base md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight whitespace-nowrap" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
-                            Kwacha <span style="color: var(--accent-orange);">Seeds</span>
-                        </span>
-                        <span class="text-[10px] md:text-xs lg:text-sm text-gray-500 tracking-wide hidden sm:block" style="font-family: 'Inter', sans-serif;">
-                            Providing Top Reliable Seeds
-                        </span>
-                    </div>
-                </div>
-                
-                <!-- Desktop Navigation Links -->
-                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
-                    <a href="#home" class="nav-link text-gray-700 hover:text-orange-500 text-sm font-medium transition" style="font-family: 'Inter', sans-serif;">Home</a>
-                    <a href="#about" class="nav-link text-gray-700 hover:text-orange-500 text-sm font-medium transition" style="font-family: 'Inter', sans-serif;">About</a>
-                    <a href="#products" class="nav-link text-gray-700 hover:text-orange-500 text-sm font-medium transition" style="font-family: 'Inter', sans-serif;">Products</a>
-                    <a href="#farmers-hub" class="nav-link text-gray-700 hover:text-orange-500 text-sm font-medium transition" style="font-family: 'Inter', sans-serif;">Farmer's Hub</a>
-                    <a href="#dealers" class="nav-link text-gray-700 hover:text-orange-500 text-sm font-medium transition" style="font-family: 'Inter', sans-serif;">Dealers</a>
-                    <a href="#contact" class="nav-link text-gray-700 hover:text-orange-500 text-sm font-medium transition" style="font-family: 'Inter', sans-serif;">Contact</a>
-                    <a href="#get-quote" class="btn-quote px-5 py-2 text-sm font-semibold rounded-md shadow-md transition" style="background: var(--kwacha-green); color: white; font-family: 'Inter', sans-serif;">Get a Quote</a>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobileMenuBtn" class="md:hidden text-gray-700 text-2xl focus:outline-none menu-icon">
-                    <i id="menuIcon" class="fas fa-bars"></i>
-                </button>
-            </div>
-            
-            <!-- Mobile Menu - Contact & Social info inside the menu panel -->
-            <div id="mobileMenu" class="hidden md:hidden pb-6">
-                <div class="flex flex-col space-y-3 text-center">
-                    <!-- Mobile Contact & Social with Green Background (inside menu) -->
-                    <div class="pt-3 pb-3 rounded-lg mb-2" style="background: var(--kwacha-green);">
-                        <div class="text-white/90 text-sm space-y-2" style="font-family: 'Inter', sans-serif;">
-                            <div><i class="fas fa-phone-alt" style="color: var(--accent-orange); margin-right: 8px; width: 16px;"></i> +265 998 823 330</div>
-                            <div><i class="fas fa-envelope" style="color: var(--accent-orange); margin-right: 8px; width: 16px;"></i> info@kwachaseeds.mw</div>
-                            <div class="flex justify-center gap-4 pt-2">
-                                <a href="#" class="text-white/80 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="text-white/80 hover:text-white"><i class="fab fa-whatsapp"></i></a>
-                                <a href="#" class="text-white/80 hover:text-white"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="text-white/80 hover:text-white"><i class="fab fa-tiktok"></i></a>
-                                <a href="#" class="text-white/80 hover:text-white"><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Mobile Nav Links -->
-                    <a href="#home" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">About</a>
-                    <a href="#products" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">Products</a>
-                    <a href="#farmers-hub" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">Farmer's Hub</a>
-                    <a href="#dealers" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">Dealers</a>
-                    <a href="#contact" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">Contact</a>
-                    <a href="#get-quote" class="px-5 py-2 text-sm font-semibold rounded-md text-center" style="background: var(--kwacha-green); color: white; font-family: 'Inter', sans-serif;">Get a Quote</a>
+            <!-- Right Side: Follow Us + Social Icons -->
+            <div class="flex items-center gap-4">
+                <span class="text-white/80 text-sm" style="font-family: 'Inter', sans-serif;">Follow us online</span>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="text-white/80 hover:text-white transition"><i class="fab fa-facebook-f text-base"></i></a>
+                    <a href="#" class="text-white/80 hover:text-white transition"><i class="fab fa-whatsapp text-base"></i></a>
+                    <a href="#" class="text-white/80 hover:text-white transition"><i class="fab fa-instagram text-base"></i></a>
+                    <a href="#" class="text-white/80 hover:text-white transition"><i class="fab fa-tiktok text-base"></i></a>
+                    <a href="#" class="text-white/80 hover:text-white transition"><i class="fab fa-youtube text-base"></i></a>
                 </div>
             </div>
         </div>
-    </nav>
+        
+        <!-- Bottom Row: Logo + Navigation Menu (White background) -->
+        <div class="flex items-center justify-between py-3 md:py-4">
+            
+            <!-- Logo Section -->
+            <div class="flex items-center gap-2 md:gap-4 lg:gap-5 flex-shrink-0">
+            
+                <div class="logo-container flex items-center justify-center 
+                            flex-shrink-0
+                            w-[40px] h-[40px] 
+                            md:w-[55px] md:h-[55px] 
+                            lg:w-[65px] lg:h-[65px]
+                            hover:scale-105
+                            overflow-hidden"
+                     style="cursor: pointer;">
+                    <img src="{{ asset('images/midium quality.png') }}" 
+                         alt="Kwacha Seeds Logo" 
+                         class="object-cover w-full h-full">
+                </div>
+
+                <!-- Brand Text -->
+                <div class="flex flex-col leading-tight">
+                    <span class="text-sm md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight whitespace-nowrap" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
+                        Kwacha <span style="color: var(--accent-orange);">Seeds</span>
+                    </span>
+                    <span class="text-[8px] md:text-xs lg:text-sm text-gray-500 tracking-wide hidden sm:block" style="font-family: 'Inter', sans-serif;">
+                        Providing Top Reliable Seeds
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation Links - WIDER SPACING & SCALED TEXT -->
+            <div class="hidden md:flex items-center space-x-4 lg:space-x-5 xl:space-x-6">
+                <a href="#home" class="nav-link text-gray-700 hover:text-orange-500 text-xs lg:text-sm font-medium transition whitespace-nowrap" style="font-family: 'Inter', sans-serif;">Home</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-orange-500 text-xs lg:text-sm font-medium transition whitespace-nowrap" style="font-family: 'Inter', sans-serif;">About</a>
+                <a href="#products" class="nav-link text-gray-700 hover:text-orange-500 text-xs lg:text-sm font-medium transition whitespace-nowrap" style="font-family: 'Inter', sans-serif;">Products</a>
+                <a href="#farmers-hub" class="nav-link text-gray-700 hover:text-orange-500 text-xs lg:text-sm font-medium transition whitespace-nowrap" style="font-family: 'Inter', sans-serif;">Farmer's Hub</a>
+                <a href="#dealers" class="nav-link text-gray-700 hover:text-orange-500 text-xs lg:text-sm font-medium transition whitespace-nowrap" style="font-family: 'Inter', sans-serif;">Dealers</a>
+                <a href="#gallery" class="nav-link text-gray-700 hover:text-orange-500 text-xs lg:text-sm font-medium transition whitespace-nowrap" style="font-family: 'Inter', sans-serif;">Gallery</a>
+                <a href="#testimonials" class="nav-link text-gray-700 hover:text-orange-500 text-xs lg:text-sm font-medium transition whitespace-nowrap" style="font-family: 'Inter', sans-serif;">Testimonials</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-orange-500 text-xs lg:text-sm font-medium transition whitespace-nowrap" style="font-family: 'Inter', sans-serif;">Contact</a>
+                <a href="#get-quote" class="btn-quote px-4 py-1.5 lg:px-5 lg:py-2 text-xs lg:text-sm font-semibold rounded-md shadow-md transition whitespace-nowrap" style="background: var(--kwacha-green); color: white; font-family: 'Inter', sans-serif;">Get a Quote</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-gray-700 text-2xl focus:outline-none menu-icon">
+                <i id="menuIcon" class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu - Contact & Social info inside the menu panel -->
+        <div id="mobileMenu" class="hidden md:hidden pb-6">
+            <div class="flex flex-col space-y-3 text-center">
+                <!-- Mobile Contact & Social with Green Background (inside menu) -->
+                <div class="pt-3 pb-3 rounded-lg mb-2" style="background: var(--kwacha-green);">
+                    <div class="text-white/90 text-sm space-y-2" style="font-family: 'Inter', sans-serif;">
+                        <div><i class="fas fa-phone-alt" style="color: var(--accent-orange); margin-right: 8px; width: 16px;"></i> +265 998 823 330</div>
+                        <div><i class="fas fa-envelope" style="color: var(--accent-orange); margin-right: 8px; width: 16px;"></i> info@kwachaseeds.mw</div>
+                        <div class="flex justify-center gap-4 pt-2">
+                            <a href="#" class="text-white/80 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white/80 hover:text-white"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="text-white/80 hover:text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white/80 hover:text-white"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" class="text-white/80 hover:text-white"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Nav Links -->
+                <a href="#home" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">About</a>
+                <a href="#products" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">Products</a>
+                <a href="#farmers-hub" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">Farmer's Hub</a>
+                <a href="#dealers" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">Dealers</a>
+                <a href="#gallery" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">Gallery</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">Testimonials</a>
+                <a href="#contact" class="text-gray-700 hover:text-orange-500 py-2" style="font-family: 'Inter', sans-serif;">Contact</a>
+                <a href="#get-quote" class="px-5 py-2 text-sm font-semibold rounded-md text-center" style="background: var(--kwacha-green); color: white; font-family: 'Inter', sans-serif;">Get a Quote</a>
+            </div>
+        </div>
+    </div>
+</nav>
+    
 
     <!-- ========== HERO CAROUSEL SECTION ========== -->
     <section id="home">
@@ -1352,7 +1356,1138 @@
 </script>
 
 
+<!--Gallery code-->
+<!-- ========== UNIFIED MEDIA GALLERY SECTION ========== -->
+<section id="gallery" class="py-16 md:py-24" style="background: #f8f9fa;">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <span class="text-sm md:text-base font-semibold tracking-wide uppercase" style="color: var(--accent-orange); letter-spacing: 2px;">Our Story in Media</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
+                Media <span style="color: var(--accent-orange);">Gallery</span>
+            </h2>
+            <div class="w-20 h-1 mx-auto rounded-full" style="background: var(--accent-orange);"></div>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Photos from our farms, events, and YouTube videos - all in one place</p>
+        </div>
+        
+        <!-- Unified Gallery Grid (Photos + YouTube Videos Mixed) -->
+        <div id="unifiedGalleryGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+        
+        <!-- Lightbox Modal for Photos -->
+        <div id="lightboxModal" class="lightbox-modal">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-image" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+        
+        <!-- YouTube Video Modal -->
+        <div id="youtubeModal" class="youtube-modal">
+            <div class="youtube-modal-content">
+                <span class="youtube-modal-close">&times;</span>
+                <div class="video-wrapper">
+                    <iframe id="youtubeIframe" width="100%" height="400" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h3 id="youtubeModalTitle" class="mt-4 text-xl font-bold" style="color: var(--kwacha-green);"></h3>
+                <p id="youtubeModalCaption" class="text-gray-600 mt-2"></p>
+            </div>
+        </div>
+        
+    </div>
+</section>
 
+<style>
+    /* Gallery Card Styles */
+    .gallery-card {
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+    
+    .gallery-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+    
+    /* Uniform Media Container - FIXED ASPECT RATIO */
+    .media-container {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;  /* All items now have same 16:9 ratio */
+        overflow: hidden;
+        background: #0a0a0a;
+    }
+    
+    /* Photo styling - now fits 16:9 container */
+    .photo-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    
+    .gallery-card:hover .photo-image {
+        transform: scale(1.02);
+    }
+    
+    /* YouTube Thumbnail - same 16:9 container */
+    .youtube-thumbnail {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .youtube-thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    
+    .gallery-card:hover .youtube-thumbnail img {
+        transform: scale(1.05);
+    }
+    
+    /* Play button overlay - centered */
+    .play-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        background: rgba(255,0,0,0.85);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+    
+    .play-overlay i {
+        font-size: 24px;
+        color: white;
+        margin-left: 4px;
+    }
+    
+    .gallery-card:hover .play-overlay {
+        transform: translate(-50%, -50%) scale(1.1);
+        background: #ff0000;
+    }
+    
+    /* Card Info */
+    .card-info {
+        padding: 14px;
+    }
+    
+    .card-caption {
+        font-size: 14px;
+        color: #333;
+        line-height: 1.4;
+        margin-bottom: 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .card-date {
+        font-size: 11px;
+        color: #999;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .media-type-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 8px;
+        border-radius: 20px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    
+    .badge-photo {
+        background: rgba(10, 59, 10, 0.1);
+        color: var(--kwacha-green);
+    }
+    
+    .badge-video {
+        background: rgba(255, 0, 0, 0.1);
+        color: #ff0000;
+    }
+    
+    /* Lightbox Modal */
+    .lightbox-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.95);
+        z-index: 10000;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .lightbox-modal.active {
+        display: flex;
+    }
+    
+    .lightbox-image {
+        max-width: 90%;
+        max-height: 85%;
+        object-fit: contain;
+    }
+    
+    .lightbox-caption {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        background: rgba(0,0,0,0.7);
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .lightbox-close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    
+    .lightbox-close:hover {
+        transform: rotate(90deg);
+    }
+    
+    /* YouTube Modal */
+    .youtube-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.95);
+        z-index: 10001;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .youtube-modal.active {
+        display: flex;
+    }
+    
+    .youtube-modal-content {
+        background: white;
+        border-radius: 20px;
+        max-width: 900px;
+        width: 90%;
+        padding: 20px;
+        position: relative;
+    }
+    
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+    
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+    
+    .youtube-modal-close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        color: #999;
+        transition: color 0.2s;
+        z-index: 1;
+        background: white;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .youtube-modal-close:hover {
+        color: var(--accent-orange);
+    }
+    
+    /* Empty State */
+    .empty-gallery {
+        text-align: center;
+        padding: 60px 20px;
+        background: white;
+        border-radius: 24px;
+    }
+    
+    .empty-gallery i {
+        font-size: 64px;
+        color: #ddd;
+        margin-bottom: 20px;
+    }
+    
+    /* Animations */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .gallery-card {
+        animation: fadeInUp 0.4s ease-out forwards;
+    }
+</style>
+
+<script>
+    // ========== UNIFIED GALLERY DATA ==========
+    
+    // YouTube videos with their direct links and captions
+    const youtubeVideos = [
+        {
+            id: 'yt1',
+            type: 'youtube',
+            videoId: 'HFtCxKmemEY',
+            url: 'https://www.youtube.com/watch?v=HFtCxKmemEY',
+            thumbnail: 'https://img.youtube.com/vi/HFtCxKmemEY/maxresdefault.jpg',
+            thumbnailFallback: 'https://img.youtube.com/vi/HFtCxKmemEY/hqdefault.jpg',
+            title: 'Chitedze 4 Soybean Seed Field',
+            caption: 'Chitedze 4 soybean seed field. Rouging Demonstration.',
+            date: '2024-03-20'
+        },
+        {
+            id: 'yt2',
+            type: 'youtube',
+            videoId: 'ryZvXbA_Bcw',
+            url: 'https://www.youtube.com/watch?v=ryZvXbA_Bcw',
+            thumbnail: 'https://img.youtube.com/vi/ryZvXbA_Bcw/maxresdefault.jpg',
+            thumbnailFallback: 'https://img.youtube.com/vi/ryZvXbA_Bcw/hqdefault.jpg',
+            title: 'Farmer Testimonies',
+            caption: 'Testimonies - Chitedze 4 soybean certified seed.',
+            date: '2024-03-15'
+        },
+        {
+            id: 'yt3',
+            type: 'youtube',
+            videoId: 'igPvaO1GV6s',
+            url: 'https://www.youtube.com/watch?v=igPvaO1GV6s',
+            thumbnail: 'https://img.youtube.com/vi/igPvaO1GV6s/maxresdefault.jpg',
+            thumbnailFallback: 'https://img.youtube.com/vi/igPvaO1GV6s/hqdefault.jpg',
+            title: 'Agriculture Trade Fair',
+            caption: 'At Agriculture Trade Fair - Showcasing our premium seeds.',
+            date: '2024-03-10'
+        },
+        {
+            id: 'yt4',
+            type: 'youtube',
+            videoId: 'WyQbYjUDmC0',
+            url: 'https://www.youtube.com/watch?v=WyQbYjUDmC0',
+            thumbnail: 'https://img.youtube.com/vi/WyQbYjUDmC0/maxresdefault.jpg',
+            thumbnailFallback: 'https://img.youtube.com/vi/WyQbYjUDmC0/hqdefault.jpg',
+            title: 'Tidziwe Zambiri za Chitedze 4',
+            caption: 'Tidziwe zambiri za Chitedze 4 soybean - Everything you need to know about Chitedze 4 soybean.',
+            date: '2024-03-05'
+        }
+    ];
+    
+    // ========== ADD YOUR IMAGES HERE ==========
+    // All images will now automatically fit the same 16:9 container as YouTube videos
+    const photoGallery = [
+        {
+            id: 'photo1',
+            type: 'photo',
+            url: 'images/product.jpeg',  // Using 16:9 ratio image (800x450)
+            caption: 'Our SoyBean Package',
+            date: '2024-03-18'
+        },
+        {
+            id: 'photo2',
+            type: 'photo',
+            url: 'images/kwacha seeds 4.jpg',  // 16:9 ratio
+            caption: 'Our Product presentation at chitedze trade fair',
+            date: '2024-03-12'
+        },
+        {
+            id: 'photo3',
+            type: 'photo',
+            url: 'images/crop insp.jpg',  // 16:9 ratio
+            caption: 'Crop inspection at luanar',
+            date: '2024-03-08'
+        },
+        {
+            id: 'photo4',
+            type: 'photo',
+            url: 'images/promo.jpg',  // 16:9 ratio
+            caption: 'Gulani Mbeu Yamakono',
+            date: '2024-03-01'
+        },
+        {
+            id: 'photo5',
+            type: 'photo',
+            url: 'images/promo1.jpg',  // 16:9 ratio
+            caption: '',
+            date: '2024-02-25'
+        },
+         {
+            id: 'photo5',
+            type: 'photo',
+            url: 'images/promo3.jpg',  // 16:9 ratio
+            caption: '',
+            date: '2024-02-25'
+        },
+       
+    ];
+    // ========== END OF IMAGES SECTION ==========
+    
+    // Combine and sort all media by date (newest first)
+    function getAllMedia() {
+        const allMedia = [...photoGallery, ...youtubeVideos];
+        return allMedia.sort((a, b) => new Date(b.date) - new Date(a.date));
+    }
+    
+    // Format date to readable format
+    function formatDate(dateString) {
+        const date = new Date(dateString);
+        const now = new Date();
+        const diffTime = Math.abs(now - date);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        
+        if (diffDays === 0) return 'Today';
+        if (diffDays === 1) return 'Yesterday';
+        if (diffDays < 7) return `${diffDays} days ago`;
+        if (diffDays < 30) return `${Math.floor(diffDays / 7)} weeks ago`;
+        return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    }
+    
+    // Render unified gallery
+    function renderUnifiedGallery() {
+        const grid = document.getElementById('unifiedGalleryGrid');
+        if (!grid) return;
+        
+        const allMedia = getAllMedia();
+        
+        if (allMedia.length === 0) {
+            grid.innerHTML = `
+                <div class="empty-gallery col-span-full">
+                    <i class="fas fa-images"></i>
+                    <h3 class="text-xl font-semibold text-gray-600 mb-2">No Media Yet</h3>
+                    <p class="text-gray-400">Check back soon for photos and videos!</p>
+                </div>
+            `;
+            return;
+        }
+        
+        grid.innerHTML = allMedia.map(media => {
+            if (media.type === 'photo') {
+                return `
+                    <div class="gallery-card photo-card" data-id="${media.id}" data-type="photo">
+                        <div class="media-container">
+                            <img src="${media.url}" alt="${media.caption}" class="photo-image" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-caption">${media.caption}</p>
+                            <div class="card-date">
+                                <span class="media-type-badge badge-photo">
+                                    <i class="fas fa-camera"></i> Photo
+                                </span>
+                                <span>${formatDate(media.date)}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                return `
+                    <div class="gallery-card youtube-card" data-id="${media.id}" data-type="youtube" data-video-id="${media.videoId}">
+                        <div class="media-container">
+                            <div class="youtube-thumbnail">
+                                <img src="${media.thumbnail}" alt="${media.title}" loading="lazy" onerror="this.src='${media.thumbnailFallback}'">
+                                <div class="play-overlay">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <p class="card-caption">${media.caption}</p>
+                            <div class="card-date">
+                                <span class="media-type-badge badge-video">
+                                    <i class="fab fa-youtube"></i> YouTube
+                                </span>
+                                <span>${formatDate(media.date)}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        }).join('');
+        
+        // Add click handlers for photo cards
+        document.querySelectorAll('.photo-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const id = card.dataset.id;
+                const photo = photoGallery.find(p => p.id === id);
+                if (photo) openLightbox(photo);
+            });
+        });
+        
+        // Add click handlers for YouTube cards
+        document.querySelectorAll('.youtube-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const id = card.dataset.id;
+                const video = youtubeVideos.find(v => v.id === id);
+                if (video) openYouTubeModal(video);
+            });
+        });
+    }
+    
+    // Lightbox for photos
+    function openLightbox(photo) {
+        const modal = document.getElementById('lightboxModal');
+        const img = document.getElementById('lightboxImage');
+        const caption = document.getElementById('lightboxCaption');
+        
+        img.src = photo.url;
+        caption.textContent = `${photo.caption}`;
+        modal.classList.add('active');
+    }
+    
+    function closeLightbox() {
+        const modal = document.getElementById('lightboxModal');
+        modal.classList.remove('active');
+    }
+    
+    // YouTube modal
+    function openYouTubeModal(video) {
+        const modal = document.getElementById('youtubeModal');
+        const iframe = document.getElementById('youtubeIframe');
+        const title = document.getElementById('youtubeModalTitle');
+        const caption = document.getElementById('youtubeModalCaption');
+        
+        iframe.src = `https://www.youtube.com/embed/${video.videoId}?autoplay=1&rel=0`;
+        title.textContent = video.title;
+        caption.textContent = video.caption;
+        modal.classList.add('active');
+    }
+    
+    function closeYouTubeModal() {
+        const modal = document.getElementById('youtubeModal');
+        const iframe = document.getElementById('youtubeIframe');
+        iframe.src = '';
+        modal.classList.remove('active');
+    }
+    
+    // Initialize modals
+    function initModals() {
+        const lightbox = document.getElementById('lightboxModal');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        const youtubeModal = document.getElementById('youtubeModal');
+        const youtubeClose = document.querySelector('.youtube-modal-close');
+        
+        if (lightbox) {
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) closeLightbox();
+            });
+        }
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+        
+        if (youtubeModal) {
+            youtubeModal.addEventListener('click', (e) => {
+                if (e.target === youtubeModal) closeYouTubeModal();
+            });
+        }
+        if (youtubeClose) youtubeClose.addEventListener('click', closeYouTubeModal);
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+                closeYouTubeModal();
+            }
+        });
+    }
+    
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function() {
+        initModals();
+        renderUnifiedGallery();
+    });
+</script>
+
+<!--testimonial section-->
+<!-- ========== TESTIMONIALS SECTION ========== -->
+<section id="testimonials" class="py-16 md:py-24" style="background: linear-gradient(135deg, #fff5eb 0%, #ffe8d9 100%);">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <span class="text-sm md:text-base font-semibold tracking-wide uppercase" style="color: var(--accent-orange); letter-spacing: 2px;">Success Stories</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
+                What <span style="color: var(--accent-orange);">Farmers Say</span>
+            </h2>
+            <div class="w-20 h-1 mx-auto rounded-full" style="background: var(--accent-orange);"></div>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Real stories from farmers and partners who trust Kwacha Seeds</p>
+        </div>
+        
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="testimonialsGrid">
+            <!-- Testimonials will be loaded here -->
+        </div>
+        
+    </div>
+</section>
+
+<style>
+    /* Testimonial Card Styles */
+    .testimonial-card {
+        background: white;
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+    
+    /* Quote Icon */
+    .quote-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 60px;
+        color: rgba(255, 102, 0, 0.08);
+        z-index: 0;
+        pointer-events: none;
+    }
+    
+    /* Person Avatar */
+    .person-avatar {
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    .person-avatar i {
+        font-size: 32px;
+        color: white;
+    }
+    
+    .person-avatar img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    /* Person Info */
+    .person-name {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--kwacha-green);
+        margin-bottom: 4px;
+    }
+    
+    .person-position {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--accent-orange);
+        margin-bottom: 4px;
+    }
+    
+    .person-org {
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    
+    /* Rating Stars */
+    .rating-stars {
+        margin-bottom: 16px;
+        display: flex;
+        gap: 3px;
+    }
+    
+    .rating-stars i {
+        font-size: 14px;
+        color: #ffc107;
+    }
+    
+    .rating-stars i.far {
+        color: #ddd;
+    }
+    
+    /* Testimonial Text */
+    .testimonial-text {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #555;
+        position: relative;
+        z-index: 1;
+        margin-top: 8px;
+        font-style: italic;
+    }
+    
+    .testimonial-text::before {
+        content: '"';
+        font-size: 30px;
+        color: var(--accent-orange);
+        opacity: 0.3;
+        position: absolute;
+        top: -15px;
+        left: -5px;
+        font-family: serif;
+    }
+    
+    /* Modal Styles */
+    .testimonial-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.9);
+        z-index: 10050;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+    }
+    
+    .testimonial-modal.active {
+        display: flex;
+    }
+    
+    .testimonial-modal-content {
+        background: white;
+        border-radius: 28px;
+        max-width: 550px;
+        width: 90%;
+        position: relative;
+        animation: modalPopIn 0.4s ease-out;
+        overflow: hidden;
+    }
+    
+    @keyframes modalPopIn {
+        from {
+            opacity: 0;
+            transform: scale(0.9) translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+    
+    .testimonial-modal-header {
+        background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);
+        padding: 20px 25px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .testimonial-modal-header h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .testimonial-modal-close {
+        font-size: 28px;
+        cursor: pointer;
+        transition: transform 0.2s;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.2);
+    }
+    
+    .testimonial-modal-close:hover {
+        transform: rotate(90deg);
+        background: rgba(255,255,255,0.3);
+    }
+    
+    .testimonial-modal-body {
+        padding: 25px;
+    }
+    
+    .modal-person-info {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .modal-avatar {
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    
+    .modal-avatar i {
+        font-size: 32px;
+        color: white;
+    }
+    
+    .modal-details {
+        flex: 1;
+    }
+    
+    .modal-name {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--kwacha-green);
+    }
+    
+    .modal-position {
+        font-size: 14px;
+        color: var(--accent-orange);
+        font-weight: 500;
+    }
+    
+    .modal-org {
+        font-size: 13px;
+        color: #888;
+        margin-top: 4px;
+    }
+    
+    .modal-testimonial {
+        font-size: 15px;
+        line-height: 1.7;
+        color: #444;
+        margin-top: 20px;
+        font-style: italic;
+    }
+    
+    .modal-testimonial::before {
+        content: '"';
+        font-size: 40px;
+        color: var(--accent-orange);
+        opacity: 0.3;
+        position: relative;
+        top: 10px;
+        left: -5px;
+        font-family: serif;
+    }
+    
+    /* View Details Button */
+    .view-details-btn {
+        margin-top: 16px;
+        padding: 8px 16px;
+        background: transparent;
+        border: 1px solid var(--accent-orange);
+        color: var(--accent-orange);
+        border-radius: 30px;
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 100%;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .view-details-btn:hover {
+        background: var(--accent-orange);
+        color: white;
+    }
+</style>
+
+<script>
+    // ========== TESTIMONIALS DATA ==========
+    // Add your testimonials here
+    const testimonialsData = [
+        {
+            id: 1,
+            name: "John Banda",
+            position: "Lead Farmer",
+            organization: "Kasungu Farmers Cooperative",
+            avatarInitial: "JB",
+            testimonial: "Kwacha Seeds has transformed our farming cooperative. The MH36 maize variety gave us the highest yield we've ever recorded - 9 tons per hectare! The seeds are drought-resistant and the support team is always available to help.",
+            rating: 5,
+            date: "2024-03-15"
+        },
+        {
+            id: 2,
+            name: "Grace Phiri",
+            position: "Agri-Business Owner",
+            organization: "Phiri Farms Ltd",
+            avatarInitial: "GP",
+            testimonial: "I've been using Chitedze 4 soybean seeds for two seasons now. The germination rate is excellent and the plants are very disease-resistant. My profits have increased by 40% since switching to Kwacha Seeds.",
+            rating: 5,
+            date: "2024-03-10"
+        },
+        {
+            id: 3,
+            name: "Michael Chavula",
+            position: "Agricultural Extension Officer",
+            organization: "Ministry of Agriculture",
+            avatarInitial: "MC",
+            testimonial: "As an extension officer, I recommend Kwacha Seeds to all farmers I work with. Their seeds are certified, consistently high-performing, and backed by excellent agronomic support. The MH42A orange maize is particularly impressive for its nutritional value.",
+            rating: 5,
+            date: "2024-03-05"
+        },
+        {
+            id: 4,
+            name: "Esther Mwale",
+            position: "Smallholder Farmer",
+            organization: "Dedza Women Farmers Group",
+            avatarInitial: "EM",
+            testimonial: "The KARS 52 wheat variety has been a game-changer for my farm. It matures early so I can harvest before the rains come. The support from Kwacha Seeds has been incredible - they even came to my farm to give planting advice.",
+            rating: 4,
+            date: "2024-02-28"
+        },
+        {
+            id: 5,
+            name: "David Chimwala",
+            position: "Farm Manager",
+            organization: "Green Valley Estates",
+            avatarInitial: "DC",
+            testimonial: "We've been using Kwacha Seeds exclusively for our 200-hectare farm. The consistency and quality are unmatched. The CG9 groundnuts have excellent shelling percentage and market demand is very high.",
+            rating: 5,
+            date: "2024-02-20"
+        },
+        {
+            id: 6,
+            name: "Dr. Sarah Kachingwe",
+            position: "Agricultural Researcher",
+            organization: "Lilongwe University of Agriculture",
+            avatarInitial: "SK",
+            testimonial: "From a research perspective, Kwacha Seeds maintains excellent quality control. We've tested their seeds in our trials and the results consistently exceed expectations. A trusted partner for Malawian agriculture.",
+            rating: 5,
+            date: "2024-02-15"
+        }
+    ];
+    
+    // ========== ADD YOUR TESTIMONIALS HERE ==========
+    // Copy this format to add more testimonials:
+    /*
+    {
+        id: 7,
+        name: "Your Name",
+        position: "Your Position",
+        organization: "Your Organization Name",
+        avatarInitial: "YN",  // Two letters for avatar
+        testimonial: "Your testimonial text here...",
+        rating: 5,  // 1-5 stars
+        date: "2024-03-20"
+    }
+    */
+    
+    // Render stars based on rating
+    function renderStars(rating) {
+        let stars = '';
+        for (let i = 1; i <= 5; i++) {
+            if (i <= rating) {
+                stars += '<i class="fas fa-star"></i>';
+            } else {
+                stars += '<i class="far fa-star"></i>';
+            }
+        }
+        return stars;
+    }
+    
+    // Get random color for avatar background (for images, but we'll use gradient)
+    function getAvatarColor(name) {
+        const colors = [
+            'linear-gradient(135deg, #0a3b0a, #1e6b1e)',
+            'linear-gradient(135deg, #ff6600, #e05a00)',
+            'linear-gradient(135deg, #1e6b1e, #0a3b0a)',
+            'linear-gradient(135deg, #e05a00, #ff6600)'
+        ];
+        const index = name.length % colors.length;
+        return colors[index];
+    }
+    
+    // Show testimonial modal
+    function showTestimonialModal(testimonial) {
+        const modal = document.getElementById('testimonialModal');
+        const modalName = document.getElementById('modalName');
+        const modalPosition = document.getElementById('modalPosition');
+        const modalOrg = document.getElementById('modalOrg');
+        const modalTestimonial = document.getElementById('modalTestimonial');
+        const modalRating = document.getElementById('modalRating');
+        const modalAvatar = document.getElementById('modalAvatar');
+        
+        if (modal) {
+            modalName.textContent = testimonial.name;
+            modalPosition.textContent = testimonial.position;
+            modalOrg.textContent = testimonial.organization;
+            modalTestimonial.textContent = testimonial.testimonial;
+            modalRating.innerHTML = renderStars(testimonial.rating);
+            
+            // Update avatar
+            modalAvatar.innerHTML = `<i class="fas fa-user-circle"></i>`;
+            
+            modal.classList.add('active');
+        }
+    }
+    
+    function closeTestimonialModal() {
+        const modal = document.getElementById('testimonialModal');
+        if (modal) {
+            modal.classList.remove('active');
+        }
+    }
+    
+    // Render testimonials grid
+    function renderTestimonials() {
+        const grid = document.getElementById('testimonialsGrid');
+        if (!grid) return;
+        
+        if (testimonialsData.length === 0) {
+            grid.innerHTML = `
+                <div class="col-span-full text-center py-12">
+                    <i class="fas fa-comments text-4xl text-gray-300 mb-3"></i>
+                    <p class="text-gray-500">Testimonials coming soon...</p>
+                </div>
+            `;
+            return;
+        }
+        
+        grid.innerHTML = testimonialsData.map(testimonial => `
+            <div class="testimonial-card" data-id="${testimonial.id}">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                
+                <div class="person-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                
+                <h3 class="person-name">${testimonial.name}</h3>
+                <p class="person-position">${testimonial.position}</p>
+                <p class="person-org">
+                    <i class="fas fa-building" style="font-size: 10px;"></i>
+                    ${testimonial.organization}
+                </p>
+                
+                <div class="rating-stars">
+                    ${renderStars(testimonial.rating)}
+                </div>
+                
+                <p class="testimonial-text">
+                    ${testimonial.testimonial.length > 120 ? testimonial.testimonial.substring(0, 120) + '...' : testimonial.testimonial}
+                </p>
+                
+                <button class="view-details-btn" onclick="showTestimonialModal(${JSON.stringify(testimonial).replace(/"/g, '&quot;')})">
+                    Read Full Story <i class="fas fa-arrow-right ml-1"></i>
+                </button>
+            </div>
+        `).join('');
+    }
+    
+    // Initialize testimonials on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        renderTestimonials();
+        
+        // Setup modal close handlers
+        const modal = document.getElementById('testimonialModal');
+        const closeBtn = document.querySelector('.testimonial-modal-close');
+        
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeTestimonialModal();
+            });
+        }
+        
+        if (closeBtn) closeBtn.addEventListener('click', closeTestimonialModal);
+        
+        // Close with escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeTestimonialModal();
+            }
+        });
+    });
+</script>
+
+<!-- Testimonial Modal -->
+<div id="testimonialModal" class="testimonial-modal">
+    <div class="testimonial-modal-content">
+        <div class="testimonial-modal-header">
+            <h3>
+                <i class="fas fa-quote-left"></i>
+                Farmer's Testimonial
+            </h3>
+            <span class="testimonial-modal-close">&times;</span>
+        </div>
+        <div class="testimonial-modal-body">
+            <div class="modal-person-info">
+                <div class="modal-avatar" id="modalAvatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="modal-details">
+                    <div class="modal-name" id="modalName">John Banda</div>
+                    <div class="modal-position" id="modalPosition">Lead Farmer</div>
+                    <div class="modal-org" id="modalOrg">Kasungu Farmers Cooperative</div>
+                    <div class="rating-stars" id="modalRating" style="margin-top: 8px;"></div>
+                </div>
+            </div>
+            <div class="modal-testimonial" id="modalTestimonial">
+                Testimonial text will appear here...
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -2501,6 +3636,11 @@
     // Calculate initial grand total
     calculateGrandTotal();
 </script>
+
+
+
+
+
 
 
 
