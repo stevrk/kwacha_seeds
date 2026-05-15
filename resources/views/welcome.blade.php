@@ -346,10 +346,11 @@
                 <!-- Slide 1 - Soya Field -->
                 <div class="carousel-slide absolute inset-0 opacity-100" data-active="true">
                     <div class="absolute inset-0">
-                        <img src="{{ asset('images/soya_field.jpg') }}" class="w-full h-full object-cover" alt="Soya field">
+                        <!--{{ asset('images/soya_field.jpg') }}-->
+                        <img src="{{ asset('images/new/carausel1.png') }}" class="w-full h-full object-cover" alt="Soya field">
                         <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
                     </div>
-                    <div class="relative h-full flex items-center justify-center">
+                    <!--<div class="relative h-full flex items-center justify-center">
                         <div class="max-w-7xl mx-auto px-6 lg:px-10 w-full">
                             <div class="max-w-xl text-center md:text-left">
                                 <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 md:mb-3 leading-tight" style="font-family: 'Inter', sans-serif;">
@@ -364,7 +365,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
 
                 <!-- Slide 2 - Maize Harvest -->
@@ -437,128 +438,7 @@
 
     <!-- ========== MAIN CONTENT ========== -->
 
- <!-- ========== ABOUT SECTION ========== -->
-<section id="about" class="py-16 md:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-        
-        <!-- Section Header -->
-        <div class="text-center mb-12 md:mb-16">
-            <span class="text-sm md:text-base font-semibold tracking-wide uppercase" style="color: var(--accent-orange); letter-spacing: 2px;">Who We Are</span>
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
-                About <span style="color: var(--accent-orange);">Kwacha Seeds</span>
-            </h2>
-            <div class="w-20 h-1 mx-auto rounded-full" style="background: var(--accent-orange);"></div>
-        </div>
-        
-        <!-- Company Description - No card, just clean text -->
-        <div class="mb-16 max-w-5xl mx-auto">
-            <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center" style="font-family: 'Inter', sans-serif; line-height: 1.8;">
-                <span class="font-bold text-xl" style="color: var(--kwacha-green);">Kwacha Seeds Limited</span> is a visionary seed company dedicated to transforming agriculture through high-quality hybrid seeds like <span class="font-semibold" style="color: var(--accent-orange);">maize MH 36</span>, vitamin A-rich orange maize <span class="font-semibold" style="color: var(--accent-orange);">MH42A</span>, wheat (<span class="font-semibold" style="color: var(--accent-orange);">KARS 52</span>), Soybean <span class="font-semibold" style="color: var(--accent-orange);">Chitedze-4</span>, and Groundnuts <span class="font-semibold" style="color: var(--accent-orange);">CG9</span>, prioritizing farmer-centric innovation and sustainability to boost productivity and livelihoods. Committed to excellence over scale, we empower farmers with resilient, nutrient-enhanced crops while fostering integrity, collaboration, and environmental stewardship for a food-secure future.
-            </p>
-        </div>
-        
-        <!-- Vision & Mission Row -->
-        <div class="grid md:grid-cols-2 gap-8 mb-16">
-            <!-- Vision Card -->
-            <div class="rounded-2xl p-6 md:p-8 transition-all duration-300 hover:transform hover:-translate-y-2" style="background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);">
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: rgba(255, 102, 0, 0.2);">
-                        <i class="fas fa-eye text-2xl" style="color: var(--accent-orange);"></i>
-                    </div>
-                    <h3 class="text-2xl md:text-3xl font-bold text-white" style="font-family: 'Inter', sans-serif;">Our Vision</h3>
-                </div>
-                <p class="text-white/90 text-base md:text-lg leading-relaxed" style="font-family: 'Inter', sans-serif; line-height: 1.6;">
-                    To inspire excellence by being the best in the production and supply of hybrid seeds that consistently meet the evolving needs of farmers.
-                </p>
-            </div>
-            
-            <!-- Mission Card -->
-            <div class="rounded-2xl p-6 md:p-8 transition-all duration-300 hover:transform hover:-translate-y-2" style="background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);">
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: rgba(255, 102, 0, 0.2);">
-                        <i class="fas fa-bullseye text-2xl" style="color: var(--accent-orange);"></i>
-                    </div>
-                    <h3 class="text-2xl md:text-3xl font-bold text-white" style="font-family: 'Inter', sans-serif;">Our Mission</h3>
-                </div>
-                <p class="text-white/90 text-base md:text-lg leading-relaxed" style="font-family: 'Inter', sans-serif; line-height: 1.6;">
-                    To provide high-yielding, quality seeds that boost agricultural productivity, elevate livelihoods, and foster a thriving agricultural sector, powered by a purpose-driven workforce.
-                </p>
-            </div>
-        </div>
-        
-        <!-- Core Values Section -->
-        <div>
-            <div class="text-center mb-10">
-                <h3 class="text-2xl md:text-3xl font-bold mb-3" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
-                    Our <span style="color: var(--accent-orange);">Core Values</span>
-                </h3>
-                <div class="w-16 h-1 mx-auto rounded-full" style="background: var(--accent-orange);"></div>
-                <p class="text-gray-500 mt-3 text-sm md:text-base">The principles that guide everything we do</p>
-            </div>
-            
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Value 1 - Quality & Excellence -->
-                <div class="bg-white rounded-xl p-6 text-center transition-all duration-300 hover:shadow-xl border border-gray-100 group">
-                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(255, 102, 0, 0.1);">
-                        <i class="fas fa-star text-2xl" style="color: var(--accent-orange);"></i>
-                    </div>
-                    <h4 class="text-lg font-bold mb-3" style="color: var(--kwacha-green); font-family: 'Inter', sans-serif;">QUALITY & EXCELLENCE</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif;">
-                        We prioritize rigorous research, testing, and certification to ensure our seeds meet the highest standards of germination, disease resistance, and yield performance.
-                    </p>
-                </div>
-                
-                <!-- Value 2 - Empowerment & Collaboration -->
-                <div class="bg-white rounded-xl p-6 text-center transition-all duration-300 hover:shadow-xl border border-gray-100 group">
-                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(255, 102, 0, 0.1);">
-                        <i class="fas fa-handshake text-2xl" style="color: var(--accent-orange);"></i>
-                    </div>
-                    <h4 class="text-lg font-bold mb-3" style="color: var(--kwacha-green); font-family: 'Inter', sans-serif;">EMPOWERMENT & COLLABORATION</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif;">
-                        We invest in our workforce, partners, and farming communities through training, knowledge-sharing, and inclusive partnerships that drive collective success.
-                    </p>
-                </div>
-                
-                <!-- Value 3 - Sustainability -->
-                <div class="bg-white rounded-xl p-6 text-center transition-all duration-300 hover:shadow-xl border border-gray-100 group">
-                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(255, 102, 0, 0.1);">
-                        <i class="fas fa-leaf text-2xl" style="color: var(--accent-orange);"></i>
-                    </div>
-                    <h4 class="text-lg font-bold mb-3" style="color: var(--kwacha-green); font-family: 'Inter', sans-serif;">SUSTAINABILITY</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif;">
-                        We promote environmentally responsible practices and seed varieties that conserve resources, enhance soil health, and support long-term food security.
-                    </p>
-                </div>
-                
-                <!-- Value 4 - Integrity & Transparency -->
-                <div class="bg-white rounded-xl p-6 text-center transition-all duration-300 hover:shadow-xl border border-gray-100 group">
-                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(255, 102, 0, 0.1);">
-                        <i class="fas fa-shield-alt text-2xl" style="color: var(--accent-orange);"></i>
-                    </div>
-                    <h4 class="text-lg font-bold mb-3" style="color: var(--kwacha-green); font-family: 'Inter', sans-serif;">INTEGRITY & TRANSPARENCY</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif;">
-                        We operate with honesty, fairness, and accountability in every interaction, building trust with farmers, suppliers, and stakeholders.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- CTA Banner -->
-        <div class="mt-16 rounded-2xl overflow-hidden">
-            <div class="py-8 px-6 text-center" style="background: linear-gradient(135deg, #fff5eb 0%, #ffe8d9 100%);">
-                <p class="text-gray-700 text-base md:text-lg mb-4" style="font-family: 'Inter', sans-serif;">
-                    🌱 <span class="font-semibold" style="color: var(--kwacha-green);">Join us</span> in transforming agriculture across Malawi — one seed at a time.
-                </p>
-                <a href="#contact" class="inline-block px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:transform hover:-translate-y-1" style="background: var(--accent-orange); color: white; font-family: 'Inter', sans-serif;">
-                    Partner With Us <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </div>
-        
-    </div>
-</section>
 <!-- ========== PRODUCTS SECTION ========== -->
-
 <section id="products" class="py-16 md:py-24" style="background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         
@@ -783,7 +663,551 @@
         
     </div>
 </section>
+<!--testimonial section-->
+<!-- ========== TESTIMONIALS SECTION ========== -->
+<section id="testimonials" class="py-16 md:py-24" style="background: linear-gradient(135deg, #fff5eb 0%, #ffe8d9 100%);">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <span class="text-sm md:text-base font-semibold tracking-wide uppercase" style="color: var(--accent-orange); letter-spacing: 2px;">Success Stories</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
+                What <span style="color: var(--accent-orange);">Farmers Say</span>
+            </h2>
+            <div class="w-20 h-1 mx-auto rounded-full" style="background: var(--accent-orange);"></div>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Real stories from farmers and partners who trust Kwacha Seeds</p>
+        </div>
+        
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="testimonialsGrid">
+            <!-- Testimonials will be loaded here -->
+        </div>
+        
+    </div>
+</section>
 
+<style>
+    /* Testimonial Card Styles */
+    .testimonial-card {
+        background: white;
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+    
+    /* Quote Icon */
+    .quote-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 60px;
+        color: rgba(255, 102, 0, 0.08);
+        z-index: 0;
+        pointer-events: none;
+    }
+    
+    /* Person Avatar */
+    .person-avatar {
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    .person-avatar i {
+        font-size: 32px;
+        color: white;
+    }
+    
+    .person-avatar img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    /* Person Info */
+    .person-name {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--kwacha-green);
+        margin-bottom: 4px;
+    }
+    
+    .person-position {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--accent-orange);
+        margin-bottom: 4px;
+    }
+    
+    .person-org {
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    
+    /* Rating Stars */
+    .rating-stars {
+        margin-bottom: 16px;
+        display: flex;
+        gap: 3px;
+    }
+    
+    .rating-stars i {
+        font-size: 14px;
+        color: #ffc107;
+    }
+    
+    .rating-stars i.far {
+        color: #ddd;
+    }
+    
+    /* Testimonial Text */
+    .testimonial-text {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #555;
+        position: relative;
+        z-index: 1;
+        margin-top: 8px;
+        font-style: italic;
+    }
+    
+    .testimonial-text::before {
+        content: '"';
+        font-size: 30px;
+        color: var(--accent-orange);
+        opacity: 0.3;
+        position: absolute;
+        top: -15px;
+        left: -5px;
+        font-family: serif;
+    }
+    
+    /* Modal Styles */
+    .testimonial-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.9);
+        z-index: 10050;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+    }
+    
+    .testimonial-modal.active {
+        display: flex;
+    }
+    
+    .testimonial-modal-content {
+        background: white;
+        border-radius: 28px;
+        max-width: 550px;
+        width: 90%;
+        position: relative;
+        animation: modalPopIn 0.4s ease-out;
+        overflow: hidden;
+    }
+    
+    @keyframes modalPopIn {
+        from {
+            opacity: 0;
+            transform: scale(0.9) translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+    
+    .testimonial-modal-header {
+        background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);
+        padding: 20px 25px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .testimonial-modal-header h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .testimonial-modal-close {
+        font-size: 28px;
+        cursor: pointer;
+        transition: transform 0.2s;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.2);
+    }
+    
+    .testimonial-modal-close:hover {
+        transform: rotate(90deg);
+        background: rgba(255,255,255,0.3);
+    }
+    
+    .testimonial-modal-body {
+        padding: 25px;
+    }
+    
+    .modal-person-info {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .modal-avatar {
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    
+    .modal-avatar i {
+        font-size: 32px;
+        color: white;
+    }
+    
+    .modal-details {
+        flex: 1;
+    }
+    
+    .modal-name {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--kwacha-green);
+    }
+    
+    .modal-position {
+        font-size: 14px;
+        color: var(--accent-orange);
+        font-weight: 500;
+    }
+    
+    .modal-org {
+        font-size: 13px;
+        color: #888;
+        margin-top: 4px;
+    }
+    
+    .modal-testimonial {
+        font-size: 15px;
+        line-height: 1.7;
+        color: #444;
+        margin-top: 20px;
+        font-style: italic;
+    }
+    
+    .modal-testimonial::before {
+        content: '"';
+        font-size: 40px;
+        color: var(--accent-orange);
+        opacity: 0.3;
+        position: relative;
+        top: 10px;
+        left: -5px;
+        font-family: serif;
+    }
+    
+    /* View Details Button */
+    .view-details-btn {
+        margin-top: 16px;
+        padding: 8px 16px;
+        background: transparent;
+        border: 1px solid var(--accent-orange);
+        color: var(--accent-orange);
+        border-radius: 30px;
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 100%;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .view-details-btn:hover {
+        background: var(--accent-orange);
+        color: white;
+    }
+</style>
+
+<script>
+    // ========== TESTIMONIALS DATA ==========
+    // Add your testimonials here
+    const testimonialsData = [
+        {
+            id: 1,
+            name: "John Banda",
+            position: "Lead Farmer",
+            organization: "Kasungu Farmers Cooperative",
+            avatarInitial: "JB",
+            testimonial: "Kwacha Seeds has transformed our farming cooperative. The MH36 maize variety gave us the highest yield we've ever recorded - 9 tons per hectare! The seeds are drought-resistant and the support team is always available to help.",
+            rating: 5,
+            date: "2024-03-15"
+        },
+        {
+            id: 2,
+            name: "Grace Phiri",
+            position: "Agri-Business Owner",
+            organization: "Phiri Farms Ltd",
+            avatarInitial: "GP",
+            testimonial: "I've been using Chitedze 4 soybean seeds for two seasons now. The germination rate is excellent and the plants are very disease-resistant. My profits have increased by 40% since switching to Kwacha Seeds.",
+            rating: 5,
+            date: "2024-03-10"
+        },
+        {
+            id: 3,
+            name: "Michael Chavula",
+            position: "Agricultural Extension Officer",
+            organization: "Ministry of Agriculture",
+            avatarInitial: "MC",
+            testimonial: "As an extension officer, I recommend Kwacha Seeds to all farmers I work with. Their seeds are certified, consistently high-performing, and backed by excellent agronomic support. The MH42A orange maize is particularly impressive for its nutritional value.",
+            rating: 5,
+            date: "2024-03-05"
+        },
+        {
+            id: 4,
+            name: "Esther Mwale",
+            position: "Smallholder Farmer",
+            organization: "Dedza Women Farmers Group",
+            avatarInitial: "EM",
+            testimonial: "The KARS 52 wheat variety has been a game-changer for my farm. It matures early so I can harvest before the rains come. The support from Kwacha Seeds has been incredible - they even came to my farm to give planting advice.",
+            rating: 4,
+            date: "2024-02-28"
+        },
+        {
+            id: 5,
+            name: "David Chimwala",
+            position: "Farm Manager",
+            organization: "Green Valley Estates",
+            avatarInitial: "DC",
+            testimonial: "We've been using Kwacha Seeds exclusively for our 200-hectare farm. The consistency and quality are unmatched. The CG9 groundnuts have excellent shelling percentage and market demand is very high.",
+            rating: 5,
+            date: "2024-02-20"
+        },
+        {
+            id: 6,
+            name: "Dr. Sarah Kachingwe",
+            position: "Agricultural Researcher",
+            organization: "Lilongwe University of Agriculture",
+            avatarInitial: "SK",
+            testimonial: "From a research perspective, Kwacha Seeds maintains excellent quality control. We've tested their seeds in our trials and the results consistently exceed expectations. A trusted partner for Malawian agriculture.",
+            rating: 5,
+            date: "2024-02-15"
+        }
+    ];
+    
+    // ========== ADD YOUR TESTIMONIALS HERE ==========
+    // Copy this format to add more testimonials:
+    /*
+    {
+        id: 7,
+        name: "Your Name",
+        position: "Your Position",
+        organization: "Your Organization Name",
+        avatarInitial: "YN",  // Two letters for avatar
+        testimonial: "Your testimonial text here...",
+        rating: 5,  // 1-5 stars
+        date: "2024-03-20"
+    }
+    */
+    
+    // Render stars based on rating
+    function renderStars(rating) {
+        let stars = '';
+        for (let i = 1; i <= 5; i++) {
+            if (i <= rating) {
+                stars += '<i class="fas fa-star"></i>';
+            } else {
+                stars += '<i class="far fa-star"></i>';
+            }
+        }
+        return stars;
+    }
+    
+    // Get random color for avatar background (for images, but we'll use gradient)
+    function getAvatarColor(name) {
+        const colors = [
+            'linear-gradient(135deg, #0a3b0a, #1e6b1e)',
+            'linear-gradient(135deg, #ff6600, #e05a00)',
+            'linear-gradient(135deg, #1e6b1e, #0a3b0a)',
+            'linear-gradient(135deg, #e05a00, #ff6600)'
+        ];
+        const index = name.length % colors.length;
+        return colors[index];
+    }
+    
+    // Show testimonial modal
+    function showTestimonialModal(testimonial) {
+        const modal = document.getElementById('testimonialModal');
+        const modalName = document.getElementById('modalName');
+        const modalPosition = document.getElementById('modalPosition');
+        const modalOrg = document.getElementById('modalOrg');
+        const modalTestimonial = document.getElementById('modalTestimonial');
+        const modalRating = document.getElementById('modalRating');
+        const modalAvatar = document.getElementById('modalAvatar');
+        
+        if (modal) {
+            modalName.textContent = testimonial.name;
+            modalPosition.textContent = testimonial.position;
+            modalOrg.textContent = testimonial.organization;
+            modalTestimonial.textContent = testimonial.testimonial;
+            modalRating.innerHTML = renderStars(testimonial.rating);
+            
+            // Update avatar
+            modalAvatar.innerHTML = `<i class="fas fa-user-circle"></i>`;
+            
+            modal.classList.add('active');
+        }
+    }
+    
+    function closeTestimonialModal() {
+        const modal = document.getElementById('testimonialModal');
+        if (modal) {
+            modal.classList.remove('active');
+        }
+    }
+    
+    // Render testimonials grid
+    function renderTestimonials() {
+        const grid = document.getElementById('testimonialsGrid');
+        if (!grid) return;
+        
+        if (testimonialsData.length === 0) {
+            grid.innerHTML = `
+                <div class="col-span-full text-center py-12">
+                    <i class="fas fa-comments text-4xl text-gray-300 mb-3"></i>
+                    <p class="text-gray-500">Testimonials coming soon...</p>
+                </div>
+            `;
+            return;
+        }
+        
+        grid.innerHTML = testimonialsData.map(testimonial => `
+            <div class="testimonial-card" data-id="${testimonial.id}">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                
+                <div class="person-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                
+                <h3 class="person-name">${testimonial.name}</h3>
+                <p class="person-position">${testimonial.position}</p>
+                <p class="person-org">
+                    <i class="fas fa-building" style="font-size: 10px;"></i>
+                    ${testimonial.organization}
+                </p>
+                
+                <div class="rating-stars">
+                    ${renderStars(testimonial.rating)}
+                </div>
+                
+                <p class="testimonial-text">
+                    ${testimonial.testimonial.length > 120 ? testimonial.testimonial.substring(0, 120) + '...' : testimonial.testimonial}
+                </p>
+                
+                <button class="view-details-btn" onclick="showTestimonialModal(${JSON.stringify(testimonial).replace(/"/g, '&quot;')})">
+                    Read Full Story <i class="fas fa-arrow-right ml-1"></i>
+                </button>
+            </div>
+        `).join('');
+    }
+    
+    // Initialize testimonials on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        renderTestimonials();
+        
+        // Setup modal close handlers
+        const modal = document.getElementById('testimonialModal');
+        const closeBtn = document.querySelector('.testimonial-modal-close');
+        
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeTestimonialModal();
+            });
+        }
+        
+        if (closeBtn) closeBtn.addEventListener('click', closeTestimonialModal);
+        
+        // Close with escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeTestimonialModal();
+            }
+        });
+    });
+</script>
+
+<!-- Testimonial Modal -->
+<div id="testimonialModal" class="testimonial-modal">
+    <div class="testimonial-modal-content">
+        <div class="testimonial-modal-header">
+            <h3>
+                <i class="fas fa-quote-left"></i>
+                Farmer's Testimonial
+            </h3>
+            <span class="testimonial-modal-close">&times;</span>
+        </div>
+        <div class="testimonial-modal-body">
+            <div class="modal-person-info">
+                <div class="modal-avatar" id="modalAvatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="modal-details">
+                    <div class="modal-name" id="modalName">John Banda</div>
+                    <div class="modal-position" id="modalPosition">Lead Farmer</div>
+                    <div class="modal-org" id="modalOrg">Kasungu Farmers Cooperative</div>
+                    <div class="rating-stars" id="modalRating" style="margin-top: 8px;"></div>
+                </div>
+            </div>
+            <div class="modal-testimonial" id="modalTestimonial">
+                Testimonial text will appear here...
+            </div>
+        </div>
+    </div>
+</div>
+  
 <!--Framers Hub -->
 <!-- ========== FARMER'S HUB SECTION ========== -->
 <section id="farmers-hub" class="py-16 md:py-24" style="background: #f8f9fa;">
@@ -1944,550 +2368,140 @@
     });
 </script>
 
-<!--testimonial section-->
-<!-- ========== TESTIMONIALS SECTION ========== -->
-<section id="testimonials" class="py-16 md:py-24" style="background: linear-gradient(135deg, #fff5eb 0%, #ffe8d9 100%);">
+
+
+  <!-- ========== ABOUT SECTION ========== -->
+<section id="about" class="py-16 md:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         
-        <!-- Section Header -->
-        <div class="text-center mb-12">
-            <span class="text-sm md:text-base font-semibold tracking-wide uppercase" style="color: var(--accent-orange); letter-spacing: 2px;">Success Stories</span>
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
-                What <span style="color: var(--accent-orange);">Farmers Say</span>
-            </h2>
-            <div class="w-20 h-1 mx-auto rounded-full" style="background: var(--accent-orange);"></div>
-            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Real stories from farmers and partners who trust Kwacha Seeds</p>
+        <!-- Split Layout: Left (Title) + Right (Content) with Separator -->
+     <div class="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12">
+    
+    <!-- LEFT SIDE: Who We Are & About Kwacha Seeds - CENTERED -->
+    <div class="md:w-1/2 flex flex-col justify-center text-center">
+        <span class="text-xs md:text-sm font-semibold tracking-wide uppercase" style="color: var(--accent-orange); letter-spacing: 2px;">Who We Are</span>
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-2 mb-3" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
+            About <span style="color: var(--accent-orange);">Kwacha Seeds</span>
+        </h2>
+        <div class="w-12 h-0.5 rounded-full mx-auto" style="background: var(--accent-orange);"></div>
+    </div>
+    
+    <!-- VERTICAL SEPARATOR / BAR -->
+    <div class="hidden md:block w-px bg-gray-200 self-stretch"></div>
+    
+    <!-- RIGHT SIDE: Company Description - CENTERED -->
+    <div class="md:w-1/2 flex flex-col justify-center">
+        <p class="text-gray-700 text-sm md:text-base leading-relaxed text-center md:text-center" style="font-family: 'Inter', sans-serif; line-height: 1.7;">
+            <span class="font-bold text-base md:text-lg" style="color: var(--kwacha-green);">Kwacha Seeds Limited</span> is a visionary seed company dedicated to transforming agriculture through high-quality hybrid seeds like <span class="font-semibold" style="color: var(--accent-orange);">maize MH 36</span>, vitamin A-rich orange maize <span class="font-semibold" style="color: var(--accent-orange);">MH42A</span>, wheat (<span class="font-semibold" style="color: var(--accent-orange);">KARS 52</span>), Soybean <span class="font-semibold" style="color: var(--accent-orange);">Chitedze-4</span>, and Groundnuts <span class="font-semibold" style="color: var(--accent-orange);">CG9</span>, prioritizing farmer-centric innovation and sustainability to boost productivity and livelihoods.
+        </p>
+        <p class="text-gray-700 text-sm md:text-base leading-relaxed mt-4 text-center md:text-center" style="font-family: 'Inter', sans-serif; line-height: 1.7;">
+            Committed to excellence over scale, we empower farmers with resilient, nutrient-enhanced crops while fostering integrity, collaboration, and environmental stewardship for a food-secure future.
+        </p>
+    </div>
+    
+</div>
+        
+        <!-- Vision & Mission Row - REDUCED CARD SIZES -->
+        <div class="grid md:grid-cols-2 gap-5 md:gap-6 mt-16 mb-12">
+            <!-- Vision Card - SMALLER -->
+            <div class="rounded-xl p-5 md:p-6 transition-all duration-300 hover:transform hover:-translate-y-1" style="background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-9 h-9 rounded-full flex items-center justify-center" style="background: rgba(255, 102, 0, 0.2);">
+                        <i class="fas fa-eye text-lg" style="color: var(--accent-orange);"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-white" style="font-family: 'Inter', sans-serif;">Our Vision</h3>
+                </div>
+                <p class="text-white/90 text-sm md:text-base leading-relaxed" style="font-family: 'Inter', sans-serif; line-height: 1.5;">
+                    To inspire excellence by being the best in the production and supply of hybrid seeds that consistently meet the evolving needs of farmers.
+                </p>
+            </div>
+            
+            <!-- Mission Card - SMALLER -->
+            <div class="rounded-xl p-5 md:p-6 transition-all duration-300 hover:transform hover:-translate-y-1" style="background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-9 h-9 rounded-full flex items-center justify-center" style="background: rgba(255, 102, 0, 0.2);">
+                        <i class="fas fa-bullseye text-lg" style="color: var(--accent-orange);"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-white" style="font-family: 'Inter', sans-serif;">Our Mission</h3>
+                </div>
+                <p class="text-white/90 text-sm md:text-base leading-relaxed" style="font-family: 'Inter', sans-serif; line-height: 1.5;">
+                    To provide high-yielding, quality seeds that boost agricultural productivity, elevate livelihoods, and foster a thriving agricultural sector, powered by a purpose-driven workforce.
+                </p>
+            </div>
         </div>
         
-        <!-- Testimonials Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="testimonialsGrid">
-            <!-- Testimonials will be loaded here -->
+        <!-- Core Values Section -->
+        <div>
+            <div class="text-center mb-10">
+                <h3 class="text-2xl md:text-3xl font-bold mb-3" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
+                    Our <span style="color: var(--accent-orange);">Core Values</span>
+                </h3>
+                <div class="w-16 h-1 mx-auto rounded-full" style="background: var(--accent-orange);"></div>
+                <p class="text-gray-500 mt-3 text-sm md:text-base">The principles that guide everything we do</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Value 1 - Quality & Excellence -->
+                <div class="bg-white rounded-xl p-6 text-center transition-all duration-300 hover:shadow-xl border border-gray-100 group">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(255, 102, 0, 0.1);">
+                        <i class="fas fa-star text-2xl" style="color: var(--accent-orange);"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3" style="color: var(--kwacha-green); font-family: 'Inter', sans-serif;">QUALITY & EXCELLENCE</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        We prioritize rigorous research, testing, and certification to ensure our seeds meet the highest standards of germination, disease resistance, and yield performance.
+                    </p>
+                </div>
+                
+                <!-- Value 2 - Empowerment & Collaboration -->
+                <div class="bg-white rounded-xl p-6 text-center transition-all duration-300 hover:shadow-xl border border-gray-100 group">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(255, 102, 0, 0.1);">
+                        <i class="fas fa-handshake text-2xl" style="color: var(--accent-orange);"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3" style="color: var(--kwacha-green); font-family: 'Inter', sans-serif;">EMPOWERMENT & COLLABORATION</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        We invest in our workforce, partners, and farming communities through training, knowledge-sharing, and inclusive partnerships that drive collective success.
+                    </p>
+                </div>
+                
+                <!-- Value 3 - Sustainability -->
+                <div class="bg-white rounded-xl p-6 text-center transition-all duration-300 hover:shadow-xl border border-gray-100 group">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(255, 102, 0, 0.1);">
+                        <i class="fas fa-leaf text-2xl" style="color: var(--accent-orange);"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3" style="color: var(--kwacha-green); font-family: 'Inter', sans-serif;">SUSTAINABILITY</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        We promote environmentally responsible practices and seed varieties that conserve resources, enhance soil health, and support long-term food security.
+                    </p>
+                </div>
+                
+                <!-- Value 4 - Integrity & Transparency -->
+                <div class="bg-white rounded-xl p-6 text-center transition-all duration-300 hover:shadow-xl border border-gray-100 group">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(255, 102, 0, 0.1);">
+                        <i class="fas fa-shield-alt text-2xl" style="color: var(--accent-orange);"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3" style="color: var(--kwacha-green); font-family: 'Inter', sans-serif;">INTEGRITY & TRANSPARENCY</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        We operate with honesty, fairness, and accountability in every interaction, building trust with farmers, suppliers, and stakeholders.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA Banner - RESTORED TO ORIGINAL -->
+        <div class="mt-16 rounded-2xl overflow-hidden">
+            <div class="py-8 px-6 text-center" style="background: linear-gradient(135deg, #fff5eb 0%, #ffe8d9 100%);">
+                <p class="text-gray-700 text-base md:text-lg mb-4" style="font-family: 'Inter', sans-serif;">
+                    🌱 <span class="font-semibold" style="color: var(--kwacha-green);">Join us</span> in transforming agriculture across Malawi — one seed at a time.
+                </p>
+                <a href="#contact" class="inline-block px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:transform hover:-translate-y-1" style="background: var(--accent-orange); color: white; font-family: 'Inter', sans-serif;">
+                    Partner With Us <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
         </div>
         
     </div>
 </section>
 
-<style>
-    /* Testimonial Card Styles */
-    .testimonial-card {
-        background: white;
-        border-radius: 20px;
-        padding: 24px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-    }
-    
-    .testimonial-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-    }
-    
-    /* Quote Icon */
-    .quote-icon {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 60px;
-        color: rgba(255, 102, 0, 0.08);
-        z-index: 0;
-        pointer-events: none;
-    }
-    
-    /* Person Avatar */
-    .person-avatar {
-        width: 70px;
-        height: 70px;
-        background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 16px;
-        position: relative;
-        z-index: 1;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    
-    .person-avatar i {
-        font-size: 32px;
-        color: white;
-    }
-    
-    .person-avatar img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-    
-    /* Person Info */
-    .person-name {
-        font-size: 18px;
-        font-weight: 700;
-        color: var(--kwacha-green);
-        margin-bottom: 4px;
-    }
-    
-    .person-position {
-        font-size: 13px;
-        font-weight: 500;
-        color: var(--accent-orange);
-        margin-bottom: 4px;
-    }
-    
-    .person-org {
-        font-size: 12px;
-        color: #888;
-        margin-bottom: 16px;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-    }
-    
-    /* Rating Stars */
-    .rating-stars {
-        margin-bottom: 16px;
-        display: flex;
-        gap: 3px;
-    }
-    
-    .rating-stars i {
-        font-size: 14px;
-        color: #ffc107;
-    }
-    
-    .rating-stars i.far {
-        color: #ddd;
-    }
-    
-    /* Testimonial Text */
-    .testimonial-text {
-        font-size: 14px;
-        line-height: 1.6;
-        color: #555;
-        position: relative;
-        z-index: 1;
-        margin-top: 8px;
-        font-style: italic;
-    }
-    
-    .testimonial-text::before {
-        content: '"';
-        font-size: 30px;
-        color: var(--accent-orange);
-        opacity: 0.3;
-        position: absolute;
-        top: -15px;
-        left: -5px;
-        font-family: serif;
-    }
-    
-    /* Modal Styles */
-    .testimonial-modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.9);
-        z-index: 10050;
-        justify-content: center;
-        align-items: center;
-        backdrop-filter: blur(5px);
-    }
-    
-    .testimonial-modal.active {
-        display: flex;
-    }
-    
-    .testimonial-modal-content {
-        background: white;
-        border-radius: 28px;
-        max-width: 550px;
-        width: 90%;
-        position: relative;
-        animation: modalPopIn 0.4s ease-out;
-        overflow: hidden;
-    }
-    
-    @keyframes modalPopIn {
-        from {
-            opacity: 0;
-            transform: scale(0.9) translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: scale(1) translateY(0);
-        }
-    }
-    
-    .testimonial-modal-header {
-        background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);
-        padding: 20px 25px;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .testimonial-modal-header h3 {
-        margin: 0;
-        font-size: 1.3rem;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    .testimonial-modal-close {
-        font-size: 28px;
-        cursor: pointer;
-        transition: transform 0.2s;
-        width: 32px;
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background: rgba(255,255,255,0.2);
-    }
-    
-    .testimonial-modal-close:hover {
-        transform: rotate(90deg);
-        background: rgba(255,255,255,0.3);
-    }
-    
-    .testimonial-modal-body {
-        padding: 25px;
-    }
-    
-    .modal-person-info {
-        display: flex;
-        gap: 15px;
-        margin-bottom: 20px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #eee;
-    }
-    
-    .modal-avatar {
-        width: 70px;
-        height: 70px;
-        background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-    }
-    
-    .modal-avatar i {
-        font-size: 32px;
-        color: white;
-    }
-    
-    .modal-details {
-        flex: 1;
-    }
-    
-    .modal-name {
-        font-size: 20px;
-        font-weight: 700;
-        color: var(--kwacha-green);
-    }
-    
-    .modal-position {
-        font-size: 14px;
-        color: var(--accent-orange);
-        font-weight: 500;
-    }
-    
-    .modal-org {
-        font-size: 13px;
-        color: #888;
-        margin-top: 4px;
-    }
-    
-    .modal-testimonial {
-        font-size: 15px;
-        line-height: 1.7;
-        color: #444;
-        margin-top: 20px;
-        font-style: italic;
-    }
-    
-    .modal-testimonial::before {
-        content: '"';
-        font-size: 40px;
-        color: var(--accent-orange);
-        opacity: 0.3;
-        position: relative;
-        top: 10px;
-        left: -5px;
-        font-family: serif;
-    }
-    
-    /* View Details Button */
-    .view-details-btn {
-        margin-top: 16px;
-        padding: 8px 16px;
-        background: transparent;
-        border: 1px solid var(--accent-orange);
-        color: var(--accent-orange);
-        border-radius: 30px;
-        font-size: 12px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.3s;
-        width: 100%;
-        font-family: 'Inter', sans-serif;
-    }
-    
-    .view-details-btn:hover {
-        background: var(--accent-orange);
-        color: white;
-    }
-</style>
-
-<script>
-    // ========== TESTIMONIALS DATA ==========
-    // Add your testimonials here
-    const testimonialsData = [
-        {
-            id: 1,
-            name: "John Banda",
-            position: "Lead Farmer",
-            organization: "Kasungu Farmers Cooperative",
-            avatarInitial: "JB",
-            testimonial: "Kwacha Seeds has transformed our farming cooperative. The MH36 maize variety gave us the highest yield we've ever recorded - 9 tons per hectare! The seeds are drought-resistant and the support team is always available to help.",
-            rating: 5,
-            date: "2024-03-15"
-        },
-        {
-            id: 2,
-            name: "Grace Phiri",
-            position: "Agri-Business Owner",
-            organization: "Phiri Farms Ltd",
-            avatarInitial: "GP",
-            testimonial: "I've been using Chitedze 4 soybean seeds for two seasons now. The germination rate is excellent and the plants are very disease-resistant. My profits have increased by 40% since switching to Kwacha Seeds.",
-            rating: 5,
-            date: "2024-03-10"
-        },
-        {
-            id: 3,
-            name: "Michael Chavula",
-            position: "Agricultural Extension Officer",
-            organization: "Ministry of Agriculture",
-            avatarInitial: "MC",
-            testimonial: "As an extension officer, I recommend Kwacha Seeds to all farmers I work with. Their seeds are certified, consistently high-performing, and backed by excellent agronomic support. The MH42A orange maize is particularly impressive for its nutritional value.",
-            rating: 5,
-            date: "2024-03-05"
-        },
-        {
-            id: 4,
-            name: "Esther Mwale",
-            position: "Smallholder Farmer",
-            organization: "Dedza Women Farmers Group",
-            avatarInitial: "EM",
-            testimonial: "The KARS 52 wheat variety has been a game-changer for my farm. It matures early so I can harvest before the rains come. The support from Kwacha Seeds has been incredible - they even came to my farm to give planting advice.",
-            rating: 4,
-            date: "2024-02-28"
-        },
-        {
-            id: 5,
-            name: "David Chimwala",
-            position: "Farm Manager",
-            organization: "Green Valley Estates",
-            avatarInitial: "DC",
-            testimonial: "We've been using Kwacha Seeds exclusively for our 200-hectare farm. The consistency and quality are unmatched. The CG9 groundnuts have excellent shelling percentage and market demand is very high.",
-            rating: 5,
-            date: "2024-02-20"
-        },
-        {
-            id: 6,
-            name: "Dr. Sarah Kachingwe",
-            position: "Agricultural Researcher",
-            organization: "Lilongwe University of Agriculture",
-            avatarInitial: "SK",
-            testimonial: "From a research perspective, Kwacha Seeds maintains excellent quality control. We've tested their seeds in our trials and the results consistently exceed expectations. A trusted partner for Malawian agriculture.",
-            rating: 5,
-            date: "2024-02-15"
-        }
-    ];
-    
-    // ========== ADD YOUR TESTIMONIALS HERE ==========
-    // Copy this format to add more testimonials:
-    /*
-    {
-        id: 7,
-        name: "Your Name",
-        position: "Your Position",
-        organization: "Your Organization Name",
-        avatarInitial: "YN",  // Two letters for avatar
-        testimonial: "Your testimonial text here...",
-        rating: 5,  // 1-5 stars
-        date: "2024-03-20"
-    }
-    */
-    
-    // Render stars based on rating
-    function renderStars(rating) {
-        let stars = '';
-        for (let i = 1; i <= 5; i++) {
-            if (i <= rating) {
-                stars += '<i class="fas fa-star"></i>';
-            } else {
-                stars += '<i class="far fa-star"></i>';
-            }
-        }
-        return stars;
-    }
-    
-    // Get random color for avatar background (for images, but we'll use gradient)
-    function getAvatarColor(name) {
-        const colors = [
-            'linear-gradient(135deg, #0a3b0a, #1e6b1e)',
-            'linear-gradient(135deg, #ff6600, #e05a00)',
-            'linear-gradient(135deg, #1e6b1e, #0a3b0a)',
-            'linear-gradient(135deg, #e05a00, #ff6600)'
-        ];
-        const index = name.length % colors.length;
-        return colors[index];
-    }
-    
-    // Show testimonial modal
-    function showTestimonialModal(testimonial) {
-        const modal = document.getElementById('testimonialModal');
-        const modalName = document.getElementById('modalName');
-        const modalPosition = document.getElementById('modalPosition');
-        const modalOrg = document.getElementById('modalOrg');
-        const modalTestimonial = document.getElementById('modalTestimonial');
-        const modalRating = document.getElementById('modalRating');
-        const modalAvatar = document.getElementById('modalAvatar');
-        
-        if (modal) {
-            modalName.textContent = testimonial.name;
-            modalPosition.textContent = testimonial.position;
-            modalOrg.textContent = testimonial.organization;
-            modalTestimonial.textContent = testimonial.testimonial;
-            modalRating.innerHTML = renderStars(testimonial.rating);
-            
-            // Update avatar
-            modalAvatar.innerHTML = `<i class="fas fa-user-circle"></i>`;
-            
-            modal.classList.add('active');
-        }
-    }
-    
-    function closeTestimonialModal() {
-        const modal = document.getElementById('testimonialModal');
-        if (modal) {
-            modal.classList.remove('active');
-        }
-    }
-    
-    // Render testimonials grid
-    function renderTestimonials() {
-        const grid = document.getElementById('testimonialsGrid');
-        if (!grid) return;
-        
-        if (testimonialsData.length === 0) {
-            grid.innerHTML = `
-                <div class="col-span-full text-center py-12">
-                    <i class="fas fa-comments text-4xl text-gray-300 mb-3"></i>
-                    <p class="text-gray-500">Testimonials coming soon...</p>
-                </div>
-            `;
-            return;
-        }
-        
-        grid.innerHTML = testimonialsData.map(testimonial => `
-            <div class="testimonial-card" data-id="${testimonial.id}">
-                <div class="quote-icon">
-                    <i class="fas fa-quote-right"></i>
-                </div>
-                
-                <div class="person-avatar">
-                    <i class="fas fa-user-circle"></i>
-                </div>
-                
-                <h3 class="person-name">${testimonial.name}</h3>
-                <p class="person-position">${testimonial.position}</p>
-                <p class="person-org">
-                    <i class="fas fa-building" style="font-size: 10px;"></i>
-                    ${testimonial.organization}
-                </p>
-                
-                <div class="rating-stars">
-                    ${renderStars(testimonial.rating)}
-                </div>
-                
-                <p class="testimonial-text">
-                    ${testimonial.testimonial.length > 120 ? testimonial.testimonial.substring(0, 120) + '...' : testimonial.testimonial}
-                </p>
-                
-                <button class="view-details-btn" onclick="showTestimonialModal(${JSON.stringify(testimonial).replace(/"/g, '&quot;')})">
-                    Read Full Story <i class="fas fa-arrow-right ml-1"></i>
-                </button>
-            </div>
-        `).join('');
-    }
-    
-    // Initialize testimonials on page load
-    document.addEventListener('DOMContentLoaded', function() {
-        renderTestimonials();
-        
-        // Setup modal close handlers
-        const modal = document.getElementById('testimonialModal');
-        const closeBtn = document.querySelector('.testimonial-modal-close');
-        
-        if (modal) {
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) closeTestimonialModal();
-            });
-        }
-        
-        if (closeBtn) closeBtn.addEventListener('click', closeTestimonialModal);
-        
-        // Close with escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                closeTestimonialModal();
-            }
-        });
-    });
-</script>
-
-<!-- Testimonial Modal -->
-<div id="testimonialModal" class="testimonial-modal">
-    <div class="testimonial-modal-content">
-        <div class="testimonial-modal-header">
-            <h3>
-                <i class="fas fa-quote-left"></i>
-                Farmer's Testimonial
-            </h3>
-            <span class="testimonial-modal-close">&times;</span>
-        </div>
-        <div class="testimonial-modal-body">
-            <div class="modal-person-info">
-                <div class="modal-avatar" id="modalAvatar">
-                    <i class="fas fa-user-circle"></i>
-                </div>
-                <div class="modal-details">
-                    <div class="modal-name" id="modalName">John Banda</div>
-                    <div class="modal-position" id="modalPosition">Lead Farmer</div>
-                    <div class="modal-org" id="modalOrg">Kasungu Farmers Cooperative</div>
-                    <div class="rating-stars" id="modalRating" style="margin-top: 8px;"></div>
-                </div>
-            </div>
-            <div class="modal-testimonial" id="modalTestimonial">
-                Testimonial text will appear here...
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
