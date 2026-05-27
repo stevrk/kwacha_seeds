@@ -335,128 +335,391 @@
     </div>
 </nav>
     
-
-    <!-- ========== HERO CAROUSEL SECTION ========== -->
-    <section id="home">
-        <div class="relative w-full">
-            <!-- Spacer for fixed navbar -->
-            <div class="h-[70px] md:h-[140px] lg:h-[150px]"></div>
-            <div id="carousel" class="relative h-[400px] md:h-[500px] overflow-hidden">
-
-                <!-- Slide 1 - Soya Field -->
-                <div class="carousel-slide absolute inset-0 opacity-100" data-active="true">
-                    <div class="absolute inset-0">
-                        <!--{{ asset('images/soya_field.jpg') }}-->
-                        <img src="{{ asset('images/new/carausel1.png') }}" class="w-full h-full object-cover" alt="Soya field">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
-                    </div>
-                    <!--<div class="relative h-full flex items-center justify-center">
-                        <div class="max-w-7xl mx-auto px-6 lg:px-10 w-full">
-                            <div class="max-w-xl text-center md:text-left">
-                                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 md:mb-3 leading-tight" style="font-family: 'Inter', sans-serif;">
-                                    Fast-Maturing Seeds<br>
-                                    <span style="color: var(--accent-orange);">Perfect for Malawi's Climate</span>
-                                </h1>
-                                <p class="text-xs sm:text-sm md:text-base text-gray-200 mb-3 md:mb-4 slide-content" style="font-family: 'Inter', sans-serif;">
-                                    Reliable performance, early maturity, and high yields for every season.
-                                </p>
-                                <a href="#products" class="inline-block px-4 py-1.5 md:px-5 md:py-2.5 rounded-md font-semibold text-white transition hover:opacity-90 slide-content text-sm md:text-base" style="background: var(--kwacha-green); font-family: 'Inter', sans-serif;">
-                                    View Seeds <i class="fas fa-arrow-right ml-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>-->
-                </div>
-
-                <!-- Slide 2 - Maize Harvest -->
-                <div class="carousel-slide absolute inset-0 opacity-0" data-active="false">
-                    <div class="absolute inset-0">
-                        <img src="{{ asset('images/malawi_harvest.jpg') }}" class="w-full h-full object-cover" alt="Maize harvest">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
-                    </div>
-                    <div class="relative h-full flex items-center justify-center">
-                        <div class="max-w-7xl mx-auto px-6 lg:px-10 w-full">
-                            <div class="max-w-xl text-center md:text-left">
-                                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 md:mb-3" style="font-family: 'Inter', sans-serif;">
-                                    Abundant Harvests<br>
-                                    <span style="color: var(--accent-orange);">Season After Season</span>
-                                </h1>
-                                <p class="text-xs sm:text-sm md:text-base text-gray-200 mb-3 md:mb-4 slide-content" style="font-family: 'Inter', sans-serif;">
-                                    Strong, reliable maize varieties that deliver consistent and high yields.
-                                </p>
-                                <a href="#products" class="inline-block px-4 py-1.5 md:px-5 md:py-2.5 rounded-md font-semibold text-white transition hover:opacity-90 slide-content text-sm md:text-base" style="background: var(--kwacha-green); font-family: 'Inter', sans-serif;">
-                                    Explore Seeds <i class="fas fa-arrow-right ml-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 3 - Farmer Support -->
-                <div class="carousel-slide absolute inset-0 opacity-0" data-active="false">
-                    <div class="absolute inset-0">
-                        <img src="{{ asset('images/Farmer_guide.jpg') }}" class="w-full h-full object-cover" alt="Farmer support">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
-                    </div>
-                    <div class="relative h-full flex items-center justify-center">
-                        <div class="max-w-7xl mx-auto px-6 lg:px-10 w-full">
-                            <div class="max-w-xl text-center md:text-left">
-                                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 md:mb-3" style="font-family: 'Inter', sans-serif;">
-                                    Growing Together<br>
-                                    <span style="color: var(--accent-orange);">With Malawi's Farmers</span>
-                                </h1>
-                                <p class="text-xs sm:text-sm md:text-base text-gray-200 mb-3 md:mb-4 slide-content" style="font-family: 'Inter', sans-serif;">
-                                    We work hand in hand with farmers to improve yields, incomes, and livelihoods.
-                                </p>
-                                <a href="#contact" class="inline-block px-4 py-1.5 md:px-5 md:py-2.5 rounded-md font-semibold text-white transition hover:opacity-90 slide-content text-sm md:text-base" style="background: var(--kwacha-green); font-family: 'Inter', sans-serif;">
-                                    Get in Touch <i class="fas fa-arrow-right ml-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
-                <span class="dot-nav w-2 h-2 rounded-full bg-white cursor-pointer transition-all"></span>
-                <span class="dot-nav w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all"></span>
-                <span class="dot-nav w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all"></span>
-            </div>
-
-            <!-- Previous Button -->
-            <button id="prevSlide" class="carousel-btn absolute left-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 rounded-full bg-black/30 text-white hover:bg-black/50 transition flex items-center justify-center">
-                <i class="fas fa-chevron-left text-xs md:text-sm"></i>
-            </button>
-
-            <!-- Next Button -->
-            <button id="nextSlide" class="carousel-btn absolute right-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 rounded-full bg-black/30 text-white hover:bg-black/50 transition flex items-center justify-center">
-                <i class="fas fa-chevron-right text-xs md:text-sm"></i>
-            </button>
+<!-- ========== HERO CAROUSEL SECTION ========== -->
+<section id="home" class="relative overflow-hidden">
+    <!-- Modern gradient background -->
+    <div class="absolute inset-0" style="background: linear-gradient(120deg, #0d2b0d 0%, #1a4a1a 50%, #0d2b0d 100%);">
+        <!-- Abstract shapes overlay -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="absolute top-0 left-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <circle cx="20" cy="20" r="1" fill="white" opacity="0.5"/>
+                        <path d="M0 20 L40 20 M20 0 L20 40" stroke="white" stroke-width="0.5" opacity="0.1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#pattern)"/>
+            </svg>
         </div>
-    </section>
+        
+        <!-- Decorative leaf shapes - hidden on mobile -->
+        <div class="absolute top-20 right-10 w-32 h-32 opacity-10 transform rotate-45 hidden lg:block">
+            <i class="fas fa-leaf text-7xl text-white"></i>
+        </div>
+        <div class="absolute bottom-20 left-10 w-24 h-24 opacity-10 hidden lg:block">
+            <i class="fas fa-seedling text-6xl text-white"></i>
+        </div>
+    </div>
+    
+    <div class="relative w-full">
+        <!-- Spacer for fixed navbar -->
+        <div class="h-[60px] sm:h-[80px] md:h-[120px] lg:h-[140px]"></div>
+        
+        <div id="carousel" class="relative min-h-[100vh] lg:min-h-[650px]">
+            
+            <!-- Slide 1 - Soya Field -->
+            <div class="carousel-slide absolute inset-0 opacity-100 transition-all duration-700" data-active="true">
+                <!-- Full screen image for mobile -->
+                <div class="absolute inset-0">
+                    <img src="{{ asset('images/new/carausel1.png') }}" class="w-full h-full object-cover" alt="Soya field">
+                    <!-- Dark overlay at bottom only for text -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                </div>
+                
+                <!-- Content container -->
+                <div class="relative h-full flex flex-col justify-end pb-8 sm:pb-12 lg:justify-center lg:pb-0">
+                    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="flex flex-col lg:flex-row lg:flex-row-reverse items-center justify-between gap-6 lg:gap-12">
+                            
+                            <!-- Image Section - Desktop only -->
+                            <div class="hidden lg:block w-full lg:w-1/2">
+                                <div class="relative group max-w-md mx-auto lg:mx-0 lg:max-w-none">
+                                    <div class="absolute -inset-4 bg-orange-500/20 rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                                    
+                                    <div class="relative rounded-3xl overflow-hidden shadow-2xl transform transition-all duration-500 group-hover:scale-105">
+                                        <img src="{{ asset('images/new/carausel1.png') }}" class="w-full h-[350px] lg:h-[450px] object-cover" alt="Soya field">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                                    </div>
+                                    
+                                    <div class="absolute -bottom-3 -left-3 bg-white rounded-xl px-4 py-2 shadow-lg flex items-center gap-2 animate-bounce">
+                                        <i class="fas fa-check-circle" style="color: var(--kwacha-green);"></i>
+                                        <span class="text-sm font-semibold" style="color: var(--kwacha-green);">100% Certified</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Text Section - Compact on mobile, sits at bottom -->
+                            <div class="w-full lg:w-1/2 text-center lg:text-left">
+                                <div class="max-w-xl mx-auto lg:mx-0">
+                                    <!-- Badge - smaller on mobile -->
+                                    <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur rounded-full px-2.5 py-1 sm:px-3 sm:py-1.5 border border-white/30 mb-2 sm:mb-3">
+                                        <span class="relative flex h-1.5 w-1.5">
+                                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style="background: var(--accent-orange);"></span>
+                                            <span class="relative inline-flex rounded-full h-full w-full" style="background: var(--accent-orange);"></span>
+                                        </span>
+                                        <span class="text-[9px] sm:text-xs font-semibold uppercase tracking-wide text-white">Since 2015</span>
+                                    </div>
+                                    
+                                    <!-- Headings - smaller on mobile -->
+                                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-white" style="font-family: 'Inter', sans-serif; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+                                        Fast-Maturing
+                                        <span style="color: var(--accent-orange);" class="block sm:inline">Seeds</span>
+                                    </h1>
+                                    
+                                    <!-- Description - hidden on mobile, visible on tablet+ -->
+                                    <p class="hidden sm:block text-white/90 text-sm sm:text-base md:text-lg leading-relaxed mt-2 sm:mt-3 lg:mt-4 drop-shadow-md max-w-lg mx-auto lg:mx-0" style="font-family: 'Inter', sans-serif; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">
+                                        Reliable performance, early maturity, and high yields for every season.
+                                    </p>
+                                    
+                                    <!-- Buttons - compact on mobile -->
+                                    <div class="flex flex-row gap-2 sm:gap-3 pt-3 sm:pt-4 justify-center lg:justify-start">
+                                        <a href="#products" class="group inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-5 md:px-6 py-1.5 sm:py-2.5 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg text-xs sm:text-sm md:text-base" style="background: var(--accent-orange); color: white; font-family: 'Inter', sans-serif;">
+                                            <span>Shop</span>
+                                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform text-[10px] sm:text-xs"></i>
+                                        </a>
+                                        <a href="#contact" class="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-5 md:px-6 py-1.5 sm:py-2.5 rounded-lg font-semibold transition-all duration-300 hover:scale-105 border text-xs sm:text-sm md:text-base" style="border-color: white; color: white; font-family: 'Inter', sans-serif; background: rgba(0,0,0,0.3); backdrop-filter: blur(4px);">
+                                            <i class="fas fa-play-circle text-[10px] sm:text-xs"></i>
+                                            <span>Watch</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 - Maize Harvest -->
+            <div class="carousel-slide absolute inset-0 opacity-0 transition-all duration-700" data-active="false">
+                <div class="absolute inset-0">
+                    <img src="{{ asset('images/malawi_harvest.jpg') }}" class="w-full h-full object-cover" alt="Maize harvest">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                </div>
+                
+                <div class="relative h-full flex flex-col justify-end pb-8 sm:pb-12 lg:justify-center lg:pb-0">
+                    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="flex flex-col lg:flex-row lg:flex-row-reverse items-center justify-between gap-6 lg:gap-12">
+                            
+                            <div class="hidden lg:block w-full lg:w-1/2">
+                                <div class="relative group">
+                                    <div class="absolute -inset-4 bg-orange-500/20 rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                                    
+                                    <div class="relative rounded-3xl overflow-hidden shadow-2xl transform transition-all duration-500 group-hover:scale-105">
+                                        <img src="{{ asset('images/malawi_harvest.jpg') }}" class="w-full h-[350px] lg:h-[450px] object-cover" alt="Maize harvest">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                                    </div>
+                                    
+                                    <div class="absolute -bottom-3 -right-3 bg-white rounded-xl px-4 py-2 shadow-lg flex items-center gap-2">
+                                        <i class="fas fa-star" style="color: #ffc107;"></i>
+                                        <span class="text-sm font-semibold" style="color: var(--kwacha-green);">4.9 ★ Rating</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="w-full lg:w-1/2 text-center lg:text-left">
+                                <div class="max-w-xl mx-auto lg:mx-0">
+                                    <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur rounded-full px-2.5 py-1 sm:px-3 sm:py-1.5 border border-white/30 mb-2 sm:mb-3">
+                                        <i class="fas fa-trophy text-[8px] sm:text-[10px]" style="color: var(--accent-orange);"></i>
+                                        <span class="text-[9px] sm:text-xs font-semibold uppercase tracking-wide text-white">Best Seller 2024</span>
+                                    </div>
+                                    
+                                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-white" style="font-family: 'Inter', sans-serif; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+                                        Abundant
+                                        <span style="color: var(--accent-orange);" class="block sm:inline">Harvests</span>
+                                    </h1>
+                                    
+                                    <p class="hidden sm:block text-white/90 text-sm sm:text-base md:text-lg leading-relaxed mt-2 sm:mt-3 lg:mt-4 drop-shadow-md max-w-lg mx-auto lg:mx-0" style="font-family: 'Inter', sans-serif;">
+                                        Strong, reliable maize varieties that deliver consistent and high yields.
+                                    </p>
+                                    
+                                    <div class="flex flex-row gap-2 sm:gap-3 pt-3 sm:pt-4 justify-center lg:justify-start">
+                                        <a href="#products" class="group inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-5 md:px-6 py-1.5 sm:py-2.5 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg text-xs sm:text-sm md:text-base" style="background: var(--accent-orange); color: white; font-family: 'Inter', sans-serif;">
+                                            <span>Shop</span>
+                                            <i class="fas fa-shopping-cart group-hover:translate-x-1 transition-transform text-[10px] sm:text-xs"></i>
+                                        </a>
+                                        <a href="#dealers" class="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-5 md:px-6 py-1.5 sm:py-2.5 rounded-lg font-semibold transition-all duration-300 hover:scale-105 border text-xs sm:text-sm md:text-base" style="border-color: white; color: white; font-family: 'Inter', sans-serif; background: rgba(0,0,0,0.3); backdrop-filter: blur(4px);">
+                                            <i class="fas fa-map-marker-alt text-[10px] sm:text-xs"></i>
+                                            <span>Find</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 - Farmer Support -->
+            <div class="carousel-slide absolute inset-0 opacity-0 transition-all duration-700" data-active="false">
+                <div class="absolute inset-0">
+                    <img src="{{ asset('images/Farmer_guide.jpg') }}" class="w-full h-full object-cover" alt="Farmer support">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                </div>
+                
+                <div class="relative h-full flex flex-col justify-end pb-8 sm:pb-12 lg:justify-center lg:pb-0">
+                    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="flex flex-col lg:flex-row lg:flex-row-reverse items-center justify-between gap-6 lg:gap-12">
+                            
+                            <div class="hidden lg:block w-full lg:w-1/2">
+                                <div class="relative group">
+                                    <div class="absolute -inset-4 bg-orange-500/20 rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                                    
+                                    <div class="relative rounded-3xl overflow-hidden shadow-2xl transform transition-all duration-500 group-hover:scale-105">
+                                        <img src="{{ asset('images/Farmer_guide.jpg') }}" class="w-full h-[350px] lg:h-[450px] object-cover" alt="Farmer support">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                                    </div>
+                                    
+                                    <div class="absolute -top-3 -right-3 rounded-full px-3 py-1 shadow-lg" style="background: var(--accent-orange);">
+                                        <span class="text-xs font-bold text-white">Limited Offer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="w-full lg:w-1/2 text-center lg:text-left">
+                                <div class="max-w-xl mx-auto lg:mx-0">
+                                    <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur rounded-full px-2.5 py-1 sm:px-3 sm:py-1.5 border border-white/30 mb-2 sm:mb-3">
+                                        <i class="fas fa-hand-holding-heart text-[8px] sm:text-[10px]" style="color: var(--accent-orange);"></i>
+                                        <span class="text-[9px] sm:text-xs font-semibold uppercase tracking-wide text-white">Community Support</span>
+                                    </div>
+                                    
+                                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-white" style="font-family: 'Inter', sans-serif; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+                                        Growing
+                                        <span style="color: var(--accent-orange);" class="block sm:inline">Together</span>
+                                    </h1>
+                                    
+                                    <p class="hidden sm:block text-white/90 text-sm sm:text-base md:text-lg leading-relaxed mt-2 sm:mt-3 lg:mt-4 drop-shadow-md max-w-lg mx-auto lg:mx-0" style="font-family: 'Inter', sans-serif;">
+                                        We work hand in hand with farmers to improve yields, incomes, and livelihoods.
+                                    </p>
+                                    
+                                    <div class="flex flex-row gap-2 sm:gap-3 pt-3 sm:pt-4 justify-center lg:justify-start">
+                                        <a href="#contact" class="group inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-5 md:px-6 py-1.5 sm:py-2.5 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg text-xs sm:text-sm md:text-base" style="background: var(--accent-orange); color: white; font-family: 'Inter', sans-serif;">
+                                            <span>Join</span>
+                                            <i class="fas fa-users group-hover:translate-x-1 transition-transform text-[10px] sm:text-xs"></i>
+                                        </a>
+                                        <a href="#farmers-hub" class="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-5 md:px-6 py-1.5 sm:py-2.5 rounded-lg font-semibold transition-all duration-300 hover:scale-105 border text-xs sm:text-sm md:text-base" style="border-color: white; color: white; font-family: 'Inter', sans-serif; background: rgba(0,0,0,0.3); backdrop-filter: blur(4px);">
+                                            <i class="fas fa-graduation-cap text-[10px] sm:text-xs"></i>
+                                            <span>Learn</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Navigation Dots -->
+        <div class="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 flex gap-1.5 sm:gap-2 z-30">
+            <span class="dot-nav w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full cursor-pointer transition-all duration-300" style="background: rgba(255,255,255,0.8);"></span>
+            <span class="dot-nav w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full cursor-pointer transition-all duration-300" style="background: rgba(255,255,255,0.8);"></span>
+            <span class="dot-nav w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full cursor-pointer transition-all duration-300" style="background: rgba(255,255,255,0.8);"></span>
+        </div>
+        
+        <!-- Navigation Arrows -->
+        <button id="prevSlide" class="carousel-btn absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-black/40 hover:bg-black/60 backdrop-blur text-white transition-all duration-300 flex items-center justify-center z-30">
+            <i class="fas fa-chevron-left text-xs sm:text-sm md:text-base"></i>
+        </button>
+        
+        <button id="nextSlide" class="carousel-btn absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-black/40 hover:bg-black/60 backdrop-blur text-white transition-all duration-300 flex items-center justify-center z-30">
+            <i class="fas fa-chevron-right text-xs sm:text-sm md:text-base"></i>
+        </button>
+        
+    </div>
+</section>
 
-    <!-- ========== MAIN CONTENT ========== -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot-nav');
+        const prevBtn = document.getElementById('prevSlide');
+        const nextBtn = document.getElementById('nextSlide');
+        
+        if (!slides.length) return;
+        
+        let currentIndex = 0;
+        let autoTimer = null;
+        let isTransitioning = false;
+        
+        function updateSlide(index) {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.style.opacity = '1';
+                    slide.style.visibility = 'visible';
+                    slide.setAttribute('data-active', 'true');
+                } else {
+                    slide.style.opacity = '0';
+                    slide.style.visibility = 'hidden';
+                    slide.setAttribute('data-active', 'false');
+                }
+            });
+            
+            dots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.style.background = '#ffffff';
+                    dot.style.transform = 'scale(1.3)';
+                } else {
+                    dot.style.background = 'rgba(255,255,255,0.5)';
+                    dot.style.transform = 'scale(1)';
+                }
+            });
+            
+            currentIndex = index;
+            
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 700);
+        }
+        
+        function nextSlide() {
+            let newIndex = (currentIndex + 1) % slides.length;
+            updateSlide(newIndex);
+            resetAutoTimer();
+        }
+        
+        function prevSlide() {
+            let newIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlide(newIndex);
+            resetAutoTimer();
+        }
+        
+        function resetAutoTimer() {
+            if (autoTimer) clearInterval(autoTimer);
+            autoTimer = setInterval(nextSlide, 6000);
+        }
+        
+        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+        
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                updateSlide(i);
+                resetAutoTimer();
+            });
+        });
+        
+        // Touch swipe for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        const carousel = document.getElementById('carousel');
+        
+        if (carousel) {
+            carousel.addEventListener('mouseenter', () => {
+                if (autoTimer) clearInterval(autoTimer);
+                autoTimer = null;
+            });
+            
+            carousel.addEventListener('mouseleave', () => {
+                autoTimer = setInterval(nextSlide, 6000);
+            });
+            
+            carousel.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                if (autoTimer) clearInterval(autoTimer);
+                autoTimer = null;
+            });
+            
+            carousel.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                const diff = touchStartX - touchEndX;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) {
+                        nextSlide();
+                    } else {
+                        prevSlide();
+                    }
+                }
+                autoTimer = setInterval(nextSlide, 6000);
+            });
+        }
+        
+        updateSlide(0);
+        autoTimer = setInterval(nextSlide, 6000);
+    });
+</script>
+  
+
+<!-- ========== MAIN CONTENT ========== -->
+
+
 
 <!-- ========== PRODUCTS SECTION ========== -->
-<section id="products" class="py-16 md:py-24" style="background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);">
+<section id="products" class="py-16 md:py-24" style="background: white;">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         
         <!-- Section Header -->
         <div class="text-center mb-12 md:mb-16">
             <span class="text-sm md:text-base font-semibold tracking-wide uppercase" style="color: var(--accent-orange); letter-spacing: 2px;">Our Premium Range</span>
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4" style="font-family: 'Inter', sans-serif; color: white;">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
                 Our <span style="color: var(--accent-orange);">Products</span>
             </h2>
             <div class="w-20 h-1 mx-auto rounded-full" style="background: var(--accent-orange);"></div>
-            <p class="text-white/80 mt-4 max-w-2xl mx-auto">High-quality, high-yielding seed varieties trusted by farmers across Malawi</p>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">High-quality, high-yielding seed varieties trusted by farmers across Malawi</p>
         </div>
         
         <!-- Products Grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             <!-- Product 1 - Soybean (Chitedze 4) -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-green-200 hover:border-green-500" style="border-color: var(--kwacha-green);">
                 <div class="relative h-56 overflow-hidden">
                     <img src="{{ asset('images/products/soybean.jpg') }}" class="w-full h-full object-cover" alt="Soybean Chitedze 4">
                     <div class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold" style="color: var(--kwacha-green);">
@@ -499,7 +762,7 @@
             </div>
             
             <!-- Product 2 - Wheat (KARS Wheat 52) -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-green-200 hover:border-green-500" style="border-color: var(--kwacha-green);">
                 <div class="relative h-56 overflow-hidden">
                     <img src="{{ asset('images/products/wheat-seed.jpg') }}" alt="Wheat KARS 52" class="w-full h-full object-cover object-center">
                 </div>
@@ -540,7 +803,7 @@
             </div>
             
             <!-- Product 3 - White Maize (MH36) -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-green-200 hover:border-green-500" style="border-color: var(--kwacha-green);">
                 <div class="relative h-56 overflow-hidden">
                     <img src="{{ asset('images/products/maize-seed.jpg') }}" alt="White Maize MH36" class="w-full h-full object-cover object-center">
                     <div class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold" style="color: var(--kwacha-green);">
@@ -581,7 +844,7 @@
             </div>
             
             <!-- Product 4 - Orange Maize (MH42A) -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-green-200 hover:border-green-500" style="border-color: var(--kwacha-green);">
                 <div class="relative h-56 overflow-hidden">
                     <img src="{{ asset('images/products/maize-orange1.jpg') }}" alt="Orange Maize MH42A" class="w-full h-full object-cover object-center">
                     <div class="absolute top-4 right-4 px-3 py-1 bg-orange-500 text-white rounded-full text-xs font-bold shadow-md">
@@ -626,7 +889,7 @@
             </div>
             
             <!-- Product 5 - Groundnut (CG9) -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-green-200 hover:border-green-500" style="border-color: var(--kwacha-green);">
                 <div class="relative h-56 overflow-hidden">
                     <img src="{{ asset('images/products/red-nuts.jpg') }}" alt="Groundnut CG9" class="w-full h-full object-cover object-center">
                 </div>
@@ -663,19 +926,19 @@
         
     </div>
 </section>
+
 <!--testimonial section-->
-<!-- ========== TESTIMONIALS SECTION ========== -->
-<section id="testimonials" class="py-16 md:py-24" style="background: linear-gradient(135deg, #fff5eb 0%, #ffe8d9 100%);">
+<section id="testimonials" class="py-16 md:py-24" style="background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         
         <!-- Section Header -->
         <div class="text-center mb-12">
             <span class="text-sm md:text-base font-semibold tracking-wide uppercase" style="color: var(--accent-orange); letter-spacing: 2px;">Success Stories</span>
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4" style="font-family: 'Inter', sans-serif; color: white;">
                 What <span style="color: var(--accent-orange);">Farmers Say</span>
             </h2>
             <div class="w-20 h-1 mx-auto rounded-full" style="background: var(--accent-orange);"></div>
-            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Real stories from farmers and partners who trust Kwacha Seeds</p>
+            <p class="text-white/80 mt-4 max-w-2xl mx-auto">Real stories from farmers and partners who trust Kwacha Seeds</p>
         </div>
         
         <!-- Testimonials Grid -->
@@ -687,62 +950,49 @@
 </section>
 
 <style>
-    /* Testimonial Card Styles */
+    /* Testimonial Card Styles - HORIZONTAL WITH LARGER TEXT */
     .testimonial-card {
         background: white;
-        border-radius: 20px;
-        padding: 24px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 16px;
     }
     
     .testimonial-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-    }
-    
-    /* Quote Icon */
-    .quote-icon {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 60px;
-        color: rgba(255, 102, 0, 0.08);
-        z-index: 0;
-        pointer-events: none;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        background: #fefefe;
     }
     
     /* Person Avatar */
     .person-avatar {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         background: linear-gradient(135deg, var(--kwacha-green) 0%, #0e4e0e 100%);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 16px;
-        position: relative;
-        z-index: 1;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        flex-shrink: 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     
     .person-avatar i {
-        font-size: 32px;
+        font-size: 30px;
         color: white;
     }
     
-    .person-avatar img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
+    /* Card Content */
+    .testimonial-content {
+        flex: 1;
+        min-width: 0;
     }
     
-    /* Person Info */
     .person-name {
         font-size: 18px;
         font-weight: 700;
@@ -752,56 +1002,44 @@
     
     .person-position {
         font-size: 13px;
-        font-weight: 500;
+        font-weight: 600;
         color: var(--accent-orange);
         margin-bottom: 4px;
     }
     
     .person-org {
         font-size: 12px;
-        color: #888;
-        margin-bottom: 16px;
+        color: #666;
         display: flex;
         align-items: center;
         gap: 4px;
+        margin-bottom: 8px;
     }
     
-    /* Rating Stars */
-    .rating-stars {
-        margin-bottom: 16px;
-        display: flex;
-        gap: 3px;
-    }
-    
-    .rating-stars i {
-        font-size: 14px;
-        color: #ffc107;
-    }
-    
-    .rating-stars i.far {
-        color: #ddd;
-    }
-    
-    /* Testimonial Text */
-    .testimonial-text {
-        font-size: 14px;
-        line-height: 1.6;
-        color: #555;
-        position: relative;
-        z-index: 1;
-        margin-top: 8px;
-        font-style: italic;
-    }
-    
-    .testimonial-text::before {
-        content: '"';
-        font-size: 30px;
+    .person-org i {
+        font-size: 11px;
         color: var(--accent-orange);
-        opacity: 0.3;
-        position: absolute;
-        top: -15px;
-        left: -5px;
-        font-family: serif;
+    }
+    
+    /* Read More Link */
+    .read-more-link {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--accent-orange);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.2s;
+    }
+    
+    .read-more-link:hover {
+        gap: 10px;
+        color: var(--kwacha-green);
+    }
+    
+    .read-more-link i {
+        font-size: 12px;
     }
     
     /* Modal Styles */
@@ -812,7 +1050,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0,0,0,0.9);
+        background: rgba(0,0,0,0.95);
         z-index: 10050;
         justify-content: center;
         align-items: center;
@@ -825,7 +1063,7 @@
     
     .testimonial-modal-content {
         background: white;
-        border-radius: 28px;
+        border-radius: 24px;
         max-width: 550px;
         width: 90%;
         position: relative;
@@ -915,18 +1153,34 @@
         font-size: 20px;
         font-weight: 700;
         color: var(--kwacha-green);
+        margin-bottom: 4px;
     }
     
     .modal-position {
         font-size: 14px;
         color: var(--accent-orange);
         font-weight: 500;
+        margin-bottom: 4px;
     }
     
     .modal-org {
         font-size: 13px;
         color: #888;
-        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    
+    .modal-rating {
+        display: flex;
+        gap: 3px;
+    }
+    
+    .modal-rating i {
+        font-size: 14px;
+        color: #ffc107;
+    }
+    
+    .modal-rating i.far {
+        color: #ddd;
     }
     
     .modal-testimonial {
@@ -947,111 +1201,62 @@
         left: -5px;
         font-family: serif;
     }
-    
-    /* View Details Button */
-    .view-details-btn {
-        margin-top: 16px;
-        padding: 8px 16px;
-        background: transparent;
-        border: 1px solid var(--accent-orange);
-        color: var(--accent-orange);
-        border-radius: 30px;
-        font-size: 12px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.3s;
-        width: 100%;
-        font-family: 'Inter', sans-serif;
-    }
-    
-    .view-details-btn:hover {
-        background: var(--accent-orange);
-        color: white;
-    }
 </style>
 
 <script>
     // ========== TESTIMONIALS DATA ==========
-    // Add your testimonials here
     const testimonialsData = [
         {
             id: 1,
             name: "John Banda",
             position: "Lead Farmer",
             organization: "Kasungu Farmers Cooperative",
-            avatarInitial: "JB",
-            testimonial: "Kwacha Seeds has transformed our farming cooperative. The MH36 maize variety gave us the highest yield we've ever recorded - 9 tons per hectare! The seeds are drought-resistant and the support team is always available to help.",
-            rating: 5,
-            date: "2024-03-15"
+            testimonial: "Kwacha Seeds has transformed our farming cooperative. The MH36 maize variety gave us the highest yield we've ever recorded - 9 tons per hectare! The seeds are drought-resistant and the support team is always available to help. I highly recommend Kwacha Seeds to any farmer looking to improve their harvest.",
+            rating: 5
         },
         {
             id: 2,
             name: "Grace Phiri",
             position: "Agri-Business Owner",
             organization: "Phiri Farms Ltd",
-            avatarInitial: "GP",
-            testimonial: "I've been using Chitedze 4 soybean seeds for two seasons now. The germination rate is excellent and the plants are very disease-resistant. My profits have increased by 40% since switching to Kwacha Seeds.",
-            rating: 5,
-            date: "2024-03-10"
+            testimonial: "I've been using Chitedze 4 soybean seeds for two seasons now. The germination rate is excellent and the plants are very disease-resistant. My profits have increased by 40% since switching to Kwacha Seeds. The quality is unmatched!",
+            rating: 5
         },
         {
             id: 3,
             name: "Michael Chavula",
             position: "Agricultural Extension Officer",
             organization: "Ministry of Agriculture",
-            avatarInitial: "MC",
-            testimonial: "As an extension officer, I recommend Kwacha Seeds to all farmers I work with. Their seeds are certified, consistently high-performing, and backed by excellent agronomic support. The MH42A orange maize is particularly impressive for its nutritional value.",
-            rating: 5,
-            date: "2024-03-05"
+            testimonial: "As an extension officer, I recommend Kwacha Seeds to all farmers I work with. Their seeds are certified, consistently high-performing, and backed by excellent agronomic support. The MH42A orange maize is particularly impressive for its nutritional value and drought tolerance.",
+            rating: 5
         },
         {
             id: 4,
             name: "Esther Mwale",
             position: "Smallholder Farmer",
             organization: "Dedza Women Farmers Group",
-            avatarInitial: "EM",
-            testimonial: "The KARS 52 wheat variety has been a game-changer for my farm. It matures early so I can harvest before the rains come. The support from Kwacha Seeds has been incredible - they even came to my farm to give planting advice.",
-            rating: 4,
-            date: "2024-02-28"
+            testimonial: "The KARS 52 wheat variety has been a game-changer for my farm. It matures early so I can harvest before the rains come. The support from Kwacha Seeds has been incredible - they even came to my farm to give planting advice. My yields have doubled!",
+            rating: 4
         },
         {
             id: 5,
             name: "David Chimwala",
             position: "Farm Manager",
             organization: "Green Valley Estates",
-            avatarInitial: "DC",
-            testimonial: "We've been using Kwacha Seeds exclusively for our 200-hectare farm. The consistency and quality are unmatched. The CG9 groundnuts have excellent shelling percentage and market demand is very high.",
-            rating: 5,
-            date: "2024-02-20"
+            testimonial: "We've been using Kwacha Seeds exclusively for our 200-hectare farm. The consistency and quality are unmatched. The CG9 groundnuts have excellent shelling percentage and market demand is very high. Best decision we ever made.",
+            rating: 5
         },
         {
             id: 6,
             name: "Dr. Sarah Kachingwe",
             position: "Agricultural Researcher",
             organization: "Lilongwe University of Agriculture",
-            avatarInitial: "SK",
-            testimonial: "From a research perspective, Kwacha Seeds maintains excellent quality control. We've tested their seeds in our trials and the results consistently exceed expectations. A trusted partner for Malawian agriculture.",
-            rating: 5,
-            date: "2024-02-15"
+            testimonial: "From a research perspective, Kwacha Seeds maintains excellent quality control. We've tested their seeds in our trials and the results consistently exceed expectations. A trusted partner for Malawian agriculture and food security.",
+            rating: 5
         }
     ];
     
-    // ========== ADD YOUR TESTIMONIALS HERE ==========
-    // Copy this format to add more testimonials:
-    /*
-    {
-        id: 7,
-        name: "Your Name",
-        position: "Your Position",
-        organization: "Your Organization Name",
-        avatarInitial: "YN",  // Two letters for avatar
-        testimonial: "Your testimonial text here...",
-        rating: 5,  // 1-5 stars
-        date: "2024-03-20"
-    }
-    */
-    
-    // Render stars based on rating
+    // Render stars for modal
     function renderStars(rating) {
         let stars = '';
         for (let i = 1; i <= 5; i++) {
@@ -1064,18 +1269,6 @@
         return stars;
     }
     
-    // Get random color for avatar background (for images, but we'll use gradient)
-    function getAvatarColor(name) {
-        const colors = [
-            'linear-gradient(135deg, #0a3b0a, #1e6b1e)',
-            'linear-gradient(135deg, #ff6600, #e05a00)',
-            'linear-gradient(135deg, #1e6b1e, #0a3b0a)',
-            'linear-gradient(135deg, #e05a00, #ff6600)'
-        ];
-        const index = name.length % colors.length;
-        return colors[index];
-    }
-    
     // Show testimonial modal
     function showTestimonialModal(testimonial) {
         const modal = document.getElementById('testimonialModal');
@@ -1084,7 +1277,6 @@
         const modalOrg = document.getElementById('modalOrg');
         const modalTestimonial = document.getElementById('modalTestimonial');
         const modalRating = document.getElementById('modalRating');
-        const modalAvatar = document.getElementById('modalAvatar');
         
         if (modal) {
             modalName.textContent = testimonial.name;
@@ -1092,10 +1284,6 @@
             modalOrg.textContent = testimonial.organization;
             modalTestimonial.textContent = testimonial.testimonial;
             modalRating.innerHTML = renderStars(testimonial.rating);
-            
-            // Update avatar
-            modalAvatar.innerHTML = `<i class="fas fa-user-circle"></i>`;
-            
             modal.classList.add('active');
         }
     }
@@ -1115,41 +1303,29 @@
         if (testimonialsData.length === 0) {
             grid.innerHTML = `
                 <div class="col-span-full text-center py-12">
-                    <i class="fas fa-comments text-4xl text-gray-300 mb-3"></i>
-                    <p class="text-gray-500">Testimonials coming soon...</p>
+                    <i class="fas fa-comments text-4xl text-white/50 mb-3"></i>
+                    <p class="text-white/70">Testimonials coming soon...</p>
                 </div>
             `;
             return;
         }
         
         grid.innerHTML = testimonialsData.map(testimonial => `
-            <div class="testimonial-card" data-id="${testimonial.id}">
-                <div class="quote-icon">
-                    <i class="fas fa-quote-right"></i>
-                </div>
-                
+            <div class="testimonial-card" data-id="${testimonial.id}" onclick="showTestimonialModal(${JSON.stringify(testimonial).replace(/"/g, '&quot;')})">
                 <div class="person-avatar">
                     <i class="fas fa-user-circle"></i>
                 </div>
-                
-                <h3 class="person-name">${testimonial.name}</h3>
-                <p class="person-position">${testimonial.position}</p>
-                <p class="person-org">
-                    <i class="fas fa-building" style="font-size: 10px;"></i>
-                    ${testimonial.organization}
-                </p>
-                
-                <div class="rating-stars">
-                    ${renderStars(testimonial.rating)}
+                <div class="testimonial-content">
+                    <h3 class="person-name">${testimonial.name}</h3>
+                    <p class="person-position">${testimonial.position}</p>
+                    <p class="person-org">
+                        <i class="fas fa-building"></i>
+                        <span>${testimonial.organization}</span>
+                    </p>
+                    <div class="read-more-link" onclick="event.stopPropagation(); showTestimonialModal(${JSON.stringify(testimonial).replace(/"/g, '&quot;')})">
+                        Read full story <i class="fas fa-arrow-right"></i>
+                    </div>
                 </div>
-                
-                <p class="testimonial-text">
-                    ${testimonial.testimonial.length > 120 ? testimonial.testimonial.substring(0, 120) + '...' : testimonial.testimonial}
-                </p>
-                
-                <button class="view-details-btn" onclick="showTestimonialModal(${JSON.stringify(testimonial).replace(/"/g, '&quot;')})">
-                    Read Full Story <i class="fas fa-arrow-right ml-1"></i>
-                </button>
             </div>
         `).join('');
     }
@@ -1191,14 +1367,14 @@
         </div>
         <div class="testimonial-modal-body">
             <div class="modal-person-info">
-                <div class="modal-avatar" id="modalAvatar">
+                <div class="modal-avatar">
                     <i class="fas fa-user-circle"></i>
                 </div>
                 <div class="modal-details">
                     <div class="modal-name" id="modalName">John Banda</div>
                     <div class="modal-position" id="modalPosition">Lead Farmer</div>
                     <div class="modal-org" id="modalOrg">Kasungu Farmers Cooperative</div>
-                    <div class="rating-stars" id="modalRating" style="margin-top: 8px;"></div>
+                    <div class="modal-rating" id="modalRating"></div>
                 </div>
             </div>
             <div class="modal-testimonial" id="modalTestimonial">
@@ -1207,7 +1383,6 @@
         </div>
     </div>
 </div>
-  
 <!--Framers Hub -->
 <!-- ========== FARMER'S HUB SECTION ========== -->
 <section id="farmers-hub" class="py-16 md:py-24" style="background: #f8f9fa;">
@@ -2375,31 +2550,31 @@
     <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         
         <!-- Split Layout: Left (Title) + Right (Content) with Separator -->
-     <div class="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12">
     
-    <!-- LEFT SIDE: Who We Are & About Kwacha Seeds - CENTERED -->
-    <div class="md:w-1/2 flex flex-col justify-center text-center">
-        <span class="text-xs md:text-sm font-semibold tracking-wide uppercase" style="color: var(--accent-orange); letter-spacing: 2px;">Who We Are</span>
-        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-2 mb-3" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
-            About <span style="color: var(--accent-orange);">Kwacha Seeds</span>
-        </h2>
-        <div class="w-12 h-0.5 rounded-full mx-auto" style="background: var(--accent-orange);"></div>
-    </div>
-    
-    <!-- VERTICAL SEPARATOR / BAR -->
-    <div class="hidden md:block w-px bg-gray-200 self-stretch"></div>
-    
-    <!-- RIGHT SIDE: Company Description - CENTERED -->
-    <div class="md:w-1/2 flex flex-col justify-center">
-        <p class="text-gray-700 text-sm md:text-base leading-relaxed text-center md:text-center" style="font-family: 'Inter', sans-serif; line-height: 1.7;">
-            <span class="font-bold text-base md:text-lg" style="color: var(--kwacha-green);">Kwacha Seeds Limited</span> is a visionary seed company dedicated to transforming agriculture through high-quality hybrid seeds like <span class="font-semibold" style="color: var(--accent-orange);">maize MH 36</span>, vitamin A-rich orange maize <span class="font-semibold" style="color: var(--accent-orange);">MH42A</span>, wheat (<span class="font-semibold" style="color: var(--accent-orange);">KARS 52</span>), Soybean <span class="font-semibold" style="color: var(--accent-orange);">Chitedze-4</span>, and Groundnuts <span class="font-semibold" style="color: var(--accent-orange);">CG9</span>, prioritizing farmer-centric innovation and sustainability to boost productivity and livelihoods.
-        </p>
-        <p class="text-gray-700 text-sm md:text-base leading-relaxed mt-4 text-center md:text-center" style="font-family: 'Inter', sans-serif; line-height: 1.7;">
-            Committed to excellence over scale, we empower farmers with resilient, nutrient-enhanced crops while fostering integrity, collaboration, and environmental stewardship for a food-secure future.
-        </p>
-    </div>
-    
-</div>
+            <!-- LEFT SIDE: Who We Are & About Kwacha Seeds - CENTERED -->
+            <div class="md:w-1/2 flex flex-col justify-center text-center md:text-center">
+                <span class="text-xs md:text-sm font-semibold tracking-wide uppercase" style="color: var(--accent-orange); letter-spacing: 2px;">Who We Are</span>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-2 mb-3" style="font-family: 'Inter', sans-serif; color: var(--kwacha-green);">
+                    About <span style="color: var(--accent-orange);">Kwacha Seeds</span>
+                </h2>
+                <div class="w-12 h-0.5 rounded-full mx-auto md:mx-auto" style="background: var(--accent-orange);"></div>
+            </div>
+            
+            <!-- VERTICAL SEPARATOR / BAR -->
+            <div class="hidden md:block w-px bg-gray-200 self-stretch"></div>
+            
+            <!-- RIGHT SIDE: Company Description - LEFT ALIGNED -->
+            <div class="md:w-1/2 flex flex-col justify-center">
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed text-left" style="font-family: 'Inter', sans-serif; line-height: 1.7;">
+                    <span class="font-bold text-base md:text-lg" style="color: var(--kwacha-green);">Kwacha Seeds Limited</span> is a visionary seed company dedicated to transforming agriculture through high-quality hybrid seeds like <span class="font-semibold" style="color: var(--accent-orange);">maize MH 36</span>, vitamin A-rich orange maize <span class="font-semibold" style="color: var(--accent-orange);">MH42A</span>, wheat (<span class="font-semibold" style="color: var(--accent-orange);">KARS 52</span>), Soybean <span class="font-semibold" style="color: var(--accent-orange);">Chitedze-4</span>, and Groundnuts <span class="font-semibold" style="color: var(--accent-orange);">CG9</span>, prioritizing farmer-centric innovation and sustainability to boost productivity and livelihoods.
+                </p>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed mt-4 text-left" style="font-family: 'Inter', sans-serif; line-height: 1.7;">
+                    Committed to excellence over scale, we empower farmers with resilient, nutrient-enhanced crops while fostering integrity, collaboration, and environmental stewardship for a food-secure future.
+                </p>
+            </div>
+            
+        </div>
         
         <!-- Vision & Mission Row - REDUCED CARD SIZES -->
         <div class="grid md:grid-cols-2 gap-5 md:gap-6 mt-16 mb-12">
